@@ -15457,3 +15457,236 @@ OpenURI::HTTPError (503 Service Unavailable):
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.5ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.5ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.8ms)
+
+
+Started GET "/lookup?plate-number=V182945" for ::1 at 2015-01-29 22:31:18 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"V182945"}
+  Rendered queries/lookup.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1986ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-64d45ce94323f7a77bc5cb7e7c4077b3.css?body=1" for ::1 at 2015-01-29 22:31:20 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 22:31:20 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 22:31:20 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for ::1 at 2015-01-29 22:31:20 -0600
+
+
+Started GET "/assets/application-3f03c8bf9ba1059e6e76d09c04cffd31.js?body=1" for ::1 at 2015-01-29 22:31:20 -0600
+
+
+Started GET "/lookup/make?make=BUIC" for ::1 at 2015-01-29 22:35:24 -0600
+Processing by QueriesMakeController#make as HTML
+  Parameters: {"make"=>"BUIC"}
+  Rendered queries/make.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 1973ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-64d45ce94323f7a77bc5cb7e7c4077b3.css?body=1" for ::1 at 2015-01-29 22:35:26 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 22:35:27 -0600
+
+
+Started GET "/assets/application-3f03c8bf9ba1059e6e76d09c04cffd31.js?body=1" for ::1 at 2015-01-29 22:35:27 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for ::1 at 2015-01-29 22:35:27 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 22:35:27 -0600
+
+
+Started GET "/lookup?plate-number=S880123" for ::1 at 2015-01-29 22:35:32 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"S880123"}
+  Rendered queries/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1848ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lookup?plate-number=S880123" for ::1 at 2015-01-29 22:35:36 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"S880123"}
+  Rendered queries/lookup.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1454ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 22:35:37 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for ::1 at 2015-01-29 22:35:37 -0600
+
+
+Started GET "/assets/application-3f03c8bf9ba1059e6e76d09c04cffd31.js?body=1" for ::1 at 2015-01-29 22:35:37 -0600
+
+
+Started GET "/assets/application-64d45ce94323f7a77bc5cb7e7c4077b3.css?body=1" for ::1 at 2015-01-29 22:35:37 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 22:35:37 -0600
+
+
+Started GET "/lookup?plate-number=S880123" for ::1 at 2015-01-29 22:50:59 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"S880123"}
+  Rendered queries/lookup.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1618ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-64d45ce94323f7a77bc5cb7e7c4077b3.css?body=1" for ::1 at 2015-01-29 22:51:01 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 22:51:01 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 22:51:01 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for ::1 at 2015-01-29 22:51:01 -0600
+
+
+Started GET "/assets/application-3f03c8bf9ba1059e6e76d09c04cffd31.js?body=1" for ::1 at 2015-01-29 22:51:01 -0600
+
+
+Started GET "/lookup/make?make=AUDI" for ::1 at 2015-01-29 22:51:13 -0600
+Processing by QueriesMakeController#make as HTML
+  Parameters: {"make"=>"AUDI"}
+  Rendered queries/make.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1414ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lookup?plate-number=481R339" for ::1 at 2015-01-29 22:51:18 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"481R339"}
+  Rendered queries/lookup.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1426ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lookup?plate-number=588R920" for ::1 at 2015-01-29 22:51:49 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"588R920"}
+  Rendered queries/lookup.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1523ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lookup?plate-number=588R920" for ::1 at 2015-01-29 22:52:13 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"588R920"}
+  Rendered queries/lookup.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1350ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-64d45ce94323f7a77bc5cb7e7c4077b3.css?body=1" for ::1 at 2015-01-29 22:52:14 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for ::1 at 2015-01-29 22:52:14 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 22:52:14 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 22:52:14 -0600
+
+
+Started GET "/assets/application-3f03c8bf9ba1059e6e76d09c04cffd31.js?body=1" for ::1 at 2015-01-29 22:52:14 -0600
+
+
+Started GET "/lookup/make" for ::1 at 2015-01-30 15:01:08 -0600
+Processing by QueriesMakeController#make as HTML
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/queries_make_controller.rb:3:in `make'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+
+
+Started GET "/lookup/make" for ::1 at 2015-01-30 15:01:23 -0600
+Processing by QueriesMakeController#make as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/queries_make_controller.rb:3:in `make'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.5ms)
+
+
+Started GET "/lookup/make" for ::1 at 2015-01-30 15:01:37 -0600
+Processing by QueriesMakeController#make as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/queries_make_controller.rb:3:in `make'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (14.9ms)
+
+
+Started GET "/lookup/make" for ::1 at 2015-01-30 15:02:06 -0600
+Processing by QueriesMakeController#make as HTML
+  Rendered queries/make.html.erb within layouts/application (69.7ms)
+Completed 200 OK in 3479ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-64d45ce94323f7a77bc5cb7e7c4077b3.css?body=1" for ::1 at 2015-01-30 15:02:09 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-30 15:02:09 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-30 15:02:09 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for ::1 at 2015-01-30 15:02:09 -0600
+
+
+Started GET "/assets/application-3f03c8bf9ba1059e6e76d09c04cffd31.js?body=1" for ::1 at 2015-01-30 15:02:09 -0600
+
+
+Started GET "/lookup?plate-number=R799593" for ::1 at 2015-01-30 15:02:18 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"R799593"}
+  Rendered queries/lookup.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2307ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lookup?plate-number=R799593" for ::1 at 2015-01-30 15:02:51 -0600
+Processing by QueriesController#lookup as HTML
+  Parameters: {"plate-number"=>"R799593"}
+  Rendered queries/lookup.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1666ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-64d45ce94323f7a77bc5cb7e7c4077b3.css?body=1" for ::1 at 2015-01-30 15:02:53 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-30 15:02:53 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for ::1 at 2015-01-30 15:02:53 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-30 15:02:53 -0600
+
+
+Started GET "/assets/application-3f03c8bf9ba1059e6e76d09c04cffd31.js?body=1" for ::1 at 2015-01-30 15:02:53 -0600
