@@ -1,5 +1,7 @@
 class QueriesMakeController < ApplicationController 
 
+
+
   def make 
     require 'open-uri'
     require 'json'
@@ -10,125 +12,48 @@ class QueriesMakeController < ApplicationController
     
     towed_vehicles = parsed_data["data"]
     
+    
+    
+    towed_vehicles = parsed_data["data"]
+    
     search_by = params["make"]
-
-
+    
     license_plates = towed_vehicles.select do |arr|
       if arr.include?(search_by)
         true
       end
     end
     
-
     @each_plate = license_plates.each do |license_plate|
 		
-    	color =license_plate[12] 
-    	make =license_plate[9]
-	
-			
-    			if color == "SIL"
-    				@color ="SILVER" 
-    			end
-    			if color == "GRY"
-    				@color ="GRAY" 
-    			end
-    			if color == "BLK"
-    				@color ="BLACK" 
-    			end
-    			if color == "BLU"
-    				@color ="BLUE" 
-    			end
-    			if color == "GLD"
-    				@color ="GOLD" 
-    			end
-    			if color == "WHI"
-    				@color ="WHITE" 
-    			end
-    			if color == "MAR"
-    				@color ="MAROON" 
-    			end
-    			if color == "PLE"
-    				@color ="PURPLE" 
-    			end
-    			if color == "GRN"
-    				@color ="GREEN" 
-    			end
 
-    			if make == "CADI"
-    				@make ="Cadillac" 
-    			end
-    			if make == "ACUR"
-    				@make ="Acura" 
-    			end
-    			if make == "AUDI"
-    				@make ="Audi" 
-    			end
-    			if make == "BUIC"
-    				@make ="Buick" 
-    			end
-    			if make == "DODG"
-    				@make ="Dodge" 
-    			end
-    			if make == "CHEV"
-    				@make ="Chevy" 
-    			end
-    			if make == "HOND"
-    				@make ="Honda" 
-    			end
-    			if make == "HYUN"
-    				@make ="Hyundai" 
-    			end
-    			if make == "INFI"
-    				@make ="Infiniti" 
-    			end
-    			if make == "LEXS"
-    				@make ="Lexus" 
-    			end
-    			if make == "INFI"
-    				@make ="Infiniti" 
-    			end
-    			if make == "LINC"
-    				@make ="Lincoln" 
-    			end
-    			if make == "MAZD"
-    				@make ="Mazda" 
-    			end
-    			if make == "LINC"
-    				@make ="Lincoln" 
-    			end
-    			if make == "MITS"
-    				@make ="Mitsubishi" 
-    			end
-    			if make == "NISS"
-    				@make ="Nissaan" 
-    			end
-    			if make == "PONT"
-    				@make ="Pontiac" 
-    			end
-    			if make == "SUZI"
-    				@make ="Suzuki" 
-    			end
-    			if make == "TOYT"
-    				@make ="Toyota" 
-    			end
-    			if make == "VOLK"
-    				@make ="Volkswagon" 
-    			end
-    			if make == "VOLK"
-    				@make ="Volkswagon" 
-    			end
-  			end
+      # Set up Variables
 
+      #################
+      # Variables are not working, they pick up the first item and repeat across all values
+      #################
+
+    	@all = license_plate
+    	@plate = license_plate[13]
+    	@state = license_plate[14]	
+    	@color =license_plate[12] 
+    	@type = license_plate[10] 
+    	@make =license_plate[9]
+    	@date_towed = license_plate[8]
+    	@facility_phone_number = license_plate[16]
+      @address = license_plate[15]
+
+      # Bring in abbreviation fix from Application Controller
+      fullname("abbrev")
+
+  	end
 
     render "queries/make"
     
   end 
- 
 
 
 
-
-  
 end  
  
  

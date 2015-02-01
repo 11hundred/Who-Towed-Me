@@ -4,23 +4,32 @@
 
 -->
 <%= @each_plate.count %> <%= @make %>'s towed
+
 <ul>
-<% @each_plate.each do |license_plate| %>
+	<% @each_plate.each do |license_plate| %>
 
+		<li class="illinois-plate">
+
+			<a href="/lookup?plate-number=<%= license_plate[13] %>">
+				<%= license_plate[14] %> 
+				<%= license_plate[13] %>
+			</a>
 		
-<li class="illinois-plate">
+			<%= license_plate[10] %> <%= @make %>
+			<% date_towed = license_plate[8] %> 
+			<%= date_towed = date_towed[0..-10] %>
+			
+			<% today = DateTime.now.to_date %>
 
-	<a href="/lookup?plate-number=<%= license_plate[13] %>">
-		<%= license_plate[14] %> 
-		<%= license_plate[13] %>
-	</a>
-	<%= @color.capitalize %> <%= license_plate[10] %> <%= @make %>
-	<% date_towed = license_plate[8] %> 
-	<%= date_towed = date_towed[0..-10] %>
-	<%= license_plate[15] %>
+			<% if today.to_s == date_towed.to_s %>
+				Today
+			<% else %>	
+			<% end %>
+				
+			<%= license_plate[15] %>
 
-</li>
+		</li>
   
-<% end %>
+	<% end %>
 
 </ul>
