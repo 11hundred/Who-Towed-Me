@@ -7,89 +7,70 @@ class ApplicationController < ActionController::Base
   def fullname(abbrev)
   	
 		if @color == "SIL"
-			@color ="SILVER" 
+			@color ="silver" 
+    elsif @color == "BGE"
+			@color ="beige" 
     elsif @color == "GRY"
-			@color ="GRAY" 
+			@color ="gray" 
 		elsif @color == "BLK"
-			@color ="BLACK" 
+			@color ="black" 
+		elsif @color == "BRO"
+			@color ="brown" 
 		elsif @color == "BLU"
-			@color ="BLUE" 
+			@color ="blue" 
 		elsif @color == "GLD"
-			@color ="GOLD" 
+			@color ="gold" 
 		elsif @color == "WHI"
-			@color ="WHITE" 
+			@color ="white" 
+		elsif @color == "MAR"
+			@color ="maroon" 
+		elsif @color == "PLE"
+			@color ="purple" 
+		elsif @color == "GRN"
+			@color ="green" 
 		end
-
-		if @color == "MAR"
-			@color ="MAROON" 
-		end
-		if @color == "PLE"
-			@color ="PURPLE" 
-		end
-		if @color == "GRN"
-			@color ="GREEN" 
-		end
+    
 		if @make == "CADI"
 			@make ="Cadillac" 
-		end
-		if @make == "ACUR"
+		elsif @make == "ACUR"
 			@make ="Acura" 
-		end
-		if @make == "AUDI"
+		elsif @make == "AUDI"
 			@make ="Audi" 
-		end
-		if @make == "BUIC"
+		elsif @make == "BUIC"
 			@make ="Buick" 
-		end
-		if @make == "DODG"
+		elsif @make == "DODG"
 			@make ="Dodge" 
-		end
-		if @make == "CHEV"
+		elsif @make == "CHEV"
 			@make ="Chevy" 
-		end
-		if @make == "HOND"
+		elsif @make == "HOND"
 			@make ="Honda" 
-		end
-		if @make == "HYUN"
+		elsif @make == "HYUN"
 			@make ="Hyundai" 
-		end
-		if @make == "INFI"
+		elsif @make == "INFI"
 			@make ="Infiniti" 
-		end
-		if @make == "LEXS"
+		elsif @make == "LEXS"
 			@make ="Lexus" 
-		end
-		if @make == "INFI"
+		elsif @make == "INFI"
 			@make ="Infiniti" 
-		end
-		if @make == "LINC"
+		elsif @make == "LINC"
 			@make ="Lincoln" 
-		end
-		if @make == "MAZD"
+		elsif @make == "MAZD"
 			@make ="Mazda" 
-		end
-		if @make == "LINC"
+		elsif @make == "LINC"
 			@make ="Lincoln" 
-		end
-		if @make == "MITS"
+		elsif @make == "MITS"
 			@make ="Mitsubishi" 
-		end
-		if @make == "NISS"
+		elsif @make == "NISS"
 			@make ="Nissaan" 
-		end
-		if @make == "PONT"
+		elsif @make == "PONT"
 			@make ="Pontiac" 
-		end
-		if @make == "SUZI"
+		elsif @make == "SUZI"
 			@make ="Suzuki" 
-		end
-		if @make == "TOYT"
+		elsif @make == "TOYT"
 			@make ="Toyota" 
-		end
-		if @make == "VOLK"
+		elsif @make == "VOLK"
 			@make ="Volkswagon" 
-		end
-		if @make == "VOLK"
+		elsif @make == "VOLK"
 			@make ="Volkswagon" 
 		end
   end

@@ -2,64 +2,65 @@ class QueriesController < ApplicationController
 
 
   def index 
+    require 'open-uri'
+    require 'json'
+    
+    url = 'https://data.cityofchicago.org/resource/ygr5-vcbg.json'
+    raw_data = open(url).read
+    all_plates = JSON.parse(raw_data)
+
+  	@plate_count = all_plates.count
+
   end 
 
   def lookup 
     require 'open-uri'
     require 'json'
+    require 'ostruct'
     
-    # Base data
-    url = 'https://data.cityofchicago.org/api/views/ygr5-vcbg/rows.json'
+    url = 'https://data.cityofchicago.org/resource/ygr5-vcbg.json'
     raw_data = open(url).read
+    all_plates = JSON.parse(raw_data)
+    
+    # Search within array to repturn based on plate number
+    license_plates = all_plates.select {|plate| plate["plate"] == params[:plate] }
+
+  	@plate_search = params[:plate]
+    # Remove Hash from Array
+    license_plate = license_plates[0]
+    
+    # Set plate to receive methods from key values
+    @plate = OpenStruct.new license_plate
+    
+    if license_plate != nil
+    # Get Ready to plot the long lat we get from City Data on a Google map
+    google_map_url_base = "http://maps.googleapis.com/maps/api/geocode/json?address="
+    address = @plate.towed_to_address
+    address_url = "#{address.tr!(' ', '+')}+Chicago+IL"
+    google_map_url = google_map_url_base + address_url    
+    
+    # Google Map Data
+    raw_data = open(google_map_url).read
     parsed_data = JSON.parse(raw_data)
     
-    # All towed vehicle data
-    towed_vehicles = parsed_data["data"]
-   
-    # My search term
-    search_by = params["plate-number"]
+    # get specific hash results
+    latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
+    longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
 
-    # Search within array
-    license_plates = towed_vehicles.select do |arr|
-      if arr.include?(search_by)
-        true
-      end
+    # Create specific instance variables 
+    @tow_headline = ["Next time, check twice and park once.", "It happens.", "Yes, it was towed."]
+    @lat = latitude
+    @long = longitude  
+    @address = address.tr!('+', ' ')
+    @color = @plate.color
+  	@make = @plate.make
+  	@date = @plate.tow_date[0..9]
     end
-    
-    # Extract plate content
-    license_plates.each do |license_plate|
-
-      # Set up Map Actions
-      # Google Map URL
-      google_map_url_base = "http://maps.googleapis.com/maps/api/geocode/json?address="
-      address = license_plate[15]
-      address_url = "#{address.tr!(' ', '+')}+Chicago+IL"
-      google_map_url = google_map_url_base + address_url    
-      # Google Map Data
-      raw_data = open(google_map_url).read
-      parsed_data = JSON.parse(raw_data)
-      # get specific hash results
-      latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
-      longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
-
-      # Set up Variables
-    	@all = license_plate
-    	@plate = license_plate[13]
-    	@state = license_plate[14]	
-    	@color =license_plate[12] 
-    	@type = license_plate[10] 
-    	@make =license_plate[9]
-    	@date_towed = license_plate[8]
-    	@facility_phone_number = license_plate[16]
-      @address = license_plate[15]
-      @lat = latitude
-      @long = longitude  
-
-    end  
-
+ 
     # Bring in abbreviation fix from Application Controller
     fullname("abbrev")
-    
+
+
   end 
 
 

@@ -3,31 +3,35 @@
 	Bring in Towed Vehicles Data from queries_controller 
 
 -->
-<%= @each_plate.count %> <%= @make %>'s towed
 
-<ul>
-	<% @each_plate.each do |license_plate| %>
+<%= @all_plates.count %> <%= @make %>'s towed
 
-		<li class="illinois-plate">
+<ul class="list">
+	
+	<% @all_plates.each do |license_plate| %>
 
-			<a href="/lookup?plate-number=<%= license_plate[13] %>">
-				<%= license_plate[14] %> 
-				<%= license_plate[13] %>
-			</a>
+		<% date = license_plate["tow_date"] %></h4>
+		<% date = date[0..-10] %></h4>
 		
-			<%= license_plate[10] %> <%= @make %>
-			<% date_towed = license_plate[8] %> 
-			<%= date_towed = date_towed[0..-10] %>
-			
-			<% today = DateTime.now.to_date %>
 
-			<% if today.to_s == date_towed.to_s %>
-				Today
-			<% else %>	
-			<% end %>
+		<% if license_plate["state"] == "IL" %>
+		<li class="illinois">
+		<% elsif %>
+		<li>
+		<% end %>	
+			<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
+			<div class="center">
+				<h2>
+					<span class="state"><%= license_plate["state"] %></span> 
+					<span class="number"><%= license_plate["plate"] %></span>
+				</h2>
 				
-			<%= license_plate[15] %>
-
+				<div class="details">
+					<h4>Make: <%= @make %></h4>
+					<h4>Date Towed: <%= date %></h4>
+				</div>	
+				
+			</div>
 		</li>
   
 	<% end %>

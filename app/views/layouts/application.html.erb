@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/731360/749444/css/fonts.css" />
 </head>
 
 
@@ -12,29 +13,32 @@
 
 
 	<%= yield %>
-
-
-	<nav>
-		<form action="/lookup">
-			<input name="plate-number" type="text" placeholder="<%= @plate %>">
-		</form>	
 	
-		<ul>		
-			<li>
-				<a href="/lookup/make?make=ACUR">Acura</a>
-			</li>
-			<li>
-				<a href="/lookup/make?make=AUDI">AUDI</a>
-			</li>
-			<li>
-				<a href="/lookup/make?make=CADI">Cadillac</a>
-			</li>
-			<li>
-				<a href="/lookup/make?make=BUIC">Buick</a>
-			</li>
-		</ul>
-	</nav>
+	<%= @plate_count %>
 
+
+	<div class="section" id="makes">
+			<ul class="makes">		
+				<li>
+					<a href="/lookup/make/ACUR">Acura</a>
+				</li>
+				<li>
+					<a href="/lookup/make/AUDI">AUDI</a>
+				</li>
+				<li>
+					<a href="/lookup/make/CADI">Cadillac</a>
+				</li>
+				<li>
+					<a href="/lookup/make/BUIC">Buick</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+	
+	
 
 </body>
 </html>

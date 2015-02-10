@@ -2,49 +2,83 @@
 	Bring in Towed Vehicles Data from queries_controller 
 
 -->
+<% if @plate.state == nil %>
+	<div class="section" id="plate-detail">
+		<div class="center">
+			<h2>Umm no. Maybe Stolen?</h2>
+			<h1>
+				<span class="plate"><%= @plate_search %></span>	
+			</h1>
+			<h4></h4>
+			<div class="plate-details">
+			</div>
+		</div>	
 
 
-<div class="section" id="plate-detail">
+	</div>
 
-	<div class="plate">
-		<h1><%= @state %> <%= @plate %></h1>
-		<div class="plate-details">
-			<%= @color.capitalize %> <%= @make %>
-			<%= @date_towed %>
-		</div>
-	</div>	
+<% else %>
 
 
-</div>
+	<div class="section" id="plate-detail">
+		<div class="center">
+			<h2><%= @tow_headline.sample %></h2>
+			<h1>
+				<% if @plate.state != "IL" %>
+					<span class="state"><%= @plate.state %></span>	
+				<% else %>
+				
+				<% end %>
+				<span class="plate"><%= @plate.plate %></span>	
+			</h1>
+		</div>	
+			<h3> <%= @color %> <%= @make %></h3>
+	</div>
+	<div class="plate-details">
+		<h4>This vehicle was towed on <%= @date %></h4>
+		<h4> Get it here: <%= @address %> or call them: <a href=""><%= @plate.tow_facility_phone %></a></h4>
+	</div>
 
 
-<div class="address">
-
-<%= @address %> Call the facility: <a href="tel:<%= @facility_phone_number %>"><%= @facility_phone_number %></a>
-</div>
-
-
-
-<div id="map-canvas"></div>
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-    <script>
+	<div id="map-canvas"></div>
 	
-	var map;
-		function initialize() {
-			var mapOptions = {
-			zoom: 16,
-			scrollwheel: false,
-		    navigationControl: false,
-		    mapTypeControl: false,
-		    scaleControl: false,
-		    draggable: false,
-			center: new google.maps.LatLng(<%= @lat %>,<%= @long %>)
-		};
-		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions); }
+	<div class="address">
+		<div class="center">
+			view all <a href="/lookup/make/<%= @plate.make %>	"><%= @make %></a> vehicle's towed
+		</div>
+	</div>
+	
 
-		google.maps.event.addDomListener(window, 'load', initialize);
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
 
-    </script>
+	<script>
 
+	    function initialize()
+	    {
+	        var lat=<%= @lat %>;
+	        var lon= <%= @long %>;
+	        var mapOptions =
+	        {
+	            zoom: 7,
+	            center: new google.maps.LatLng(lat, lon),
+	            mapTypeId: google.maps.MapTypeId.ROADMAP,
+	            zoom: 16, scrollwheel: false, navigationControl: false, mapTypeControl: false, scaleControl: false, draggable: false
+	        };
+
+	        var map = new google.maps.Map(document.getElementById('map-canvas'),
+	            mapOptions);
+
+	        var marker = new google.maps.Marker({
+	            map: map,
+	            draggable: false,
+	            position: new google.maps.LatLng(lat, lon)
+	        });
+
+
+	    }
+
+	    google.maps.event.addDomListener(window, 'resize', initialize);
+	    google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+<% end %>
