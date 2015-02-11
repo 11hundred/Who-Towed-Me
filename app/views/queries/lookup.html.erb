@@ -2,35 +2,47 @@
 	Bring in Towed Vehicles Data from queries_controller 
 
 -->
+
+<% if @plate.state == nil %>
 	<div class="section home" id="search">
 		<div class="center">
 			<div class="lincolns">
 				<div class="lincoln"></div>	
 			</div>	
 			<div class="title">
-				<h1><%= @plate.plate %></h1>
+				<h1><%= @plate_search %></h1>
 			</div>
 		</div>
 		<div class="overlay">
 		</div>
 	</div>
-
-<% if @plate.state == nil %>
 	<div class="section" id="plate-detail">
 		<div class="center">
 			<h2>Umm no. Maybe Stolen?</h2>
-			<h1>
-				<span class="plate"><%= @plate_search %></span>	
-			</h1>
-			<h4></h4>
-			<div class="plate-details">
-			</div>
 		</div>	
 
 
 	</div>
 
 <% else %>
+	<div class="section home" id="search">
+		<div class="center">
+			<div class="lincolns">
+				<div class="lincoln"></div>	
+			</div>	
+			<div class="title">
+				<h1><%= @plate.plate %>
+				<% if @plate.state != "IL" %>
+					<span class="state"><%= @plate.state %></span>	
+				<% else %>
+				<% end %>
+				
+				</h1>
+			</div>
+		</div>
+		<div class="overlay">
+		</div>
+	</div>
 
 <!--
 	<div class="section" id="plate-detail">
@@ -49,8 +61,15 @@
 	</div>
 -->
 	<div class="plate-details">
+		<% if @plate.state != "IL" %>
+			<h4><span class="state"><%= @plate.state %></span></h4>	
+		<% else %>
+		<% end %>
+		<h4> <%= @color %> <%= @make %></h4>
 		<h4>This vehicle was towed on <%= @date %></h4>
 		<h4> Get it here: <%= @address %> or call them: <a href=""><%= @plate.tow_facility_phone %></a></h4>
+		Not your car? <a href="/lookup/make/<%= @plate.make %>	">View all <%= @make %></a> vehicle's towed
+		
 	</div>
 
 
@@ -58,7 +77,6 @@
 	
 	<div class="address">
 		<div class="center">
-			view all <a href="/lookup/make/<%= @plate.make %>	"><%= @make %></a> vehicle's towed
 		</div>
 	</div>
 	
