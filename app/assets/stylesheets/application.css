@@ -262,8 +262,7 @@ ul.makes li {
 	position:absolute;
 	left:50%;
 	margin-left:-475px;
-	top:25%;
-	margin-top:-150px;
+	top:20%;
 }
 .bar {
 	z-index:10;
@@ -278,6 +277,9 @@ ul.makes li {
 .modal.active {
 	display:block;
 }
+.active .container {
+	top:25%;
+
 
 @media all and (max-width:768px) {
 	.container {
