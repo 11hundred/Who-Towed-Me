@@ -279,6 +279,8 @@ ul.makes li a {
 	margin:0 auto;
 	z-index:1;
 	text-align:center;
+	padding-top: 125px;
+	
 }
 .title h1 {
 	background-image:url(who_bar.png), url(who_bar.png);
@@ -303,6 +305,16 @@ ul.makes li a {
 	display: inline-block;
 
 }
+.title.active h1 {
+	background-image:url(who_bar.png), url(who_bar.png);
+	background-position:center top, center bottom;
+	background-size:100% 20px;
+transition: background .5s;
+-webkit-transition: background .5s;
+-moz-transition: background .5s;
+-o-transition: background .5s;
+}
+
 
 .title p {
 	text-align:center;
@@ -364,16 +376,6 @@ ul.makes li a {
 	padding:20px 0;
 }
 
-.title.active h1 {
-	background-image:url(who_bar.png), url(who_bar.png);
-	background-position:center top, center bottom;
-	background-size:100% 20px;
-transition: background .5s;
--webkit-transition: background .5s;
--moz-transition: background .5s;
--o-transition: background .5s;
-}
-
 
 @media all and (max-width:768px) {
 	.section.home#search {
@@ -388,7 +390,38 @@ transition: background .5s;
 	h1 {
 		font-size:3.5em;
 	}
+	
+	.title {
+		padding-top: 75px;
+	}
+	.title h1 {
+		background-image: url(who_bar.png), url(who_bar.png);
+		background-position: center top, center bottom;
+		background-size: 170px 10px;
+		background-repeat: no-repeat;
+		}
+		.title h1 em {
+			background-image:url(who_star.png);
+			background-position:center;
+			background-size:30px;
+			background-repeat:no-repeat;
+			width:40px;
+			display: inline-block;
 
+		}
+.title a {
+	font-size:.8em;
+}		
+
+	ul.makes li {
+	width: auto;
+	padding: 70px 0;
+	float: none;
+	}
+	ul.makes li a {
+	font-size:1.4em;
+	}
+	
 ul.list li {
 	height:auto;
 	}
