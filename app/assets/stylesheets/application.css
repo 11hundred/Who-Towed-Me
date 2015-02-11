@@ -34,6 +34,10 @@ h1 {
 	font-size:20em;
 	font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
 }
+h1#title {
+	font-size:11em;
+	font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: normal;
+}
 
 h2 {
 	font-size:4em;
@@ -288,7 +292,6 @@ ul.makes li {
 	}
 
 	h1 {
-		font-size:20px!important;
 	}
 
 ul.list li {
