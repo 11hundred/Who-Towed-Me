@@ -2,6 +2,19 @@
 	Bring in Towed Vehicles Data from queries_controller 
 
 -->
+	<div class="section home" id="search">
+		<div class="center">
+			<div class="lincolns">
+				<div class="lincoln"></div>	
+			</div>	
+			<div class="title">
+				<h1><%= @plate.plate %></h1>
+			</div>
+		</div>
+		<div class="overlay">
+		</div>
+	</div>
+
 <% if @plate.state == nil %>
 	<div class="section" id="plate-detail">
 		<div class="center">
@@ -19,7 +32,7 @@
 
 <% else %>
 
-
+<!--
 	<div class="section" id="plate-detail">
 		<div class="center">
 			<h2><%= @tow_headline.sample %></h2>
@@ -34,6 +47,7 @@
 		</div>	
 			<h3> <%= @color %> <%= @make %></h3>
 	</div>
+-->
 	<div class="plate-details">
 		<h4>This vehicle was towed on <%= @date %></h4>
 		<h4> Get it here: <%= @address %> or call them: <a href=""><%= @plate.tow_facility_phone %></a></h4>
