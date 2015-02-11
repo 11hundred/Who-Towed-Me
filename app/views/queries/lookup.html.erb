@@ -31,9 +31,13 @@
 				<div class="lincoln"></div>	
 			</div>	
 			<div class="title">
+			<form action="/lookup/plate/">
+				<input name="plate" type="text" id="plate_search" placeholder="<%= @plate_search %>">
+			</form>	
 				<h1><%= @plate.plate %>
 				<% if @plate.state != "IL" %>
-					 <span class="state"> <%= @plate.state %></span>	
+					 <span class="state"> <%= @plate.state %></span>
+					 <span class="menu">search</a>	
 				<% else %>
 				<% end %>
 				

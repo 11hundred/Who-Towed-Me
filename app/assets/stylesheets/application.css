@@ -483,5 +483,24 @@ padding: 0;
 	padding: 0px
 }
 
+input#plate_search {
+width: 225px;
+text-align: left;
+font-size: 2em;
+position: absolute;
+left: 0px;
+top: 54px;
+padding: 5px 0;
+border-bottom: 5px solid #111;
+background: #fff;
+display:none;
+}
+
+.menu {
+	float: right;
+	padding-right: 30px;
+	text-indent: 100px;
+
+}
 
 }
