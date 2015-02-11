@@ -24,7 +24,9 @@
 	
 	<div class="container">
 		
-		<input type="text" id="input" placeholder="enter your plate">
+			<form action="/lookup/plate/">
+				<input name="plate" type="text" id="plate_search" placeholder="<%= @plate_search %>">
+			</form>	
 		
 		
 	</div>	
@@ -59,7 +61,15 @@
 	
 <script>
 	$('.bar').click( function() {
-	    $('#input').focus();	
+	    $('.modal').fadeIn();	
+	    $('.modal').addClass("active");	
+		
+		
+		
+	    $('#plate_search').focus();	
+	});
+	$('.modal').click( function() {
+	    $('.modal').fadeOut();	
 	});
 </script>	
 	
