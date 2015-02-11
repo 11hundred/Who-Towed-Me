@@ -377,28 +377,45 @@ transition: background .5s;
 
 @media all and (max-width:768px) {
 	.section.home#search {
-	height:250px;
+	height:150px;
 	}
 		.container {
 		left:5%;
 		margin-left:0px;
+	}
+	.lincoln {
+		background-image:url(lincoln-head.jpg);
+		background-position:center;
+		background-size:cover;
+		width:100px;
+		height:100px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-150px;
+		margin-top:-250px;
 	}
 
 	.title h1,
 	h1 {
 		font-size:3.5em;
 	}
+	.title h1, h1 {
+	font-size: 2.25em;
+	}
 	
 	.title {
-		padding-top: 75px;
+		padding-top: 45px;
+		margin-left: 20px;
 	}
 	.title h1 {
-		background-image: url(who_bar.png), url(who_bar.png);
-		background-position: center top, center bottom;
-		background-size: 170px 10px;
-		background-repeat: no-repeat;
-		}
-		.title h1 em {
+	background-image: url(who_bar.png), url(who_bar.png);
+	background-position: left top, left bottom;
+	background-size: 225px 5px;
+	background-repeat: no-repeat;
+	padding: 10px 0;
+	text-align: left;
+	}		.title h1 em {
 			background-image:url(who_star.png);
 			background-position:center;
 			background-size:30px;
