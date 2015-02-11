@@ -168,7 +168,9 @@ h2 .state {
 .plate-details {
 	border-top: 2px solid #ddd;
 	padding: 30px;
+	background:#FCFBF6;
 }
+
 .number {
 	font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
 }
@@ -374,6 +376,13 @@ transition: background .5s;
 	padding:20px 0;
 }
 
+.plate-details h4 a {
+	font-family:inherit;
+	text-transform:inherit;
+	color:inherit;
+	text-decoration:underline;
+}
+
 
 @media all and (max-width:768px) {
 	.section.home#search {
@@ -461,11 +470,13 @@ padding: 0;
 
 
 .plate-details h4 {
-	border-bottom: 2px solid #ddd;
+	border-top: 2px solid #ddd;
 	padding:10px 0;
 	text-align:left;
 }
-
+.plate-details h4.first {
+	border:none;
+}
 
 #map-canvas {
 	height:250px;
