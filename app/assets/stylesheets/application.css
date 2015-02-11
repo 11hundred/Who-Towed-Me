@@ -239,3 +239,29 @@ ul.makes li {
 	border:1px solid #ddd;
 }
 
+
+@media all and (max-width:768px) {
+
+
+
+ul.list li {
+	height:auto;
+	}
+ul.list li h2 {
+	width: 100%;
+}
+.details {
+	width: 100%;
+	text-align: left;
+	float: left;
+	margin: 0;
+	border: none;
+	border-top: 1px solid #ddd;
+}
+
+.details h4 {
+padding-left: 20px;
+text-align: left;
+padding: 0;
+}
+}
