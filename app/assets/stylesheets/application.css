@@ -495,7 +495,9 @@ border-bottom: 5px solid #111;
 background: #fff;
 display:none;
 }
-
+input#plate_search.active {
+	display:block;
+}
 .menu {
 	float: right;
 	padding-right: 30px;
