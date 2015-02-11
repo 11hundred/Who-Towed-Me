@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Who Towed Me?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/731360/749444/css/fonts.css" />
@@ -59,11 +59,9 @@
 	
 <script>
 	$('.bar').click( function() {
-	    $('#input').focus();
-	
+	    $('#input').focus();	
 	});
-	
-	</script>	
+</script>	
 	
 
 </body>
