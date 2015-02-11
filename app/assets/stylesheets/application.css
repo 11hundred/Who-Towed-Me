@@ -61,9 +61,7 @@ input[type="text"] {
 	border:none;
 	outline:none;
 	background:none;
-	border-bottom:2px solid #111;
-	max-width:960px;
-	font-size:20em;
+	width:100%;
 	font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
 	text-align:center;
 }
@@ -280,12 +278,10 @@ ul.makes li {
 	.container {
 		left:5%;
 		margin-left:0px;
-		top:50%;
-		margin-top:-150px;
 	}
 
 	h1 {
-		font-size:20px;
+		font-size:20px!important;
 	}
 
 ul.list li {
