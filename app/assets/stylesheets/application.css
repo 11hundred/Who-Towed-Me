@@ -34,10 +34,6 @@ h1 {
 	font-size:20em;
 	font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
 }
-h1#title {
-	font-size:11em;
-	font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: normal;
-}
 
 h2 {
 	font-size:4em;
@@ -54,6 +50,11 @@ h4 {
 	text-align:center;
 }
 
+a {
+	font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: normal;
+	text-decoration:none;
+	text-transform:uppercase;
+}
 
 ul li {
 	list-style:none;
@@ -101,7 +102,14 @@ nav {
 	background-position:center;
 }
 .section.home#search {
-	height:1250px;
+	height:650px;
+	background:none;
+	border-bottom:1px solid #ddd;
+}
+
+.section#makes {
+background: #eee;
+float: left;
 }
 
 .centered {
@@ -246,15 +254,75 @@ ul.makes li {
 	border:1px solid #ddd;
 }
 
+ul.makes li a {
+	color:#111;
+	font-size:2em;
+}
 
+.lincoln {
+	background-image:url(lincoln-head.jpg);
+	background-position:center;
+	background-size:cover;
+	width:300px;
+	height:400px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-150px;
+	margin-top:-250px;
+}
 
-.modal {
-	position:fixed;
+.title {
+	position:relative;
+	width:100%;
+	height:200px;
+	margin:0 auto;
+	z-index:1;
+	text-align:center;
+}
+.title h1 {
+	background-image:url(who_bar.png), url(who_bar.png);
+	background-position:center top, center bottom;
+	background-size:350px 20px;
+	background-repeat:no-repeat;
+	font-size:09em;
+	color:#cc0000;
+	text-transform:uppercase;
+	padding:20px 0;
+	transition: background .5s;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	-o-transition: background .5s;
+}
+.title h1 em {
+	background-image:url(who_star.png);
+	background-position:center;
+	background-size:50px;
+	background-repeat:no-repeat;
+	width: 70px;
+	display: inline-block;
+
+}
+
+.title p {
+	text-align:center;
+	padding:10px 0 40px 0;
+}
+.title a {
+	background:#111;
+	padding:20px 40px;
+	position:relative;
+	text-align:center;
+	color:#fff;
+}
+
+.overlay {
+	position:absolute;
 	width:100%;
 	height:100%;
 	left:0px;
 	top:0px;
-	z-index:9;
+	z-index:0;
 	background:rgba(0,0,0,0.1);
 	display:none;
 }
@@ -278,20 +346,47 @@ ul.makes li {
 	left:25%;
 }
 
-.modal.active {
+.overlay.active {
 	display:block;
 }
 .active .container {
 	top:25%;
 }
 
+
+.modal input[type="text"] {
+	width:100%;
+	text-align:left;
+	font-size:3em;
+	border-bottom:2px solid #111;
+	text-transform:uppercase;
+	text-indent:20px;
+	padding:20px 0;
+}
+
+.title.active h1 {
+	background-image:url(who_bar.png), url(who_bar.png);
+	background-position:center top, center bottom;
+	background-size:100% 20px;
+transition: background .5s;
+-webkit-transition: background .5s;
+-moz-transition: background .5s;
+-o-transition: background .5s;
+}
+
+
 @media all and (max-width:768px) {
-	.container {
+	.section.home#search {
+	height: 450px;
+	}
+		.container {
 		left:5%;
 		margin-left:0px;
 	}
 
+	.title h1,
 	h1 {
+		font-size:3.5em;
 	}
 
 ul.list li {
@@ -314,4 +409,8 @@ padding-left: 20px;
 text-align: left;
 padding: 0;
 }
+
+
+
+
 }

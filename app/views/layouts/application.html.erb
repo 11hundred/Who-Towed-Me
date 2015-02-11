@@ -18,28 +18,7 @@
 
 	<%= yield %>
 	
-	<%= @plate_count %>
 
-<div class ="search modal">
-	
-	<div class="container">
-		
-			<form action="/lookup/plate/">
-				<input name="plate" type="text" id="plate_search" placeholder="<%= @plate_search %>">
-			</form>	
-			<h5>Search by Make instead. <em>Not sure about your plate number?</em></h5>
-		
-		
-	</div>	
-	
-</div>	
-
-
-
-<div class ="search bar">
-	<h2>Search Now</h2>
-	
-</div>	
 	<div class="section" id="makes">
 			<ul class="makes center">		
 				<li>
@@ -49,10 +28,28 @@
 					<a href="/lookup/make/AUDI">AUDI</a>
 				</li>
 				<li>
-					<a href="/lookup/make/CADI">Cadillac</a>
+					<a href="/lookup/make/BMW">BMW</a>
 				</li>
 				<li>
 					<a href="/lookup/make/BUIC">Buick</a>
+				</li>
+				<li>
+					<a href="/lookup/make/CADI">Cadillac</a>
+				</li>
+				<li>
+					<a href="/lookup/make/DODG">Dodge</a>
+				</li>
+				<li>
+					<a href="/lookup/make/FORD">Ford</a>
+				</li>
+				<li>
+					<a href="/lookup/make/HOND">Honda</a>
+				</li>
+				<li>
+					<a href="/lookup/make/HYUN">Hyundai</a>
+				</li>
+				<li>
+					<a href="/lookup/make/INFI">Infiniti</a>
 				</li>
 			</ul>
 		</div>
@@ -61,18 +58,64 @@
 	
 	
 <script>
-	$('.bar').click( function() {
-	    $('.modal').fadeIn();	
-	    $('.modal').addClass("active");	
-		
-		
-		
+	$('#search_plates').click( function() {
+	    $('.title').addClass("active");	
+	    $('.overlay').addClass("active");	
 	    $('#plate_search').focus();	
 	});
 	$('.modal').click( function() {
-	    $('.modal').fadeOut();	
+	    $('.overlay').fadeOut();	
+	    $('.overlay').removeClass("active");	
+	    $('.title').removeClass("active");	
 	});
-</script>	
+	
+	
+	$(document).ready(function(){
+	    animateDiv();
+    
+	});
+
+	function makeNewPosition(){
+    
+	    // Get viewport dimensions (remove the dimension of the div)
+	    var h = 350;
+	    var w = 650;
+    
+	    var nh = Math.floor(Math.random() * h);
+	    var nw = Math.floor(Math.random() * w);
+    
+	    return [nh,nw];    
+    
+	}
+
+	function animateDiv(){
+	    var newq = makeNewPosition();
+	    var oldq = $('.lincoln').offset();
+	    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+	    $('.lincoln').animate({ top: newq[0], left: newq[1] }, speed, function(){
+	      animateDiv();        
+	    });
+    
+	};
+
+	function calcSpeed(prev, next) {
+    
+	    var x = Math.abs(prev[1] - next[1]);
+	    var y = Math.abs(prev[0] - next[0]);
+    
+	    var greatest = x > y ? x : y;
+    
+	    var speedModifier = 0.02;
+
+	    var speed = Math.ceil(greatest/speedModifier);
+
+	    return speed;
+
+	}
+	
+	
+	</script>	
 	
 
 </body>
