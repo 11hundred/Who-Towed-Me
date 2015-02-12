@@ -2,29 +2,6 @@
 	Bring in Towed Vehicles Data from queries_controller 
 
 -->
-
-<% if @plate.state == nil %>
-	<div class="section home" id="search">
-		<div class="center">
-			<div class="lincolns">
-				<div class="lincoln"></div>	
-			</div>	
-			<div class="title">
-				<h1><%= @plate_search %></h1>
-			</div>
-		</div>
-		<div class="overlay">
-		</div>
-	</div>
-	<div class="section" id="plate-detail">
-		<div class="center">
-			<h2>Umm no. Maybe Stolen?</h2>
-		</div>	
-
-
-	</div>
-
-<% else %>
 	<div class="section home" id="search">
 		<div class="center">
 			<div class="lincolns">
@@ -34,11 +11,13 @@
 			<form action="/lookup/plate/">
 				<input name="plate" type="text" id="plate_search" placeholder="License Plate">
 			</form>	
-				<h1><%= @plate.plate %>
+				<h1>
 				<% if @plate.state != "IL" %>
-					 <span class="state"> <%= @plate.state %></span>
+					 <span class="state"> <%= @plate_search %></span>
 					 <span class="menu">search</a>	
 				<% else %>
+			 <span class="state"> <%= @plate.plate %></span>
+				
 				<% end %>
 				
 				</h1>
@@ -47,6 +26,17 @@
 		<div class="overlay">
 		</div>
 	</div>
+
+<% if @plate.state == nil %>
+	<div class="section" id="plate-detail">
+		<div class="center">
+			<h2>Umm no. Maybe Stolen?</h2>
+		</div>	
+
+
+	</div>
+
+<% else %>
 
 <!--
 	<div class="section" id="plate-detail">
