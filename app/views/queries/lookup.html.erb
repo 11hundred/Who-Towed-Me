@@ -1,76 +1,59 @@
-<!-- 
-	Bring in Towed Vehicles Data from queries_controller 
-
--->
-	<div class="section home" id="search">
+	<div class="section" id="nav">
 		<div class="center">
 			<div class="lincolns">
 				<div class="lincoln"></div>	
 			</div>	
 			<div class="title">
-			<form action="/lookup/plate/">
-				<input name="plate" type="text" id="plate_search" placeholder="License Plate">
-			</form>	
-				<h1>
-				<% if @plate.state != "IL" %>
-					 <span class="state"> <%= @plate_search %></span>
-					 <span class="menu">search</a>	
-				<% else %>
-			 <span class="state"> <%= @plate.plate %></span>
-				
-				<% end %>
-				
-				</h1>
+				<div class="wrapper">
+					<form action="/lookup/plate/">
+						<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.plate %>">
+					</form>	
+					<h1>
+						<% if @plate.state != "IL" %>
+							<span class="plate"> <%= @plate_search %></span>
+						<% else %>
+							<span class="plate"> <%= @plate.plate %></span>
+						<% end %>
+						<span class="menu">&nbsp;</span>	
+					</h1>
+				</div>
 			</div>
 		</div>
-		<div class="overlay">
+	</div>
+
+
+	<% if @plate.state == nil %>
+
+	<!-- Display alternate messaging for missing plate information -->
+
+		<div class="section" id="plate-detail">
+			<div class="center">
+				<h2>Umm no. Maybe Stolen?</h2>
+			</div>	
 		</div>
-	</div>
 
-<% if @plate.state == nil %>
-	<div class="section" id="plate-detail">
-		<div class="center">
-			<h2>Umm no. Maybe Stolen?</h2>
-		</div>	
+	<% else %>
 
 
-	</div>
+	<!-- Display plate information -->
 
-<% else %>
-
-<!--
-	<div class="section" id="plate-detail">
-		<div class="center">
-			<h2><%= @tow_headline.sample %></h2>
-			<h1>
-				<% if @plate.state != "IL" %>
-					<span class="state"><%= @plate.state %></span>	
-				<% else %>
-				
-				<% end %>
-				<span class="plate"><%= @plate.plate %></span>	
-			</h1>
-		</div>	
-			<h3> <%= @color %> <%= @make %></h3>
-	</div>
--->
 	<div class="plate-details">
-		<h4 class="first"><% if @plate.state != "IL" %>
-			<span class="state"><%= @plate.state %> Plate /</span>	
-		<% else %>
-		<% end %>
-		 <%= @color %> <a href="/lookup/make/<%= @plate.make %>	"><%= @make %></a></h4>
-		<h4>This vehicle was towed on <%= @date %></h4>
-		<h4> Get it here: <%= @address %> or call them: <a href=""><%= @plate.tow_facility_phone %></a></h4>
-		
+		<h4 class="first make_details">
+			<% if @plate.state != "IL" %>
+				<span class="state"><%= @plate.state %> Plate /</span>	
+			<% else %>
+			<% end %>
+		 	<%= @color.capitalize %> <a href="/lookup/make/<%= @plate.make %>"><%= @make %></a>
+		</h4>
+		<h4 class="tow_date">Towed on <%= @date %></h4>
+		<h4 class="tow_location"> <%= @address %>  Chicago, IL <br/>Call the facility: <a href=""><%= @plate.tow_facility_phone %></a></h4>
 	</div>
 
 
 	<div id="map-canvas"></div>
 	
 	<div class="address">
-		<div class="center">
-		</div>
+		<div class="center"></div>
 	</div>
 	
 

@@ -89,6 +89,11 @@ nav {
 	z-index:9;
 }
 
+.wrapper {
+	display: inline-block;
+	position: relative;
+}
+
 .section {
 	display:block;
 	width:100%;
@@ -104,7 +109,12 @@ nav {
 .section.home#search {
 	height:350px;
 	background:none;
-	border-bottom:1px solid #ddd;
+	border-bottom:1px solid #aaa;
+}
+.section#nav {
+	height:350px;
+	background:none;
+	border-bottom:1px solid #aaa;
 }
 
 .section#makes {
@@ -166,7 +176,7 @@ h2 .state {
 }
 
 .plate-details {
-	border-top: 2px solid #ddd;
+	border-top: 3px solid rgba(234, 232, 232, 0.65);
 	padding: 30px;
 	background:#FCFBF6;
 }
@@ -243,6 +253,47 @@ ul.list li:hover h2 .state {
 	padding-left:20px;
 
 }
+.details {
+	width: 100%;
+	text-align: left;
+	float: left;
+	margin: 0;
+	border: none;
+	border-top: 1px solid #ddd;
+}
+
+.details h4 {
+padding-left: 20px;
+text-align: left;
+padding: 0;
+}
+
+input#plate_search {
+padding:0;
+border-bottom: 5px solid #111;
+background: #fff;
+display:none;
+	width: 400px;
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	text-align: left;
+	font-size: 9em;
+}
+input#plate_search.active {
+	display:block;
+}
+
+
+.plate-details h4 {
+	border-top: 2px solid #ddd;
+	padding:10px 0;
+	text-align:left;
+}
+.plate-details h4.first {
+	border:none;
+}
+
 
 ul.makes {
 	width:auto;
@@ -285,14 +336,15 @@ ul.makes li a {
 	
 }
 .title h1 {
-	background-image:url(who_bar.png), url(who_bar.png);
-	background-position:center top, center bottom;
+	background-image:url(who_bar.png);
+	background-position:center bottom;
 	background-size:250px 10px;
 	background-repeat:no-repeat;
 	font-size:09em;
 	color:#cc0000;
 	text-transform:uppercase;
 	padding:20px 0;
+	min-width:600px;
 	transition: background .5s;
 	-webkit-transition: background .5s;
 	-moz-transition: background .5s;
@@ -316,7 +368,23 @@ transition: background .5s;
 -moz-transition: background .5s;
 -o-transition: background .5s;
 }
-
+.title h1 .plate  {
+	min-width: 450px;
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+.title h1 .menu  {
+	text-indent:-999em;
+	background-image:url(mag-glass.png);
+	background-position:center;
+	background-size:50px;
+	background-repeat:no-repeat;
+	width: 190px;
+	position: relative;
+	display: inline-block;
+	float:right;
+}
 
 .title p {
 	text-align:center;
@@ -385,7 +453,10 @@ transition: background .5s;
 
 
 @media all and (max-width:768px) {
-	.section.home#search {
+	.wrapper {
+	display: block;
+}
+	.section#nav {
 	height:150px;
 	}
 		.container {
@@ -415,17 +486,20 @@ transition: background .5s;
 	
 	.title {
 		padding-top: 45px;
-		margin-left: 20px;
 		height:auto;
 	}
 	.title h1 {
-	background-image: url(who_bar.png), url(who_bar.png);
-	background-position: left top, left bottom;
+	background-image:url(who_bar.png);
+	background-position:left bottom;
 	background-size: 225px 5px;
 	background-repeat: no-repeat;
 	padding: 10px 0;
 	text-align: left;
-	}		.title h1 em {
+	min-width: 200px;
+	width: 100%;
+	float: left;
+	}		
+	.title h1 em {
 			background-image:url(who_star.png);
 			background-position:center;
 			background-size:30px;
@@ -433,6 +507,9 @@ transition: background .5s;
 			width:40px;
 			display: inline-block;
 
+		}
+		.title h1 .plate {
+		min-width: 150px;
 		}
 .title a {
 	font-size:.8em;
@@ -453,56 +530,26 @@ ul.list li {
 ul.list li h2 {
 	width: 100%;
 }
-.details {
-	width: 100%;
-	text-align: left;
-	float: left;
-	margin: 0;
-	border: none;
-	border-top: 1px solid #ddd;
-}
-
-.details h4 {
-padding-left: 20px;
-text-align: left;
-padding: 0;
-}
-
-
-.plate-details h4 {
-	border-top: 2px solid #ddd;
-	padding:10px 0;
-	text-align:left;
-}
-.plate-details h4.first {
-	border:none;
-}
 
 #map-canvas {
 	height:250px;
 	padding: 0px
 }
 
+.title h1 .menu {
+width:90px;
+}
+
+
 input#plate_search {
 width: 225px;
 text-align: left;
-font-size: 2em;
-position: absolute;
-left: 0px;
-top: 54px;
-padding: 5px 0;
-border-bottom: 5px solid #111;
-background: #fff;
-display:none;
-}
-input#plate_search.active {
-	display:block;
-}
-.menu {
-	float: right;
-	padding-right: 30px;
-	text-indent: 100px;
+font-size: 2.25em;
+top: 10px;
+padding-bottom:10px;
+z-index:9999;
 
 }
+
 
 }
