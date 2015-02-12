@@ -22,7 +22,10 @@ html, body, #map-canvas {
 	font-family: 'Vitesse A', 'Vitesse B'; font-weight: 400; font-style: normal;
 }
 
-
+input {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-weight:normal;
 	padding:0;
@@ -132,7 +135,7 @@ float: left;
 .center {
 	max-width:961px;
 	margin:0 auto;
-	padding:0 11px;
+	padding:0 30px;
 	position:relative;
 	padding-top:0px;
 }
@@ -537,7 +540,8 @@ ul.list li h2 {
 }
 
 .title h1 .menu {
-width:90px;
+	width: 70px;
+	background-position: right center;
 }
 
 
