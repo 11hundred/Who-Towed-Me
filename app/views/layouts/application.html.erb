@@ -19,19 +19,20 @@
 	<%= yield %>
 	
 
-	<div class="section" id="makes">
-			<div class="center">
-	<div class="container">
-		
-			<form action="/lookup/plate/">
-				<input name="plate" type="text" id="plate_search" placeholder="<%= @plate_search %>">
-			</form>	
-			<h5>Search by Make instead. <em>Not sure about your plate number?</em></h5>
-		
-		
-		
-		
-	</div>	
+	<div class="section" id="footer">
+		<div class="center">
+			<div class="container">
+					<form action="/lookup/plate/">
+						<input name="plate" type="text" id="" placeholder="<%= @plate_search %>">
+						<button value="submit" type="submit">Search Plates</button>
+					</form>	
+
+
+
+
+			</div>	
+	<h5>Search by Make instead. <em>Not sure about your plate number?</em></h5>
+	
 			</div>
 			<!--	
 			<ul class="makes center">		
