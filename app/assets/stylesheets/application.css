@@ -204,21 +204,6 @@ h2 .state {
 }
 
 #nav ul li {
-text-align: right;
-float: right;
-padding-right: 30px;
-padding: 0px;
-padding-right: 30px;
-width: auto;
-}
-ul.list {
-	margin:0;
-	padding:0;
-	width:100%;
-	height:auto;
-	display:block;
-}
-#nav ul li:first-child {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -226,14 +211,46 @@ ul.list {
 padding-left: 30px;
 float: left;
 text-align: left;
-
 width: 50%;
+}
+
+#nav ul li:first-child {
+	float: left;
+	text-align: left;
+	width:40px;
+	padding:0;
+	margin-left:30px;
+	text-indent: -999em;
+	background-image:url(who_star.png);
+	background-position:0 center;
+	background-size:20px;
+	background-repeat:repeat;
+	height:20px;
+}
+
+ul.list {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:auto;
+	display:block;
 }
 #nav ul li a {
 	font-family:inherit;
-	font-color:inherit;
+	color:#aaa;
 	font-size:inherit;
+	font-weight:inherit;
+	text-transform:none;
+	border-bottom:2px solid #ddd;
 
+}
+#nav ul li:first-child a {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	border:none;
 }
 
 ul.list li {
