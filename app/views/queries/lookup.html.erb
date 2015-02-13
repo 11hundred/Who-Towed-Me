@@ -1,5 +1,13 @@
 	<div class="section" id="nav">
 		<div class="center">
+			<ul>
+				<li>
+					search by: <a href="#" class="search_button">plate</a> <a href="#">make</a>
+				</li>
+				<li>
+					<a href="/">home</a>
+				</li>	
+			</ul>	
 			<div class="lincolns">
 				<div class="lincoln"></div>	
 			</div>	
@@ -14,7 +22,7 @@
 						<% else %>
 							<span class="plate"> <%= @plate.plate %></span>
 						<% end %>
-						<span class="menu">&nbsp;</span>	
+						<span class="menu search_button">&nbsp;</span>	
 					</h1>
 				</div>
 			</div>
@@ -36,26 +44,26 @@
 
 
 	<!-- Display plate information -->
+	<div class="section page">
+		<div class="plate-details">
+			<h4 class="first make_details">
+				<% if @plate.state != "IL" %>
+					<span class="state"><%= @plate.state %> Plate /</span>	
+				<% else %>
+				<% end %>
+			 	<%= @color.capitalize %> <a href="/lookup/make/<%= @plate.make %>"><%= @make %></a>
+			</h4>
+			<h4 class="tow_date">Towed on <%= @date %></h4>
+			<h4 class="tow_location"> <%= @address %>  Chicago, IL <br/>Call the facility: <a href=""><%= @plate.tow_facility_phone %></a></h4>
+		</div>
 
-	<div class="plate-details">
-		<h4 class="first make_details">
-			<% if @plate.state != "IL" %>
-				<span class="state"><%= @plate.state %> Plate /</span>	
-			<% else %>
-			<% end %>
-		 	<%= @color.capitalize %> <a href="/lookup/make/<%= @plate.make %>"><%= @make %></a>
-		</h4>
-		<h4 class="tow_date">Towed on <%= @date %></h4>
-		<h4 class="tow_location"> <%= @address %>  Chicago, IL <br/>Call the facility: <a href=""><%= @plate.tow_facility_phone %></a></h4>
-	</div>
 
-
-	<div id="map-canvas"></div>
+		<div id="map-canvas"></div>
 	
-	<div class="address">
-		<div class="center"></div>
-	</div>
-	
+		<div class="address">
+			<div class="center"></div>
+		</div>
+	</div>	
 
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
 
