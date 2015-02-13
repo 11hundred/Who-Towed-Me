@@ -11,6 +11,7 @@ class QueriesMakeController < ApplicationController
     @make = params[:make]
     # Search within array
     @all_plates = all_plates.select {|plate| plate["make"] == params[:make] }
+ 
     
     fullname("abbrev")
 
