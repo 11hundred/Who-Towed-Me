@@ -394,10 +394,9 @@ ul.makes li a {
 	width:300px;
 	height:400px;
 	position:absolute;
-	top:50%;
 	left:50%;
 	margin-left:-150px;
-	margin-top:-250px;
+	margin-top:-100px;
 }
 
 .title {
@@ -468,6 +467,11 @@ transition: background .5s;
 .title p {
 	text-align:center;
 	padding:10px 0 40px 0;
+}
+
+.home .title p {
+float: left;
+width: 100%;
 }
 .title a {
 	background:#111;
@@ -592,9 +596,9 @@ font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: norma
 	.title h1 em {
 			background-image:url(who_star.png);
 			background-position:center;
-			background-size:30px;
+			background-size:15px;
 			background-repeat:no-repeat;
-			width:40px;
+			width:30px;
 			display: inline-block;
 
 		}
@@ -607,6 +611,8 @@ font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: norma
 .home .title h1 {
 	text-align:center;
 	background-position:center bottom;
+	background-size: 100% 5px;
+	font-size:3.5em;
 }
 	ul.makes li {
 	width: auto;
