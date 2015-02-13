@@ -125,7 +125,7 @@ nav {
 }
 
 .section#footer {
-background: #F7F6F0;
+background: #454543;
 float: left;
 }
 
@@ -532,7 +532,7 @@ font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: norma
 	display: block;
 }
 	.section#nav {
-	height:150px;
+	height:125px;
 	}
 		.container {
 		margin-left:0px;
