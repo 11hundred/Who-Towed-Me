@@ -14,6 +14,114 @@
  *= require_self
  */
 
+/*****
+1. Reset
+**/                                   
+
+html, body, div, span, object, iframe, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, img, ins, kbd, q, samp,
+small, sub, sup, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { outline:0; vertical-align: middle; }
+input { outline:0;}
+body { font: {{settings.general_font_size}}/1.231 {{settings.general_font}}; *font-size:small; }
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+ol { list-style-type: decimal; }
+p { margin: 0 0 1em 0; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: normal; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+select{ width: 99%; /* for ff */ }
+
+ul { list-style: none; padding:0; margin:0; }
+li { padding:0; margin:0; }
+a { color:#ccc; text-decoration:none; outline:none; margin:0; padding:0; font-family: 'Knockout 29 A', 'Knockout 29 B'; font-weight: 400; font-style: normal; text-transform:uppercase; }
+
+input { -webkit-appearance: none; border-radius: 0; }
+input[type="checkbox"] { -webkit-appearance: checkbox; box-sizing: border-box; }
+
+/*****
+2. Base Page Styles
+**/                                   
+
+html,body
+{
+}
+
+body
+{
+padding: 0;
+margin: 0px;
+font-size: 14px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+img
+{
+border: none;
+-moz-border-image: none;
+outline: none;
+}
+
+html
+{
+}
+
+body
+{
+padding: 0 0px;
+}
+
+html body
+{
+}
+
 
 html, body, #map-canvas {
 	height: 100%;
@@ -22,13 +130,6 @@ html, body, #map-canvas {
 	font-family: 'Vitesse A', 'Vitesse B'; font-weight: 400; font-style: normal;
 }
 
-input,
-input [type="text"]{
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	-webkit-appearance: none;
-	    border-radius: 0;
-}
 h1, h2, h3, h4, h5, h6 {
 	font-weight:normal;
 	padding:0;
@@ -231,7 +332,7 @@ width: 50%;
 #nav ul li a {
 	font-family:inherit;
 	font-color:inherit;
-	font-size:inherit;
+	font-size: 12px;
 
 }
 
@@ -457,7 +558,9 @@ transition: background .5s;
 	position: relative;
 	margin: 50px auto;
 	border-radius: 5px;
-	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+
 }
 .bar {
 	z-index:10;
