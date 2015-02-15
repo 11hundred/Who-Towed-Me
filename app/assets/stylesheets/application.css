@@ -114,6 +114,7 @@ input[type="text"] {
 	margin:30px auto;
 	border-radius:20px;
 	background:#fff;
+	overflow: hidden;
 }
 
 #map-canvas {
@@ -416,11 +417,17 @@ ul.makes li a {
 	
 }
 
+.interior {}
+.interior.active {
+	margin-left:-200px;
+}
+
 .sign .title {
 	background-image:url(tow_car.jpg);
-	background-position:center 50%;
+	background-position:center 15%;
 	background-size:200px;
 	background-repeat:no-repeat;
+	float:left;
 }
 .title h1 {
 	background-image:url(who_bar.png);
