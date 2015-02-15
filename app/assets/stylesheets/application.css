@@ -352,9 +352,11 @@ input#plate_search {
 	text-align: left;
 	font-size: 9em;
 }
+
 input#plate_search.active {
 	display:block;
 }
+
 
 
 .plate-details h4 {
@@ -415,7 +417,10 @@ ul.makes li a {
 }
 
 .sign .title {
-	padding-top: 150px;
+	background-image:url(tow_car.jpg);
+	background-position:center 50%;
+	background-size:200px;
+	background-repeat:no-repeat;
 }
 .title h1 {
 	background-image:url(who_bar.png);
@@ -479,8 +484,13 @@ ul.makes li a {
 	background-position:center top, center bottom;
 	background-size:100% 20px;
 }
+.sign .title h1.active {
+	text-indent:-999em;
+}
+
 .sign .title p {
 	float: left;
+	padding:10px 0 10px 0;
 	width: 100%;
 }
 .title a {
@@ -611,7 +621,7 @@ button {
 		background-position:center;
 		background-size:15px;
 		background-repeat:no-repeat;
-		width:30px;
+		width:20px;
 		display: inline-block;
 
 	}
@@ -625,7 +635,7 @@ button {
 		text-align:center;
 		background-position:center bottom;
 		background-size: 100% 5px;
-		font-size:3.5em;
+		font-size:3em;
 	}
 	.sign .title h1 {
 		background-image:url(who_bar.png), url(who_bar.png);
@@ -667,6 +677,16 @@ button {
 		padding-bottom:10px;
 		z-index:9999;
 
+	}
+	#home input#plate_search {
+	width: 90%;
+	font-size: 3em;
+	top: 25px;
+	padding-bottom: 5px;
+	z-index: 9999;
+	left: 15px;
+	text-transform: uppercase;
+	background: none;
 	}
 
 	.title .wrapper a {
