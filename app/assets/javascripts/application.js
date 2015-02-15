@@ -14,3 +14,26 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+	
+	
+
+$(document).ready(function() {
+
+	var windowHeight = $(window).height();   
+	var windowWidth = $(window).width();   
+
+	// Set  viewport 
+	$('.sign').css({height:windowHeight -80});
+	$('.sign').css({width:windowWidth -80});
+})
+
+$(window).resize(function() {
+	var windowHeight = $(window).height();   
+	var windowWidth = $(window).width();   
+
+	$('.sign').css({height:windowHeight -80});
+	$('.sign').css({width:windowWidth -80});
+})
+
+
+
