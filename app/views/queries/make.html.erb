@@ -50,15 +50,17 @@
 					<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
 					<div class="center">
 						<h2>
+							<span class="number">
 							<% if license_plate["state"] != "IL" %>
-							<span class="state"><%= license_plate["state"] %></span> 
+							<%= license_plate["state"] %>
 							<% end %>	
 							
-							<span class="number"><%= license_plate["plate"] %></span>
+							<%= license_plate["plate"] %>
+							</span>
 						</h2>
 				
 						<div class="details">
-							<h4>Make: <%= @make %> / Date Towed: <%= date %></h4>
+							<h3>Date Towed: <%= date %></h3>
 						</div>	
 				
 					</div>
