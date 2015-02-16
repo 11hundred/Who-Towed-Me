@@ -31,7 +31,7 @@ $(window).load(function() {
 	$('.interior').css({width:windowWidthDouble -80});
 	$('.sign .title').css({width:windowWidth -80});
 	$('.sign .makes').css({width:windowWidth -80});
-	$('.sign .title').css({paddingTop:windowHeightHalf -120});
+	$('.sign .title').css({paddingTop:windowHeightHalf -100});
 
 
 	$('.search_button').click( function() {
