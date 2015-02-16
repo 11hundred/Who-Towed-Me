@@ -59,7 +59,7 @@ $(window).resize(function() {
 	$('.interior').css({width:windowWidthDouble});
 	$('.sign .title').css({width:windowWidth -80});
 	$('.sign .makes').css({width:windowWidth -80});
-	$('.sign .title').css({paddingTop:windowHeightHalf -120});
+	$('.sign .title').css({paddingTop:windowHeightHalf -100});
 	$('.interior.clicked').animate({marginLeft:-windowWidth /2 -120}, 200);
 
 })
