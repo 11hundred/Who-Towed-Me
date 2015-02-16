@@ -504,6 +504,10 @@ ul.makes li a {
 	padding:10px 0 10px 0;
 	width: 100%;
 }
+
+.makes {
+	float: left;
+}
 .title a {
 	background:#111;
 	padding:20px 40px;
@@ -707,6 +711,7 @@ height: 145px;
 	}
 	#home input#plate_search {
 	width: 90%;
+	border-bottom: none;
 	font-size: 3em;
 	top: 25px;
 	padding-bottom: 5px;

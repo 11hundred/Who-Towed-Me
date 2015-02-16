@@ -28,8 +28,9 @@ $(window).load(function() {
 	// Set  viewport 
 	$('.sign').css({height:windowHeight -80});
 	$('.sign').css({width:windowWidth -80});
-	$('.interior').css({width:windowWidthDouble});
+	$('.interior').css({width:windowWidthDouble -80});
 	$('.sign .title').css({width:windowWidth -80});
+	$('.sign .makes').css({width:windowWidth -80});
 	$('.sign .title').css({paddingTop:windowHeightHalf -120});
 
 
@@ -39,7 +40,8 @@ $(window).load(function() {
 	    $('.title h1').addClass("active");	
 	});
 	$('.make_button').click( function() {
-		$('.interior').animate({marginLeft:-windowWidth /2 -95}, 500);
+		$('.interior').addClass("clicked");
+		$('.interior').animate({marginLeft:-windowWidth /2 -120}, 200);
 	});
 
 
@@ -56,7 +58,9 @@ $(window).resize(function() {
 	$('.sign').css({width:windowWidth -80});
 	$('.interior').css({width:windowWidthDouble});
 	$('.sign .title').css({width:windowWidth -80});
+	$('.sign .makes').css({width:windowWidth -80});
 	$('.sign .title').css({paddingTop:windowHeightHalf -120});
+	$('.interior.clicked').animate({marginLeft:-windowWidth /2 -120}, 200);
 
 })
 
