@@ -270,15 +270,20 @@ ul.list {
 ul.list li {
 	padding:10px 0px;
 	float:left;
-	width:40%;
+	width:49%;
 	height:auto;
-	margin:0 5%;
+	margin:0 1% 0 0;
 	display:block;
+	min-height: 265px;
 	position:relative;
 	transition: background 1s;
 	-webkit-transition: background 1s;
 	-moz-transition: background 1s;
 	-o-transition: background 1s;
+	
+}
+ul.list li:nth-of-type(even) {
+	margin:0  0  0 1%;
 	
 }
 ul.list li a {
@@ -686,10 +691,11 @@ height: 145px;
 	}
 	
 	ul.list li .container {
-		height:150px;
+		height:110px;
 	}
 	ul.list li {
 		height:auto;
+		min-height: 115px;
 	}
 	ul.list li h2 {
 		width: 100%;
