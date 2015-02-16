@@ -30,7 +30,7 @@ $(window).load(function() {
 	$('.sign').css({width:windowWidth -80});
 	$('.interior').css({width:windowWidthDouble});
 	$('.sign .title').css({width:windowWidth -80});
-	$('.sign .title .wrapper').css({paddingTop:windowHeightHalf -160});
+	$('.sign .title').css({paddingTop:windowHeightHalf -160});
 
 
 	$('.search_button').click( function() {

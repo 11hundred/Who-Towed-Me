@@ -417,7 +417,9 @@ ul.makes li a {
 	
 }
 
-.interior {}
+.interior {
+	max-width:1922px!important;	
+}
 .interior.active {
 	margin-left:-200px;
 }
@@ -428,6 +430,8 @@ ul.makes li a {
 	background-size:200px;
 	background-repeat:no-repeat;
 	float:left;
+	max-width:961px!important;	
+	
 }
 .title h1 {
 	background-image:url(who_bar.png);
@@ -581,6 +585,22 @@ button {
 	display:none;
 }
 
+@media all and (min-width:768px) {
+
+input#plate_search {
+padding: 0;
+border-bottom: none;
+background: #fff;
+display: none;
+width: 400px;
+position: absolute;
+left: 15px;
+top: 40px;
+text-align: left;
+font-size: 9em;
+height: 145px;
+}
+}
 @media all and (max-width:768px) {
 	.wrapper {
 		display: block;
