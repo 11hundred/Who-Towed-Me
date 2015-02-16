@@ -96,7 +96,7 @@ input[type="text"] {
 	border-bottom:1px solid #aaa;
 }
 .section#home {
-	background-image:url(towed.png);
+	background-image:url(map_bg.jpg);
 	background-position:center;
 	background-size:cover;
 	margin:0;
@@ -426,7 +426,7 @@ ul.makes li a {
 
 .sign .title {
 	background-image:url(tow_car.jpg);
-	background-position:center 15%;
+	background-position:center 10%;
 	background-size:200px;
 	background-repeat:no-repeat;
 	float:left;

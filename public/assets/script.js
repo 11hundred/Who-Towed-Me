@@ -30,7 +30,7 @@ $(window).load(function() {
 	$('.sign').css({width:windowWidth -80});
 	$('.interior').css({width:windowWidthDouble});
 	$('.sign .title').css({width:windowWidth -80});
-	$('.sign .title').css({paddingTop:windowHeightHalf -160});
+	$('.sign .title').css({paddingTop:windowHeightHalf -120});
 
 
 	$('.search_button').click( function() {
@@ -56,7 +56,7 @@ $(window).resize(function() {
 	$('.sign').css({width:windowWidth -80});
 	$('.interior').css({width:windowWidthDouble});
 	$('.sign .title').css({width:windowWidth -80});
-	$('.sign .title').css({paddingTop:windowHeightHalf -160});
+	$('.sign .title').css({paddingTop:windowHeightHalf -120});
 
 })
 
