@@ -554,6 +554,18 @@ ul.makes li a {
 	top:25%;
 }
 
+ul.list li .container {
+	border:1px solid #bbb;
+}
+
+ul.list li.illinois .container {
+	background-image: url(lincoln-head.jpg);
+	background-position:center  20px;
+	background-size: 150px;
+	background-repeat:no-repeat;
+	border:none;
+}
+
 
 .container input[type="text"] {
 	width:100%;
@@ -692,11 +704,23 @@ height: 145px;
 	
 	ul.list li .container {
 		height:110px;
+		border:1px solid #bbb;
 	}
+	
+	
+	ul.list li.illinois .container {
+		background-image: url(lincoln-head.jpg);
+		background-position:center  20px;
+		background-size: 50px;
+		background-repeat:no-repeat;
+		border:none;
+	}
+	
 	ul.list li {
 		height:auto;
 		min-height: 115px;
 	}
+	
 	ul.list li h2 {
 		width: 100%;
 		font-size: 1.85em;
