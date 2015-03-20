@@ -166,7 +166,7 @@ nav {
 	background:#fff;
 	z-index:5;
 	display:none;
-	background: #eee
+	background: #eee;
 }
 
 .form-home {
@@ -810,7 +810,7 @@ height: 145px;
 	.buttons {
 		position:absolute;
 		left:0px;
-		bottom:0px;
+	    top: 60%;
 	}
 
 
