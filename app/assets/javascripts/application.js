@@ -33,8 +33,8 @@ $(window).load(function() {
 	$('a.search_button').click( function() {
 	    $('.overlay').fadeIn(500, function() {
 		    $('#plate_search').addClass("active");		
-	    	$(' input#plate_search').focus();
 	    });	
+    	$(' input#plate_search').focus();
 		
 	});
 	
