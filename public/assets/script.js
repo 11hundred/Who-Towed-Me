@@ -39,7 +39,7 @@ $(window).load(function() {
 	});
 	
 	$(' input#plate_search').focus(function() {
-	    $(this).parent().addClass('focused');
+	    alert("hi")
 	});
 	
 	$('.make_button').click( function() {

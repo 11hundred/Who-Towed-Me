@@ -510,7 +510,6 @@ ul.makes li a {
 .title h1 .plate  {
 	min-width: 450px;
 	position: relative;
-	display: inline-block;
 	text-align: left;
 }
 .title h1 .menu  {
