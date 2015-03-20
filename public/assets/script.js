@@ -30,13 +30,18 @@ $(window).load(function() {
 	$('.sign .title').css({paddingTop:windowHeightHalf -200});
 
 
-	$('.search_button').click( function() {
-	    $('#plate_search').addClass("active");	
-	    $('#plate_search').focus(function(){
-	    	$('#plate_search').fadeOut(500);
+	$('a.search_button').click( function() {
+	    $('.overlay').fadeIn(500, function() {
+		    $('#plate_search').addClass("active");		
+	    	$(' input#plate_search').focus();
 	    });	
-	    $('.title h1').addClass("active");	
+		
 	});
+	
+	$(' input#plate_search').focus(function() {
+	    $(this).parent().addClass('focused');
+	});
+	
 	$('.make_button').click( function() {
 		$('.interior').addClass("clicked");
 		$('.interior').animate({marginLeft:-windowWidth /2 -120}, 200);
