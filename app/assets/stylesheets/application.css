@@ -165,6 +165,7 @@ nav {
 	background:#fff;
 	z-index:5;
 	display:none;
+	background: #222
 }
 
 .form-home {
@@ -368,7 +369,6 @@ h2 .state {
 input#plate_search {
 	padding:0;
 	border-bottom: 5px solid #111;
-	background: #fff;
 	width: 400px;
 	position: absolute;
 	left: 0px;
@@ -377,8 +377,10 @@ input#plate_search {
 	font-size: 9em;
 }
 
-input#plate_search.active {
-	display:block;
+input#plate_search:focus{
+	border-bottom: 5px solid #ddd;
+	background:#fafafa;
+	box-shadow:1px 2px 12px rgba(0,0,0,0.3);
 }
 
 
@@ -792,15 +794,17 @@ height: 145px;
 
 	}
 	#home input#plate_search {
-	width: 90%;
-	border-bottom: none;
-	font-size: 3em;
-	top: 25px;
-	padding-bottom: 5px;
-	z-index: 9999;
-	left: 15px;
-	text-transform: uppercase;
-	background: none;
+	    width: 100%;
+	    font-size: 3em;
+	    padding-bottom: 0p;
+	    z-index: 9999;
+	    left: 15px;
+	    text-transform: uppercase;
+	    background: #fff;
+	    top: 0px;
+	    left: 0px;
+	    text-indent: 10px;
+	    padding: 20px 0px;
 	}
 
 	.title .wrapper a {
