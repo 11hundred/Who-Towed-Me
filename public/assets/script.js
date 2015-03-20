@@ -32,7 +32,9 @@ $(window).load(function() {
 
 	$('.search_button').click( function() {
 	    $('#plate_search').addClass("active");	
-	    $('#plate_search').focus();	
+	    $('#plate_search').focus(function(){
+	    	$('#plate_search').fadeOut(500);
+	    });	
 	    $('.title h1').addClass("active");	
 	});
 	$('.make_button').click( function() {
