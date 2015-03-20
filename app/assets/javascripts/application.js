@@ -36,6 +36,8 @@ $(window).load(function() {
 	});
 	
 	$(' input#plate_search').focus(function() {
+	    $('#home form h1').fadeOut(0);		
+		
 	    $('.overlay').fadeIn(500, function() {
 		    $('#plate_search').addClass("active");		
 	    });	

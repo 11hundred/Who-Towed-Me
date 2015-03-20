@@ -166,7 +166,7 @@ nav {
 	background:#fff;
 	z-index:5;
 	display:none;
-	background: #222
+	background: #eee
 }
 
 .form-home {
@@ -467,6 +467,31 @@ ul.makes li a {
 	border:5px solid #111!important;
 }
 
+
+#home form h1 {
+	position:relative;
+	z-index: 9999;
+	text-align:center;
+	background-position:center bottom;
+	background-size: 100% 5px;
+	font-size:3em;
+	background:#fff;
+	background-image:url(who_bar.png), url(who_bar.png);
+	background-position:center top, center bottom;
+	background-size:100% 5px;
+	background-repeat:repeat-x;
+	height:100%;
+	text-transform:uppercase;
+	
+}
+#home form h1 em {
+background-image:url(who_star.png);
+background-position:center;
+background-size:15px;
+background-repeat:no-repeat;
+width:20px;
+display: inline-block;
+}
 .sign .title {
 	background-image:url(tow_car.jpg);
 	background-position:center 10%;
@@ -781,6 +806,12 @@ height: 145px;
 		width: 70px;
 		background-position: right center;
 	}
+	
+	.buttons {
+		position:absolute;
+		left:0px;
+		bottom:0px;
+	}
 
 
 	input#plate_search {
@@ -793,17 +824,33 @@ height: 145px;
 
 	}
 	#home input#plate_search {
-		width: 88%;
+		width: 80%;
 		  font-size: 3em;
 		  padding-bottom: 0p;
 		  z-index: 9999;
 		  left: 15px;
 		  text-transform: uppercase;
 		  top: 0px;
-		  left: 6%;
+		  left: 10%;
 		  text-indent: 10px;
 		  padding: 20px 0px;
+		  text-indent: 15px;
 	}
+	
+	#home form h1 {
+	
+    font-size: 3em;
+    background: #fff;
+    background-image: url(who_bar.png), url(who_bar.png);
+    background-position: center top, center bottom;
+    background-size: 100% 5px;
+    background-repeat: repeat-x;
+    height: 100%;
+    line-height: 2.1em;
+    width: 73%;
+    left: 13.5%;
+    z-index: 9999999;
+  }
 
 	.title .wrapper a {
 		width: 100%;
