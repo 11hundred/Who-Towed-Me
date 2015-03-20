@@ -26,15 +26,25 @@ $(window).load(function() {
 	var windowWidthDouble = $(window).width() *2;   
 
 	// Set  viewport 
+	$('.sign').css({height:windowHeight -300});
+	$('.sign .title').css({paddingTop:windowHeightHalf -200});
 
 
-	$('.search_button').click( function() {
-	    $('#plate_search').addClass("active");	
-	    $('#plate_search').focus();	
-	    $('.title h1').addClass("active");	
+	$('a.search_button').click( function() {
+	    $('.overlay').fadeIn(500, function() {
+		    $('#plate_search').addClass("active");		
+	    	$(' input#plate_search').focus();
+	    });	
+		
 	});
+	
+	$(' input#plate_search').focus(function() {
+	    $(this).parent().addClass('focused');
+	});
+	
 	$('.make_button').click( function() {
-		$('.interior').animate({marginLeft:-windowWidth /2 -95}, 500);
+		$('.interior').addClass("clicked");
+		$('.interior').animate({marginLeft:-windowWidth /2 -120}, 200);
 	});
 
 
@@ -47,6 +57,9 @@ $(window).resize(function() {
 	var windowWidthHalf = $(window).width() /2;   
 	var windowWidthDouble = $(window).width() *2;   
 
+	$('.sign').css({height:windowHeight -300});
+	$('.sign .title').css({paddingTop:windowHeightHalf -200});
+	$('.interior.clicked').animate({marginLeft:-windowWidth /2 -120}, 200);
 
 })
 
