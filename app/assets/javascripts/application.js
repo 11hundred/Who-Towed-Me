@@ -26,7 +26,7 @@ $(window).load(function() {
 	var windowWidthDouble = $(window).width() *2;   
 
 	// Set  viewport 
-	$('.sign').css({height:windowHeight -300});
+	$('.sign').css({height:windowHeight -50});
 	$('.sign .title').css({paddingTop:windowHeightHalf -200});
 
 
@@ -57,7 +57,7 @@ $(window).resize(function() {
 	var windowWidthHalf = $(window).width() /2;   
 	var windowWidthDouble = $(window).width() *2;   
 
-	$('.sign').css({height:windowHeight -300});
+	$('.sign').css({height:windowHeight -50});
 	$('.sign .title').css({paddingTop:windowHeightHalf -200});
 	$('.interior.clicked').animate({marginLeft:-windowWidth /2 -120}, 200);
 
