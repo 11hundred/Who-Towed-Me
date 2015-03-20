@@ -22,7 +22,7 @@ class QueriesController < ApplicationController
     raw_data = open(url).read
     all_plates = JSON.parse(raw_data)
     
-    # Search within array to repturn based on plate number
+    # Search within array to return based on plate number
     license_plates = all_plates.select {|plate| plate["plate"] == params[:plate] }
 
   	@plate_search = params[:plate]

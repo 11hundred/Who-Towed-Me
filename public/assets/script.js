@@ -26,12 +26,8 @@ $(window).load(function() {
 	var windowWidthDouble = $(window).width() *2;   
 
 	// Set  viewport 
-	$('.sign').css({height:windowHeight -80});
-	$('.sign').css({width:windowWidth -80});
-	$('.interior').css({width:windowWidthDouble -80});
-	$('.sign .title').css({width:windowWidth -80});
-	$('.sign .makes').css({width:windowWidth -80});
-	$('.sign .title').css({paddingTop:windowHeightHalf -100});
+	$('.sign').css({height:windowHeight -300});
+	$('.sign .title').css({paddingTop:windowHeightHalf -200});
 
 
 	$('.search_button').click( function() {
@@ -54,12 +50,8 @@ $(window).resize(function() {
 	var windowWidthHalf = $(window).width() /2;   
 	var windowWidthDouble = $(window).width() *2;   
 
-	$('.sign').css({height:windowHeight -80});
-	$('.sign').css({width:windowWidth -80});
-	$('.interior').css({width:windowWidthDouble});
-	$('.sign .title').css({width:windowWidth -80});
-	$('.sign .makes').css({width:windowWidth -80});
-	$('.sign .title').css({paddingTop:windowHeightHalf -100});
+	$('.sign').css({height:windowHeight -300});
+	$('.sign .title').css({paddingTop:windowHeightHalf -200});
 	$('.interior.clicked').animate({marginLeft:-windowWidth /2 -120}, 200);
 
 })
