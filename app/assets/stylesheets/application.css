@@ -192,6 +192,8 @@ input#plate_search {
     font-size: 9em;
     text-indent: 20px;
     top: 0px;
+	background:#fafafa;
+	box-shadow:1px 2px 12px rgba(0,0,0,0.3);
 }
 
 input#plate_search:focus{
