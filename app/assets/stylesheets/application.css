@@ -186,7 +186,7 @@ input[type="text"] {
 input#plate_search {
 	visibility:hidden;
 	opacity:0;
-	top:-5px;
+	margin-top:-20px;
     padding: 20px;
     width: 100%;
     position: relative;
