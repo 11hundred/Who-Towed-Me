@@ -19,99 +19,106 @@ html, body, #map-canvas {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	font-size:14px;
-	font-family: 'Vitesse A', 'Vitesse B'; font-weight: 400; font-style: normal;
-	background:#eee;
+	font-size: 14px;
+	font-family: 'Vitesse A', 'Vitesse B';
+	font-weight: 400;
+	font-style: normal;
+	background: #eee;
 }
 
 input,
-input [type="text"]{
-	-webkit-appearance:none;
-	-moz-appearance:none;
+input [type="text"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	-webkit-appearance: none;
 	border-radius: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight:normal;
-	padding:0;
-	margin:0;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
-	text-align:center;
-	font-size:9em;
-	font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
+	text-align: center;
+	font-size: 9em;
+	font-family: 'Tungsten A', 'Tungsten B';
+	font-weight: 500;
+	font-style: normal;
 }
 
 h2 {
-	font-size:4em;
-	margin:0;
-	
+	font-size: 4em;
+	margin: 0;
 }
 h3 {
-	font-size:1.5em;
-	font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: normal;
+	font-size: 1.5em;
+	font-family: 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 700;
+	font-style: normal;
 }
 h4 {
-	color:#666;
-	line-height:1.75em;
-	text-align:center;
+	color: #666;
+	line-height: 1.75em;
+	text-align: center;
 }
 
 a {
-	font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: normal;
-	text-decoration:none;
-	text-transform:uppercase;
+	font-family: 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 ul li {
-	list-style:none;
-	padding:0;
-	margin:0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 input[type="text"] {
-	border:none;
-	outline:none;
-	background:none;
-	width:100%;
-	font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
-	text-align:center;
+	border: none;
+	outline: none;
+	background: none;
+	width: 100%;
+	font-family: 'Tungsten A', 'Tungsten B';
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
 }
 
 
 .section {
-	display:block;
-	width:100%;
-	position:relative;
+	display: block;
+	width: 100%;
+	position: relative;
 }
 .section#search,
 .section#nav {
-	background:none;
-	background:#fff;
-	display:inline-block;
-	border-bottom:1px solid #aaa;
+	background: none;
+	background: #fff;
+	display: inline-block;
+	border-bottom: 1px solid #aaa;
 	transition: all .5s;
-	padding-bottom:50px;
-	overflow:hidden;
+	padding-bottom: 50px;
+	overflow: hidden;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
-	
 }
 .section#search {
-	position:absolute;
+	position: absolute;
 	min-height: 100%;
-	background:#eee;
-	z-index:9;
-	left:0px;
-	top:0px;
-	display:none;
-
+	background: #eee;
+	z-index: 9;
+	left: 0px;
+	top: 0px;
+	display: none;
 }
 
 #map-canvas {
-	height:500px;
+	height: 500px;
 	padding: 0px
 }
 
@@ -119,30 +126,32 @@ input[type="text"] {
 
 
 .center {
-	max-width:761px;
-	margin:0 auto;
-	padding:0 30px;
-	position:relative;
-	padding-top:0px;
-	width:80%;
+	max-width: 761px;
+	margin: 0 auto;
+	padding: 0 30px;
+	position: relative;
+	padding-top: 0px;
+	width: 80%;
 }
 
 .form-h
 .plate-details {
 	border-top: 3px solid rgba(234, 232, 232, 0.65);
 	padding: 30px;
-	background:#F7F6F0;
+	background: #F7F6F0;
 }
 .make {
 	background: #F7F6F0;
 	border-top: 3px solid rgba(234, 232, 232, 0.65);
 	padding: 30px;
-	width:auto;
-	float:left;
+	width: auto;
+	float: left;
 }
 
 .number {
-	font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
+	font-family: 'Tungsten A', 'Tungsten B';
+	font-weight: 500;
+	font-style: normal;
 }
 
 
@@ -150,114 +159,124 @@ input[type="text"] {
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
-	
 }
 .main-links {
-    position: relative;
-    width: auto;
-    left: 0px;
-    padding:10px 0 0 0px;
-	z-index:2;
+	position: relative;
+	width: auto;
+	left: 0px;
+	padding: 10px 0 0 0px;
+	z-index: 2;
 }
 .main-links a {
-	font-family:inherit;
-	color:#aaa;
-	font-size:inherit;
-	font-weight:inherit;
-	text-transform:none;
-	border-bottom:2px solid #ddd;
+	font-family: inherit;
+	color: #aaa;
+	font-size: inherit;
+	font-weight: inherit;
+	text-transform: none;
+	border-bottom: 2px solid #ddd;
+}
 
+.main-links a.home {
+	background-image: url(who_star.png);
+	background-position: 0 center;
+	background-size: 15px;
+	background-repeat: repeat-x;
+	text-indent: -1009em;
+	width: 30px;
+	margin-right: 20px;
+	position: relative;
+	float: left;
+	border-bottom: none;
 }
 .search-module {
-    position: relative;
-    float: left;
-    width: 100%;
-    padding: 0px 0 20px;
-    background-image: url(who_bar.png);
-    background-position: center bottom;
-    background-size: 100% 10px;
-    background-repeat: no-repeat;
-    margin-top: 55px;
-    z-index: 1;
-    margin-bottom: 20px;
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 0px 0 20px;
+	background-image: url(who_bar.png);
+	background-position: center bottom;
+	background-size: 100% 10px;
+	background-repeat: no-repeat;
+	margin-top: 55px;
+	z-index: 1;
+	margin-bottom: 20px;
 }
 input#plate_search {
-	visibility:hidden;
-	opacity:0;
-	margin-top:-20px;
-    padding: 20px;
-    width: 100%;
-    position: relative;
-    margin-left: -20px;
-    text-align: left;
-    font-size: 9em;
-    text-indent: 20px;
-	background:#fafafa;
-	box-shadow:1px 2px 12px rgba(0,0,0,0.3);
+	visibility: hidden;
+	opacity: 0;
+	margin-top: -20px;
+	padding: 20px;
+	width: 100%;
+	position: relative;
+	margin-left: -20px;
+	text-align: left;
+	font-size: 9em;
+	text-indent: 20px;
+	background: #fafafa;
+	box-shadow: 1px 2px 12px rgba(0,0,0,0.3);
 }
 
-input#plate_search:focus{
-	background:#fafafa;
-	box-shadow:1px 2px 12px rgba(0,0,0,0.3);
+input#plate_search:focus {
+	background: #fafafa;
+	box-shadow: 1px 2px 12px rgba(0,0,0,0.3);
 }
 .search-module h1 {
-	font-size:09em;
-	color:#cc0000;
-	text-transform:uppercase;
+	font-size: 09em;
+	color: #cc0000;
+	text-transform: uppercase;
 	text-align: left;
-    text-indent: 20px;
-	position:relative;
-	z-index:2;
+	text-indent: 20px;
+	position: relative;
+	z-index: 2;
 }
 .search-module h1 em {
-	background-image:url(who_star.png);
-	background-position:center;
+	background-image: url(who_star.png);
+	background-position: center;
 	background-size: 35px;
 	background-repeat: no-repeat;
 	width: 30px;
 	display: inline-block;
-
 }
 .search-module.active h1 {
-	background-image:url(who_bar.png), url(who_bar.png);
-	background-position:center top, center bottom;
-	background-size:100% 20px;
+	background-image: url(who_bar.png), url(who_bar.png);
+	background-position: center top, center bottom;
+	background-size: 100% 20px;
 	transition: background .5s;
 	-webkit-transition: background .5s;
 	-moz-transition: background .5s;
 	-o-transition: background .5s;
 }
-.title h1 .plate  {
+.title h1 .plate {
 	min-width: 450px;
 	position: relative;
 	text-align: left;
 }
-.search-module h1 .menu  {
-	text-indent:-999em;
-	background-image:url(mag-glass.png);
-	background-position:center;
-	background-size:50px;
-	background-repeat:no-repeat;
+.search-module h1 .menu {
+	text-indent: -999em;
+	background-image: url(mag-glass.png);
+	background-position: center;
+	background-size: 50px;
+	background-repeat: no-repeat;
 	width: 190px;
 	position: relative;
 	display: inline-block;
-	float:right;
+	float: right;
 }
 
 .lincoln {
-	background-image:url(lincoln-head.jpg);
-	background-position:center;
-	background-size:cover;
-	width:300px;
-	height:400px;
-	position:absolute;
-	left:50%;
-	margin-left:-150px;
-	margin-top:-100px;
-	z-index:0;
-	top:0px;
-	opacity:1;
-	visibility:visible;
+	background-image: url(lincoln-head.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -100px;
+	z-index: 0;
+	top: 0px;
+	opacity: 1;
+	visibility: visible;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -266,80 +285,80 @@ input#plate_search:focus{
 
 
 .make-links {
-	width:100%;
-	padding:5px 0;
-	float:left;
-	overflow:hidden;
+	width: 100%;
+	padding: 5px 0;
+	float: left;
+	overflow: hidden;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 }
-.search_make  {
-	position:relative;
-	width:100%;
+.search_make {
+	position: relative;
+	width: 100%;
 }
 .make-links h4 {
-	position:relative;
-	width:100%;
-	text-align:left;
+	position: relative;
+	width: 100%;
+	text-align: left;
 }
 .make-links h4:hover {
-	cursor:pointer;		
+	cursor: pointer;
 }
-.make-links ul  {
-	display:none;
-	padding:0;
-	margin:0;
-	overflow:hidden;
+.make-links ul {
+	display: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
 }
 .make-links ul li {
-	width:50%;
-	float:left;
-	position:relative;
-	border-bottom:1px solid #ddd;
-	padding:20px 0;
+	width: 50%;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0;
 }
 
-.active .menu.search_button{
-	display:none;
+.active .menu.search_button {
+	display: none;
 }
-.active .lincoln   {
-	top:-10px;
-	opacity:0;
-	visibility:hidden;
+.active .lincoln {
+	top: -10px;
+	opacity: 0;
+	visibility: hidden;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 }
 .make-active .make-links,
-.active .make-links   {
-	height:100%;
-	float:left;
+.active .make-links {
+	height: 100%;
+	float: left;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 }
-.make-active .make-links ul  {
-	height:100%;
-	display:block;
-    margin: 0;
-    padding: 0;
+.make-active .make-links ul {
+	height: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
 }
 .active .search_make {
-	top:0px;
-	position:relative;
+	top: 0px;
+	position: relative;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 }
 .active .make-links h4 {
-	visibility:visible;
-	opacity:1;
-	top:0px;
+	visibility: visible;
+	opacity: 1;
+	top: 0px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -351,12 +370,11 @@ input#plate_search:focus{
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
-	
 }
 .active input#plate_search {
-	visibility:visible;
-	opacity:1;
-	top:0px;
+	visibility: visible;
+	opacity: 1;
+	top: 0px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -364,65 +382,61 @@ input#plate_search:focus{
 }
 
 #search .search-module {
-  padding: 25px 0 0px;
-  margin-bottom:5px;
+	padding: 25px 0 0px;
+	margin-bottom: 5px;
 }
 
 .active .section#search {
-	display:block;
+	display: block;
 }
 @media all and (max-width:768px) {
 	.center {
-	  margin: 0 auto;
-	  padding: 0 22px;
-	  width: auto;
-  }
+		margin: 0 auto;
+		padding: 0 22px;
+		width: auto;
+	}
 	h1 {
 		font-size: 2.25em;
 	}
 	.search-module {
-	  position: relative;
-	  float: left;
-	  width: 100%;
-	  padding: 5px 0 10px;
-	  background-image: url(who_bar.png);
-	  background-position: center bottom;
-	  background-size: 100% 5px;
-	  background-repeat: no-repeat;
-	  margin-top: 5px;
-	  z-index: 1;
-	  margin-bottom: 30px;
-	}	
+		position: relative;
+		float: left;
+		width: 100%;
+		padding: 5px 0 10px;
+		background-image: url(who_bar.png);
+		background-position: center bottom;
+		background-size: 100% 5px;
+		background-repeat: no-repeat;
+		margin-top: 5px;
+		z-index: 1;
+		margin-bottom: 30px;
+	}
 	.search-module h1, h1 {
 		font-size: 2.25em;
-		text-indent:0px;
-		}
-		
-		input#plate_search {
-			text-align: left;
-			font-size: 2.25em;
-			text-indent:0px;
-
-		}
-		.active input#plate_search {
-			z-index:9;
-
-		}
-		.lincoln {
-			background-image: url(lincoln-head.jpg);
-			  background-position: center 0;
-			  background-size: 100px;
-			  background-repeat: no-repeat;
-			  width: 140px;
-			  height: 130px;
-			  position: absolute;
-			  margin-top: 0px;
-			  z-index: 0;
-			}		
-		.section#nav {
-			padding-bottom:0px;
-		}
-	
-	
-	
+		text-indent: 0px;
 	}
+		
+	input#plate_search {
+		text-align: left;
+		font-size: 2.25em;
+		text-indent: 0px;
+	}
+	.active input#plate_search {
+		z-index: 9;
+	}
+	.lincoln {
+		background-image: url(lincoln-head.jpg);
+		background-position: center 0;
+		background-size: 100px;
+		background-repeat: no-repeat;
+		width: 140px;
+		height: 130px;
+		position: absolute;
+		margin-top: 0px;
+		z-index: 0;
+	}
+	.section#nav {
+		padding-bottom: 0px;
+	}
+
+}
