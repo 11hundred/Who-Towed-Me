@@ -496,5 +496,9 @@ input#plate_search:focus {
 	  text-align: right;
 	  padding-right:0px;
 	  }	
+  	#search,
+	  .active #search {
+	  	top:10px;
+	}
 
 }
