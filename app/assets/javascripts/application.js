@@ -42,7 +42,7 @@ $(window).load(function() {
 	
 
 	$('.search_make').click( function() {
-	    $(".search_make ul").slideToggle( "slow", function() {});
+	    $(".search_make ul").delay(1000).slideToggle( "slow", function() {});
 		$('html, body').animate({scrollTop: $(this).offset().top}, 650);
 		
 	});
