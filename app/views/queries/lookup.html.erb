@@ -1,6 +1,32 @@
-	<div class="section" id="search">
+
+
+	<div class="section" id="nav">
 		<div class="center">
+			<div id="search">
+				<div class="search-module">
+					<form action="/lookup/plate/">
+						<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.plate %>">
+					</form>	
+				</div>
+			</div>	
+			<div class="main-links"><a href="/" class="home">home</a> search by: <a href="#" class="search_button">plate</a> <a href="#" class="search_make">make</a></div>
+				<h1>
+					<% if @plate.state != "IL" %>
+						<span class="plate"> <%= @plate_search %></span>
+					<% else %>
+						<span class="plate"> <%= @plate.plate %></span>
+					<% end %>
+					<span class="menu search_button">&nbsp;</span>	
+				</h1>
 				
+			
+			<div class="lincoln"></div>
+		</div>
+
+		
+	</div>
+	<div class="section" id="make">
+		<div class="center">
 		<div class="make-links">
 				<div class="search_make">
 					<h4>Search by Make</h4>
@@ -73,33 +99,10 @@
 				
 
 			</div>	
+			</div>	
 				
 				
 		</div>
-	</div>
-
-
-	<div class="section" id="nav">
-		<div class="center">
-			<div class="main-links"><a href="/" class="home">home</a> search by: <a href="#" class="search_button">plate</a> <a href="#" class="search_make">make</a></div>
-			<div class="search-module">
-				<form action="/lookup/plate/">
-					<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.plate %>">
-				</form>	
-				<h1>
-					<% if @plate.state != "IL" %>
-						<span class="plate"> <%= @plate_search %></span>
-					<% else %>
-						<span class="plate"> <%= @plate.plate %></span>
-					<% end %>
-					<span class="menu search_button">&nbsp;</span>	
-				</h1>
-			</div>
-			
-			<div class="lincoln"></div>
-		</div>
-
-		
 	</div>
 	
 	<!-- <%= render "plate_details"%> -->
