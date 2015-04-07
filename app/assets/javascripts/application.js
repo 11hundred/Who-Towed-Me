@@ -42,7 +42,6 @@ $(window).load(function() {
 	});
 	
 	$(' input#plate_search').focus(function() {
-	    // $("#nav").animate({minHeight:windowHeight}, 500);
 	    $(this).addClass("active");
 	    $("body").addClass("active");
 		$('body.make-active').removeClass('make-active');
@@ -51,7 +50,6 @@ $(window).load(function() {
 	});
 	
 	$('input#plate_search').blur(function() {
-	    // $("#nav").animate({minHeight:100}, 500);
 	    $(this).removeClass("active");
 	    $("body").removeClass("active");
 	});	
