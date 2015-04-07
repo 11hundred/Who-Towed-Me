@@ -1,98 +1,89 @@
 	<div class="section" id="nav">
 		<div class="center">
-			<ul>
-				<li>
-					<a href="/">home</a>
-				</li>	
-				<li>
-					search by: <a href="#" class="search_button">plate</a> <a href="#">make</a>
-				</li>
-			</ul>	
-			<div class="lincoln"></div>	
-			<div class="title">
-				<div class="wrapper">
-					<form action="/lookup/plate/">
-						<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.plate %>">
-					</form>	
-					<h1>
-						<% if @plate.state != "IL" %>
-							<span class="plate"> <%= @plate_search %></span>
-						<% else %>
-							<span class="plate"> <%= @plate.plate %></span>
-						<% end %>
-						<span class="menu search_button">&nbsp;</span>	
-					</h1>
-				</div>
+			<div class="main-links"><a href="/">home</a> search by: <a href="#" class="search_button">plate</a> <a href="#" class="search_make">make</a></div>
+			<div class="search-module">
+				<form action="/lookup/plate/">
+					<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.plate %>">
+				</form>	
+				<h1>
+					<% if @plate.state != "IL" %>
+						<span class="plate"> <%= @plate_search %></span>
+					<% else %>
+						<span class="plate"> <%= @plate.plate %></span>
+					<% end %>
+					<span class="menu search_button">&nbsp;</span>	
+				</h1>
 			</div>
+			<div class="lincoln"></div>
 		</div>
-	</div>
-
-
-	<% if @plate.state == nil %>
-
-	<!-- Display alternate messaging for missing plate information -->
-
-		<div class="section" id="plate-detail">
+		<div class="make-links">
 			<div class="center">
-				<h2>Umm no. Maybe Stolen?</h2>
+				<div class="search_make"><h4>Search by Make:</h4></div>
+				<ul>		
+					<li>
+						<a href="/lookup/make/ACUR">Acura</a>
+					</li>
+					<li>
+						<a href="/lookup/make/AUDI">AUDI</a>
+					</li>
+					<li>
+						<a href="/lookup/make/BMW">BMW</a>
+					</li>
+					<li>
+						<a href="/lookup/make/BUIC">Buick</a>
+					</li>
+					<li>
+						<a href="/lookup/make/CADI">Cadillac</a>
+					</li>
+					<li>
+						<a href="/lookup/make/CHEV">Chevy</a>
+					</li>
+					<li>
+						<a href="/lookup/make/DODG">Dodge</a>
+					</li>
+					<li>
+						<a href="/lookup/make/FORD">Ford</a>
+					</li>
+					<li>
+						<a href="/lookup/make/HOND">Honda</a>
+					</li>
+					<li>
+						<a href="/lookup/make/HYUN">Hyundai</a>
+					</li>
+					<li>
+						<a href="/lookup/make/INFI">Infiniti</a>
+					</li>
+					<li>
+						<a href="/lookup/make/LEXS">Lexus</a>
+					</li>
+					<li>
+						<a href="/lookup/make/LINC">Lincoln</a>
+					</li>
+					<li>
+						<a href="/lookup/make/MAZD">Mazda</a>
+					</li>
+					<li>
+						<a href="/lookup/make/MITS">Mitsubishi</a>
+					</li>
+					<li>
+						<a href="/lookup/make/NISS">Nissaan</a>
+					</li>
+					<li>
+						<a href="/lookup/make/PONT">Pontiac</a>
+					</li>
+					<li>
+						<a href="/lookup/make/SATR">Saturn</a>
+					</li>
+					<li>
+						<a href="/lookup/make/SUZI">Suzuki</a>
+					</li>
+					<li>
+						<a href="/lookup/make/VOLK">volkswagen</a>
+					</li>
+				</ul>
 			</div>	
-		</div>
-
-	<% else %>
-
-
-	<!-- Display plate information -->
-	<div class="section page">
-		<div class="plate-details">
-			<h4 class="first make_details">
-				<% if @plate.state != "IL" %>
-					<span class="state"><%= @plate.state %> Plate /</span>	
-				<% else %>
-				<% end %>
-			 	<%= @color.capitalize %> <a href="/lookup/make/<%= @plate.make %>"><%= @make %></a>
-			</h4>
-			<h4 class="tow_date">Towed on <%= @date %></h4>
-			<h4 class="tow_location"> <%= @address %>  Chicago, IL <br/>Call the facility: <a href=""><%= @plate.tow_facility_phone %></a></h4>
-		</div>
-
-
-		<div id="map-canvas"></div>
+		</div>	
+		
+	</div>
 	
-		<div class="address">
-			<div class="center"></div>
-		</div>
-	</div>	
-
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
-
-	<script>
-
-	    function initialize()
-	    {
-	        var lat=<%= @lat %>;
-	        var lon= <%= @long %>;
-	        var mapOptions =
-	        {
-	            zoom: 7,
-	            center: new google.maps.LatLng(lat, lon),
-	            mapTypeId: google.maps.MapTypeId.SATELLITE,
-	            zoom: 30, scrollwheel: false, navigationControl: false, mapTypeControl: false, scaleControl: false, draggable: false
-	        };
-
-	        var map = new google.maps.Map(document.getElementById('map-canvas'),
-	            mapOptions);
-
-	        var marker = new google.maps.Marker({
-	            map: map,
-	            draggable: false,
-	            position: new google.maps.LatLng(lat, lon)
-	        });
-
-
-	    }
-
-	    google.maps.event.addDomListener(window, 'resize', initialize);
-	    google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
-
-<% end %>
+	<%= render "plate_details"%>

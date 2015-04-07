@@ -7,7 +7,9 @@
   <title>Who Towed Me?</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+  <%= javascript_include_tag "https://code.jquery.com/jquery-2.1.3.js" %>
+  <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js" %>
+  
   <%= javascript_include_tag 'application' %>
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/731360/749444/css/fonts.css" />
 
@@ -15,59 +17,10 @@
 
 
 <body>
-<div class="modal">
-	<ul class="makes center">		
-		<li>
-			<a href="/lookup/make/ACUR">Acura</a>
-		</li>
-		<li>
-			<a href="/lookup/make/AUDI">AUDI</a>
-		</li>
-		<li>
-			<a href="/lookup/make/BMW">BMW</a>
-		</li>
-		<li>
-			<a href="/lookup/make/BUIC">Buick</a>
-		</li>
-		<li>
-			<a href="/lookup/make/CADI">Cadillac</a>
-		</li>
-		<li>
-			<a href="/lookup/make/DODG">Dodge</a>
-		</li>
-		<li>
-			<a href="/lookup/make/FORD">Ford</a>
-		</li>
-		<li>
-			<a href="/lookup/make/HOND">Honda</a>
-		</li>
-		<li>
-			<a href="/lookup/make/HYUN">Hyundai</a>
-		</li>
-		<li>
-			<a href="/lookup/make/INFI">Infiniti</a>
-		</li>
-	</ul>
-</div>	
 
 	<%= yield %>
 	
 
-	<div class="section" id="footer">
-		<div class="center">
-
-			<div class="container">
-				<form action="/lookup/plate/">
-					<input name="plate" type="text" id="" placeholder="<%= @plate_search %>">
-					<button value="submit" type="submit">Search Plates</button>
-				</form>
-				<h5>Search by Make instead. <em>Not sure about your plate number?</em></h5>
-			</div>
-
-
-		</div>
-		</div>
-	</div>
 	
 
 </body>
