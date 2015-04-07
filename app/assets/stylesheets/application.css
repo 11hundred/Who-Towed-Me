@@ -386,9 +386,6 @@ input#plate_search:focus {
 	margin-bottom: 5px;
 }
 
-.active .section#search {
-	display: block;
-}
 @media all and (max-width:768px) {
 	.center {
 		margin: 0 auto;

@@ -32,7 +32,12 @@ $(window).load(function() {
 
 	$('.search_button').click( function() {
     	$('input#plate_search').focus();
+	    $("body").addClass("active");
 	    $("#nav").css({minHeight:windowHeight});
+		
+		if ( $( "body" ).is( ".active" ) ) {
+	    	$(' input#plate_search').focus();
+		}
 		
 		
 	});
