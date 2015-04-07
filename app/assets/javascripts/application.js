@@ -32,6 +32,7 @@ $(window).load(function() {
 
 	$('.search_button').click( function() {
     	$(' input#plate_search').focus();
+	    $("body").addClass("active");
 		
 	});
 
@@ -49,10 +50,10 @@ $(window).load(function() {
 
 	});
 	
-	$('input#plate_search').blur(function() {
-	    $(this).removeClass("active");
-	    $("body").removeClass("active");
-	});	
+	// $('input#plate_search').blur(function() {
+	//     $(this).removeClass("active");
+	//     $("body").removeClass("active");
+	// });
 	
 	$('.make_button').click( function() {
 		$('.interior').addClass("clicked");

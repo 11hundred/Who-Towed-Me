@@ -85,6 +85,7 @@ input[type="text"] {
 	width:100%;
 	position:relative;
 }
+.section#search,
 .section#nav {
 	background:none;
 	background:#fff;
@@ -97,6 +98,16 @@ input[type="text"] {
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	
+}
+.section#search {
+	position:absolute;
+	height:100%;
+	background:#eee;
+	z-index:9;
+	left:0px;
+	top:0px;
+	display:none;
+
 }
 
 #map-canvas {
@@ -269,9 +280,6 @@ input#plate_search:focus{
 	width:100%;
 }
 .search_make h4 {
-	visibility:hidden;
-	opacity:0;
-	top:-5px;
 	position:relative;
 	width:100%;
 	text-align:left;
@@ -345,6 +353,9 @@ input#plate_search:focus{
 	
 }
 
+.active .section#search {
+	display:block;
+}
 @media all and (max-width:768px) {
 
 	h1 {
