@@ -403,7 +403,6 @@ input#plate_search:focus {
 	top:0px;
 	z-index:2;
 	opacity:0;
-	top:7px;
 	display:none;
 	transition: all .5s;
 	-webkit-transition: all .5s;
@@ -476,7 +475,6 @@ input#plate_search:focus {
 		padding-bottom: 0px;
 	}
 	#search {
-		top:3px;
 	}
 	#nav h1 .menu {
 	  /* text-indent: -999em; */
