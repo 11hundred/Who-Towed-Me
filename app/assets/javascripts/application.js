@@ -31,7 +31,7 @@ $(window).load(function() {
 
 
 	$('.search_button').click( function() {
-    	$(' input#plate_search').focus();
+    	$('input#plate_search').focus();
 	    $("body").addClass("active");
 		if ( $( "body" ).is( ".active" ) ) {
 	    	$(' input#plate_search').focus();
@@ -41,7 +41,7 @@ $(window).load(function() {
 	});
 	$('.search_make').click( function() {
 	    $(".search_make ul").slideToggle();
-		$('html, body').animate({scrollTop: $(this).offset().top}, 650);
+		// $('html, body').animate({scrollTop: $(this).offset().top}, 650);
 	});
 	
 

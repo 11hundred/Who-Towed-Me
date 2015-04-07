@@ -4,14 +4,6 @@
 				<form action="/lookup/plate/">
 					<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.plate %>">
 				</form>	
-				<h1>
-					<% if @plate.state != "IL" %>
-						<span class="plate"> <%= @plate_search %></span>
-					<% else %>
-						<span class="plate"> <%= @plate.plate %></span>
-					<% end %>
-					<span class="menu search_button">&nbsp;</span>	
-				</h1>
 			</div>
 				
 		<div class="make-links">

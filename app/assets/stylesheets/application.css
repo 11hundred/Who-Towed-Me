@@ -184,14 +184,16 @@ input[type="text"] {
 	
 }
 input#plate_search {
+	visibility:hidden;
+	opacity:0;
+	top:-5px;
     padding: 20px;
     width: 100%;
-    position: absolute;
-    left: -20px;
+    position: relative;
+    margin-left: -20px;
     text-align: left;
     font-size: 9em;
     text-indent: 20px;
-    top: 0px;
 	background:#fafafa;
 	box-shadow:1px 2px 12px rgba(0,0,0,0.3);
 }
@@ -269,9 +271,7 @@ input#plate_search:focus{
 	width:100%;
 	padding:5px 0;
 	float:left;
-	margin-top:25px;
 	overflow:hidden;
-	height:5px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -356,6 +356,15 @@ input#plate_search:focus{
 	-o-transition: all .5s;
 	
 }
+.active input#plate_search {
+	visibility:visible;
+	opacity:1;
+	top:0px;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+}
 
 .active .section#search {
 	display:block;
@@ -374,8 +383,9 @@ input#plate_search:focus{
 	  background-position: center bottom;
 	  background-size: 100% 5px;
 	  background-repeat: no-repeat;
-	  margin-top: 35px;
+	  margin-top: 15px;
 	  z-index: 1;
+	  margin-bottom: 25px;
 	}
 	.search-module h1, h1 {
 		font-size: 2.25em;
