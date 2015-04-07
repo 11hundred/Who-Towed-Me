@@ -256,14 +256,20 @@ input#plate_search:focus {
 }
 #nav h1 .menu {
 	text-indent: -999em;
-	background-image: url(mag-glass.png);
-	background-position: center;
-	background-size: 50px;
-	background-repeat: no-repeat;
-	width: 190px;
-	position: relative;
-	display: inline-block;
-	float: right;
+	  background-image: url(mag-glass.png);
+	  background-position: 20px center;
+	  background-size: 50px;
+	  background-repeat: no-repeat;
+	  width: 230px;
+	  position: relative;
+	  display: inline-block;
+	  float: right;
+	  border: 2px solid;
+	  position: absolute;
+	  line-height: 20px;
+	  height: 80px;
+	  margin-top: 35px;
+	  right: 0px;
 }
 
 .lincoln {
@@ -472,6 +478,25 @@ input#plate_search:focus {
 	#search {
 		top:3px;
 	}
-	
+	#nav h1 .menu {
+	  /* text-indent: -999em; */
+	  background-image: url(mag-glass.png);
+	  background-position: 10px center;
+	  background-size: 20px;
+	  background-repeat: no-repeat;
+	  width: 90px;
+	  position: relative;
+	  display: inline-block;
+	  float: right;
+	  border: 1px solid #ddd;
+	  position: absolute;
+	  line-height: 29px;
+	  height: 30px;
+	  margin-top: 5px;
+	  right: 0px;
+	  font-size: .8em;
+	  text-align: right;
+	  padding-right:0px;
+	  }	
 
 }
