@@ -290,9 +290,10 @@ input#plate_search:focus{
 	cursor:pointer;		
 }
 .make-links ul  {
-	height:0px;
+	display:none;
 	padding:0;
 	margin:0;
+	overflow:hidden;
 }
 .make-links ul li {
 	width:50%;

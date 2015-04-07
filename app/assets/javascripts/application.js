@@ -39,13 +39,12 @@ $(window).load(function() {
 		
 		
 	});
+	$('.search_make').click( function() {
+	    $(".search_make ul").slideToggle();
+		$('html, body').animate({scrollTop: $(this).offset().top}, 650);
+	});
 	
 
-	$('.search_make').click( function() {
-	    $(".search_make ul").delay(1000).slideToggle( "slow", function() {});
-		$('html, body').animate({scrollTop: $(this).offset().top}, 650);
-		
-	});
 	
 	$(' input#plate_search').focus(function() {
 	    $(this).addClass("active");
