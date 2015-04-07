@@ -400,7 +400,7 @@ input#plate_search:focus {
 	height:100%;
 	position:absolute;
 	left:0px;
-	top:0px;
+	top:5px;
 	z-index:2;
 	opacity:0;
 	display:none;
@@ -411,7 +411,7 @@ input#plate_search:focus {
 }
 .active #search {
 	opacity:1;
-	top: 10px;
+	top: 5px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
