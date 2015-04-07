@@ -93,6 +93,7 @@ input[type="text"] {
 	width: 100%;
 	position: relative;
 	float:left;
+	background:#DCE0DE;
 }
 .section#search,
 .section#nav {
@@ -108,7 +109,6 @@ input[type="text"] {
 	-o-transition: all .5s;
 }
 .section#make {
-	background: #eee;
 	display:none;
 	
 }
@@ -217,12 +217,11 @@ input#plate_search {
 	background: #fafafa;
 	top: -5px;
 	
-	box-shadow: 1px 2px 12px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.1), 0px 3px 3px rgba(0,0,0,0.1);
 }
 
 input#plate_search:focus {
-	background: #fafafa;
-	box-shadow: 1px 2px 12px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.01), 0px 6px 6px rgba(0,0,0,0.051);
 }
 #nav h1 {
 	font-size: 09em;
@@ -376,7 +375,7 @@ input#plate_search:focus {
 }
 
 .active #nav {
-	background:#eee;
+	background:#DCE0DE;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -418,7 +417,10 @@ input#plate_search:focus {
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 }
-
+.active .main-links {
+  z-index: 0;
+  opacity:0;
+}
 @media all and (max-width:768px) {
 	.center {
 		margin: 0 auto;
@@ -500,6 +502,13 @@ input#plate_search:focus {
   	#search,
 	  .active #search {
 	  	top:10px;
+	}
+
+	input#plate_search {
+		box-shadow: 0px 0px 2px rgba(0,0,0,0.1), 0px 2px 3px rgba(0,0,0,0.075);
+	}
+	input#plate_search:focus {
+		box-shadow: 0px 0px 2px rgba(0,0,0,0.1), 1px 4px 4px rgba(0,0,0,0.075);
 	}
 
 }

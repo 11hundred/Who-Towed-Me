@@ -71,6 +71,7 @@ $(window).load(function() {
 	$('.cancel').click( function() {
 	    $("body").removeClass("active");
 	    $("body.make-active").removeClass("make-active");
+	    $("#make").delay(50).slideUp(220);
 	});
 
 
