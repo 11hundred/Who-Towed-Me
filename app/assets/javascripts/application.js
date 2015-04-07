@@ -32,7 +32,7 @@ $(window).load(function() {
 
 	$('.search_button').click( function() {
     	$('input#plate_search').focus();
-	    $("#nav").css({height:windowHeight});
+	    $("#nav").css({minHeight:windowHeight});
 		
 		
 	});
