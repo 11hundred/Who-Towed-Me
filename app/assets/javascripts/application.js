@@ -50,9 +50,7 @@ $(window).load(function() {
 	$(' input#plate_search').focus(function() {
 	    $(this).addClass("active");
 	    $("body").addClass("active");
-		$('body.make-active').removeClass('make-active');
-		
-
+		$('html, body').animate({scrollTop: $('html, body').offset().top}, 650);
 	});
 	
 	// $('input#plate_search').blur(function() {
@@ -63,6 +61,10 @@ $(window).load(function() {
 	$('.make_button').click( function() {
 		$('.interior').addClass("clicked");
 		$('.interior').animate({marginLeft:-windowWidth /2 -120}, 200);
+	});
+	$('.cancel').click( function() {
+	    $("body").removeClass("active");
+	    $("body.make-active").removeClass("make-active");
 	});
 
 
