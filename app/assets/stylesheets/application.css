@@ -153,13 +153,11 @@ input[type="text"] {
 	
 }
 .main-links {
-	position: absolute;
-	width: 100%;
-	left: 0px;
-	padding: 0px;
-	margin: 0px;
-	top: 10px;
-	z-index:4;
+    position: relative;
+    width: auto;
+    left: 0px;
+    padding:10px 0 0 0px;
+	z-index:2;
 }
 .main-links a {
 	font-family:inherit;
@@ -171,17 +169,17 @@ input[type="text"] {
 
 }
 .search-module {
-	position:relative;
-	float:left;
-	width:100%;
-	padding:20px 0 20px;
-	background-image:url(who_bar.png);
-	background-position:center bottom;
-	background-size:100% 10px;
-	background-repeat:no-repeat;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0px 0 20px;
+    background-image: url(who_bar.png);
+    background-position: center bottom;
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
     margin-top: 55px;
-	z-index:1;
-	
+    z-index: 1;
+    margin-bottom: 20px;
 }
 input#plate_search {
 	visibility:hidden;
@@ -349,7 +347,6 @@ input#plate_search:focus{
 }
 
 .active #nav {
-	background:#eee;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -366,11 +363,20 @@ input#plate_search:focus{
 	-o-transition: all .5s;
 }
 
+#search .search-module {
+  padding: 25px 0 0px;
+  margin-bottom:5px;
+}
+
 .active .section#search {
 	display:block;
 }
 @media all and (max-width:768px) {
-
+	.center {
+	  margin: 0 auto;
+	  padding: 0 22px;
+	  width: auto;
+  }
 	h1 {
 		font-size: 2.25em;
 	}
@@ -378,15 +384,15 @@ input#plate_search:focus{
 	  position: relative;
 	  float: left;
 	  width: 100%;
-	  padding: 20px 0 20px;
+	  padding: 5px 0 10px;
 	  background-image: url(who_bar.png);
 	  background-position: center bottom;
 	  background-size: 100% 5px;
 	  background-repeat: no-repeat;
-	  margin-top: 15px;
+	  margin-top: 5px;
 	  z-index: 1;
-	  margin-bottom: 25px;
-	}
+	  margin-bottom: 30px;
+	}	
 	.search-module h1, h1 {
 		font-size: 2.25em;
 		text-indent:0px;
@@ -403,16 +409,16 @@ input#plate_search:focus{
 
 		}
 		.lincoln {
-		    background-image: url(lincoln-head.jpg);
-		    background-position: center 0;
-		    background-size: 130px;
-			background-repeat:no-repeat;
-		    width: 300px;
-		    height: 230px;
-		    position: absolute;
-		    margin-top:0px;
-		    z-index: 0;
-		}
+			background-image: url(lincoln-head.jpg);
+			  background-position: center 0;
+			  background-size: 100px;
+			  background-repeat: no-repeat;
+			  width: 140px;
+			  height: 130px;
+			  position: absolute;
+			  margin-top: 0px;
+			  z-index: 0;
+			}		}
 		.section#nav {
 			padding-bottom:0px;
 		}
