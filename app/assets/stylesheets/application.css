@@ -209,7 +209,7 @@ input[type="text"] {
     padding: 0px 0 15px;
     margin-top: 45px;
     z-index: 1;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 .search-module {
 	position: absolute;
@@ -551,6 +551,10 @@ input#plate_search:focus {
 	  width: 70px;
 	  border: none;
 	}
+	.section#nav {
+	  padding-bottom:0px;
+
+	}
 }
 @media all and (max-width:768px) {
 	.center {
@@ -569,7 +573,7 @@ input#plate_search:focus {
 		padding: 5px 0 10px;
 		z-index: 1;
 		width: auto;
-		margin: 5px 30px;
+		margin: 5px 30px 0px;
 		float: none;
 	}
 	#nav h1, h1 {
