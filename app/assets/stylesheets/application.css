@@ -587,6 +587,7 @@ input#plate_search:focus {
 		background-repeat: no-repeat;
 		margin-top: 10px;
 		text-indent: 8px;
+		margin-bottom: 25px;
 	}
 		
 	input#plate_search {
