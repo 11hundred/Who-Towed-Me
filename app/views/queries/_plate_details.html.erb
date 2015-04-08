@@ -16,10 +16,7 @@
 	<div class="section" id="page">
 		<div class="plate-details center">
 			<h4 class="first make_details">
-				<% if @plate.state != "IL" %>
-					<span class="state"><%= @plate.state %> Plate /</span>	
-				<% else %>
-				<% end %>
+				<span class="state"><%= @plate.state %> Plate /</span>	
 			 	<%= @color.capitalize %> <a href="/lookup/make/<%= @plate.make %>"><%= @make %></a>
 			</h4>
 			<h4 class="tow_date">Towed on <%= @date %></h4>
