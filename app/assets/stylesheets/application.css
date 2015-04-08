@@ -120,7 +120,9 @@ input[type="text"] {
 .section#make {
 	display: none;
 	border-bottom: 1px solid #aaa;
-	border-top: 2px solid rgba(0,0,0,0.05);
+	border-top: 2px solid #383836;
+	background:#383836;
+	  padding: 10px 0;
 }
 
 #map-canvas {
@@ -412,6 +414,7 @@ input#plate_search:focus {
 
 .active #nav {
 	background: #383836;
+	border-bottom:1px solid #383836;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -425,6 +428,9 @@ input#plate_search:focus {
 	z-index: 2;
 }
 
+.make-active .section#make {
+  background:#E2E2DF;
+}
 #make .search-module {
 	margin-bottom: 5px;
 }
