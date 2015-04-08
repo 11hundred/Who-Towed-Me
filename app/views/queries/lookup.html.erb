@@ -5,18 +5,14 @@
 			<div id="search">
 				<div class="search-module">
 					<form action="/lookup/plate/">
-						<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.plate %>">
+						<input name="plate" type="text" id="plate_search" placeholder="<%= @plate.state %> <%= @plate.plate %>">
 						<div class="search-close"><span class="cancel">X</span></div>
 					</form>	
 				</div>
 			</div>	
 			<div class="main-links"><a href="/" class="home">home</a> WHO TOWED ME</div>
 				<h1>
-					<% if @plate.state != "IL" %>
-						<span class="plate"> <%= @plate_search %></span>
-					<% else %>
-						<span class="plate"> <%= @plate.plate %></span>
-					<% end %>
+						<span class="plate"><%= @plate.state %> <%= @plate.plate %></span>
 					<span class="menu search_button">Search</span>	
 				</h1>
 				
