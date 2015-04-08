@@ -19,7 +19,7 @@
 			</div>	
 			<div class="main-links"><a href="/" class="home">home</a> WHO TOWED ME</div>
 				<h1>
-						<%= @make %> VEHICLES
+						ALL <%= @make %>S
 					<span class="menu search_button">Search</span>	
 				</h1>
 				
@@ -35,9 +35,10 @@
 
 
 
-	<div class="section page make">
-		<ul class="list">
-	
+	<div class="section page">
+
+				<ul class="plates">
+
 			<% @all_plates.each do |license_plate| %>
 
 				<% date = license_plate["tow_date"] %></h4>
@@ -49,8 +50,9 @@
 				<% elsif %>
 				<li>
 				<% end %>	
-				<div class="container">
-					<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
+				<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
+				
+				<div class="center">
 					<div class="center">
 						<h2>
 							<span class="number">
@@ -63,7 +65,10 @@
 						</h2>
 				
 						<div class="details">
+							
 							<h3><%= date %></h3>
+							<h3>View this plate</h3>
+
 						</div>	
 				
 					</div>
@@ -72,6 +77,7 @@
   
 			<% end %>
 
-		</ul>
+			</ul>
+
 	</div>
 		
