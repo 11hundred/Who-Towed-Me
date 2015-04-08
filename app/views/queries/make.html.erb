@@ -4,29 +4,33 @@
 
 -->
 
+
+
+
 	<div class="section" id="nav">
 		<div class="center">
-			<ul>
-				<li>
-					<a href="/">home</a>
-				</li>	
-				<li>
-					search by: <a href="#" class="search_button">plate</a> <a href="#">make</a>
-				</li>
-			</ul>	
-			<div class="title">
-				<div class="wrapper">
+			<div id="search">
+				<div class="search-module">
 					<form action="/lookup/plate/">
 						<input name="plate" type="text" id="plate_search" placeholder="Search Now">
+						<div class="search-close"><span class="cancel">X</span></div>
 					</form>	
-					<h1>
-						<%= @make %><em>&nbsp;</em><%= @all_plates.count %> towed
-						<span class="menu search_button">&nbsp;</span>	
-					</h1>
 				</div>
-			</div>
+			</div>	
+			<div class="main-links"><a href="/" class="home">home</a> search by: <a href="#" class="search_button">plate</a> <a href="#" class="search_make">make</a></div>
+				<h1>
+						<%= @make %>
+					<span class="menu search_button">Search</span>	
+				</h1>
+				
+			
+			<div class="lincoln"></div>
 		</div>
 	</div>
+
+	<%= render "/queries/make_list"%>
+
+
 
 
 
