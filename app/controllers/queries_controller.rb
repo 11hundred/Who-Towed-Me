@@ -11,6 +11,7 @@ class QueriesController < ApplicationController
     @all_plates = all_plates
 
   	@plate_count = all_plates.count
+    fullname("abbrev")
 
   end 
 
