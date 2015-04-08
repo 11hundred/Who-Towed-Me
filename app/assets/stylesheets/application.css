@@ -569,12 +569,16 @@ padding-top:75px;
 	ul.plates li:first-child {
 		border-top:2px solid rgba(0,0,0,0.2);
 	}
+	ul.plates li:hover {
+		background:rgba(255,255,255,0.3);
+	}
 	ul.plates li a {
 		position:absolute;
 		left:0px;
 		top:0px;
 		width:100%;
 		height:100%;
+		z-index:9;
 		text-indent:-999em;
 	}
 	
