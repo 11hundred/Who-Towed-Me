@@ -471,7 +471,6 @@ input#plate_search:focus {
 		border-bottom:2px solid rgba(0,0,0,0.1);
 	}
 	.plate-details h4.first {
-		border-top:2px solid rgba(0,0,0,0.1);
 	}
 	.call {
 		background-image: url(phone_icon.png);
@@ -487,14 +486,14 @@ input#plate_search:focus {
 	    right: 25px;		
 	}
 	
-	.tow_date {
+	.plate-details h4.tow_date {
 		background-image: url(time_icon.png);
 		background-position:0 center;
 		background-size: 20px;
 		text-indent:30px;
 		background-repeat:no-repeat;
 	}
-	.make_details {
+	.plate-details h4.make_details {
 		background-image: url(car_icon.png);
 		background-position:0 center;
 		background-size: 20px;
@@ -502,12 +501,13 @@ input#plate_search:focus {
 		background-repeat:no-repeat;
 		
 	}
-	.tow_location {
+	.plate-details h4.tow_location {
 		background-image: url(place_icon.png);
 		background-position:0 center;
 		background-size: 20px;
 		text-indent:30px;
 		background-repeat:no-repeat;
+		border:none;
 		
 	}
 @media all and (max-width:768px) {
@@ -613,5 +613,12 @@ input#plate_search:focus {
 	#map-canvas {
 	  height: 350px;
 	  padding: 0px;
+	}
+	
+	.section#page {
+	  padding-top: 20px;
+	}	
+	#map-canvas {
+		margin-top:20px;
 	}
 }
