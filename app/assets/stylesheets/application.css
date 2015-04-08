@@ -612,23 +612,23 @@ input#plate_search:focus {
 	#nav h1 .menu {
 		/* text-indent: -999em; */
 		background-image: url(mag_icon.png);
-		background-position: 10px center;
-		background-size: 18px;
-		background-repeat: no-repeat;
-		width: 100px;
-		position: relative;
-		display: inline-block;
-		float: right;
-		border: 1px solid #ddd;
-		position: absolute;
-		line-height: 29px;
-		height: 30px;
-		margin-top: 5px;
-		right: 0px;
-		text-align: right;
-		font-size: .45em;
-		color: #eee;
-		padding-right: 10px;
+	    background-position: 10px center;
+	    background-size: 18px;
+	    background-repeat: no-repeat;
+	    width: 95px;
+	    position: relative;
+	    display: inline-block;
+	    float: right;
+	    border: 1px solid #ddd;
+	    position: absolute;
+	    line-height: 29px;
+	    height: 30px;
+	    margin-top: 5px;
+	    right: 0px;
+	    text-align: right;
+	    font-size: .4em;
+	    color: #bbb;
+	    padding-right: 10px;
 	}
 	  
 	#nav h1 .menu:hover {
