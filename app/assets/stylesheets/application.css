@@ -470,15 +470,30 @@ input#plate_search:focus {
 	z-index: 0;
 	opacity: 0;
 }
+.message {
+	font-family: 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 700;
+	font-style: normal;
 
-.home .make_button,
-.home .search_button {
-	width:42%;
+}
+#nav .message {
+  position: relative;
+  top: -20px;
+}
+.active #nav .message {
+	opacity:0;
+}
+.home#page .make_button,
+.home#page .search_button {
+	width:48%;
 	height:250px;
-	border:1px solid #111;
-	margin:2%;
+	border:1px solid rgba(0,0,0,0.2);
 	float:left;
+	border-radius:2px;
 	text-align:center;
+}
+.home#page .make_button{
+	float:right;
 }
 .home .make_button h5,
 .home .search_button h5 {
@@ -488,6 +503,9 @@ padding-top:75px;
 		border-top: 2px solid rgba(0,0,0,0.05);
 		padding-top:50px;
 	}
+.home.section#page {
+			padding:50px 0;
+		}
 	
 	.plate-details h4 {
 		padding:10px 0;
@@ -562,7 +580,8 @@ padding-top:75px;
 	  width: 70px;
 	  border: none;
 	}
-	.section#nav {
+	.home.section#nav {
+	  padding: 100px 0;
 	  padding-bottom:20px;
 
 	}
@@ -573,6 +592,9 @@ padding-top:75px;
 	.active .section#make {
   	  padding-bottom:40px;
 		
+	}
+	#page .message {
+		display:none;
 	}
 }
 @media all and (max-width:768px) {
@@ -681,11 +703,26 @@ padding-top:75px;
 	  height: 350px;
 	  padding: 0px;
 	}
-	
+	.home.section#page {
+				padding:20px 0 50px;
+			}
+			.home#page .make_button, .home#page .search_button {
+			  width: 100%;
+			  margin-bottom:10px;
+			}
 	.section#page {
 	  padding-top: 20px;
 	}	
 	#map-canvas {
 		margin-top:20px;
+	}
+	#page .message {
+		font-size:0.9em;
+		color:rgba(0,0,0,0.8);
+		padding-right:89px;
+
+}
+	#nav .message {
+		display:none;
 	}
 }

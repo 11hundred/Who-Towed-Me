@@ -1,6 +1,6 @@
 
 
-	<div class="section" id="nav">
+	<div class="section home" id="nav">
 		<div class="center">
 			<div id="search">
 				<div class="search-module">
@@ -8,6 +8,7 @@
 						<input name="plate" type="text" id="plate_search" placeholder="PLATE NUMBER">
 						<div class="search-close cancel">X</div>
 					</form>	
+					
 				</div>
 			</div>	
 			<div class="main-links"><a href="/" class="home">home</a> Towed Vehicle Search</div>
@@ -15,7 +16,7 @@
 						WHO TOWED ME
 					<span class="menu search_button">Search</span>	
 				</h1>
-				
+				<p class="message">Search all recent vehicles towed by the city of Chicago.</p>
 			
 			<div class="lincoln"></div>
 		</div>
@@ -23,9 +24,9 @@
 
 	<%= render "/queries/make_list"%>
 
-	<div class="section page home">
+	<div class="section home" id="page">
 		<div class="center">
-
+				<p class="message">Search all recent vehicles towed by the city of Chicago.</p>
 					<div class="search_button"><h5>Search by:</h5><h2>Plate</h2></div>	
 					<div class="make_button home"><h5>Search by:</h5><h2>Make</h2></div>	
 
