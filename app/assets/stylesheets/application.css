@@ -552,8 +552,16 @@ input#plate_search:focus {
 	  border: none;
 	}
 	.section#nav {
-	  padding-bottom:0px;
+	  padding-bottom:20px;
 
+	}
+	#nav h1 {
+	  padding: 0px 0 5px;
+	  margin-bottom: 45px;
+	}
+	.active .section#make {
+  	  padding-bottom:40px;
+		
 	}
 }
 @media all and (max-width:768px) {

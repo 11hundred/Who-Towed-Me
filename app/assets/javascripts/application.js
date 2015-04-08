@@ -33,7 +33,7 @@ $(window).load(function() {
     	$(' input#plate_search').focus();
 	    $("#search").fadeIn(0, function(){
 		    $("body").addClass("active");
-		    $("#make").delay(100).slideDown(420);
+		    $("#make").slideDown(220);
 	    });
 		if ( $( "body" ).is( ".active" ) ) {
 	    	$(' input#plate_search').focus();
