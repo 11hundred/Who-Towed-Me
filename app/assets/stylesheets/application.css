@@ -486,6 +486,30 @@ input#plate_search:focus {
 	    position: absolute;
 	    right: 25px;		
 	}
+	
+	.tow_date {
+		background-image: url(time_icon.png);
+		background-position:0 center;
+		background-size: 20px;
+		text-indent:30px;
+		background-repeat:no-repeat;
+	}
+	.make_details {
+		background-image: url(car_icon.png);
+		background-position:0 center;
+		background-size: 20px;
+		text-indent:30px;
+		background-repeat:no-repeat;
+		
+	}
+	.tow_location {
+		background-image: url(place_icon.png);
+		background-position:0 center;
+		background-size: 20px;
+		text-indent:30px;
+		background-repeat:no-repeat;
+		
+	}
 @media all and (max-width:768px) {
 	.center {
 		margin: 0 auto;
