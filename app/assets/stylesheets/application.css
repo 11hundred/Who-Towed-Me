@@ -125,7 +125,6 @@ input[type="text"] {
 	  padding: 10px 0;
 }
 .active .section#make {
-	background:#383836;
 }
 
 #map-canvas {
@@ -416,8 +415,7 @@ input#plate_search:focus {
 }
 
 .active #nav {
-	background: #383836;
-	border-bottom:1px solid #383836;
+	border-bottom:1px solid #fff;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
