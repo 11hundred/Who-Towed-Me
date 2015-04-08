@@ -484,8 +484,7 @@ input#plate_search:focus {
 	    background-repeat: no-repeat;
 	    width: 40px;
 	    position: absolute;
-	    right: 25px;
-	  }		
+	    right: 25px;		
 	}
 @media all and (max-width:768px) {
 	.center {
