@@ -44,7 +44,7 @@ $(window).load(function() {
 	});
 	$('.search_make').click( function() {
 	    $(".search_make ul").slideToggle();
-		$('html, body').animate({scrollTop: $(this).offset().top}, 650);
+		$('html, body').animate({scrollTop: $(".search_make ul").offset().top}, 650);
 	});
 	
 

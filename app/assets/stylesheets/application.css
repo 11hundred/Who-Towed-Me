@@ -123,8 +123,8 @@ input[type="text"] {
 .section#make {
 	display: none;
 	border-bottom: 1px solid #aaa;
-	background: #fff;
-	  padding: 10px 0;
+    background: #fff;
+    padding: 0 0 10px 0;
 }
 .active .section#make {
 }
@@ -283,7 +283,7 @@ input#plate_search:focus {
 	text-align: left;
 }
 #nav h1 .menu {
-	background-image: url(mag-glass.png);
+	background-image: url(mag_icon.png);
 	background-position: 20px center;
 	background-size: 50px;
 	background-repeat: no-repeat;
@@ -308,7 +308,7 @@ input#plate_search:focus {
 }
 #nav h1 .menu:hover {
 	background: #fafafa;
-	background-image: url(mag-glass.png);
+	background-image: url(mag_icon.png);
 	background-position: 20px center;
 	background-size: 50px;
 	background-repeat: no-repeat;
@@ -352,10 +352,22 @@ input#plate_search:focus {
 	width: 100%;
 }
 .make-links h4 {
-	position: relative;
-	width: 100%;
+    position: relative;
 	text-align: left;
+	  background-image: url(hazard_icon.png);
+	  background-position: 0px center;
+	  background-size: 25px;
+	  background-repeat: no-repeat;
+	  text-indent: 35px;
+	  margin-left: -5px;
+	  width: auto;
 }
+.make-links h4 em {
+	font-style:normal;
+	font-weight:700;
+}
+	
+
 .make-links h4:hover {
 	cursor: pointer;
 }
@@ -409,13 +421,6 @@ input#plate_search:focus {
 	-o-transition: all .5s;
 }
 .active .make-links h4 {
-	visibility: visible;
-	opacity: 1;
-	top: 0px;
-	transition: all .5s;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
 }
 
 .active #nav {
@@ -430,7 +435,6 @@ input#plate_search:focus {
 }
 
 .make-active .section#make {
-  background:#E2E2DF;
 }
 #make .search-module {
 	margin-bottom: 5px;
@@ -576,7 +580,7 @@ input#plate_search:focus {
 	}
 	#nav h1 .menu {
 		/* text-indent: -999em; */
-		background-image: url(mag-glass.png);
+		background-image: url(mag_icon.png);
 		background-position: 10px center;
 		background-size: 18px;
 		background-repeat: no-repeat;
@@ -598,7 +602,7 @@ input#plate_search:focus {
 	  
 	#nav h1 .menu:hover {
 		background: #fafafa;
-		background-image: url(mag-glass.png);
+		background-image: url(mag_icon.png);
 		background-position: 10px center;
 		background-size: 18px;
 		background-repeat: no-repeat;
