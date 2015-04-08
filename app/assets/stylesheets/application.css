@@ -471,8 +471,19 @@ input#plate_search:focus {
 	opacity: 0;
 }
 
-
-
+.home .make_button,
+.home .search_button {
+	width:42%;
+	height:250px;
+	border:1px solid #111;
+	margin:2%;
+	float:left;
+	text-align:center;
+}
+.home .make_button h5,
+.home .search_button h5 {
+padding-top:75px;
+}
 .section#page {
 		border-top: 2px solid rgba(0,0,0,0.05);
 		padding-top:50px;
