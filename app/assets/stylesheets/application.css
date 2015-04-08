@@ -64,10 +64,11 @@ h4 {
 
 a {
 	font-family: 'Gotham SSm A', 'Gotham SSm B';
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
 	text-decoration: none;
 	text-transform: uppercase;
+	color:#333;
 }
 
 ul li {
@@ -348,11 +349,11 @@ input#plate_search:focus {
 	overflow: hidden;
 }
 .make-links ul li {
-	width: 50%;
-	float: left;
-	position: relative;
-	border-bottom: 1px solid #ddd;
-	padding: 20px 0;
+    width: 50%;
+    float: left;
+    position: relative;
+    border-bottom: 2px solid rgba(204, 205, 195, 0.75);
+    padding: 15px 0;
 }
 
 .active .menu.search_button {
@@ -362,10 +363,10 @@ input#plate_search:focus {
 	top: -10px;
 	opacity: 0;
 	visibility: hidden;
-	transition: all .5s;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
+	transition: all .25s;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
+	-o-transition: all .25s;
 }
 .make-active .make-links,
 .active .make-links {
@@ -401,7 +402,7 @@ input#plate_search:focus {
 }
 
 .active #nav {
-	background: #E2E2DF;
+	background: #383836;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -493,7 +494,7 @@ input#plate_search:focus {
 		z-index: 9;
 	}
 	.lincoln {
-		background-image: url(lincoln-head.jpg);
+		background-image: url(lincoln.png);
 		background-position: center 0;
 		background-size: 100px;
 		background-repeat: no-repeat;
