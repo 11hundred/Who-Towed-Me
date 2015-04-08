@@ -117,6 +117,9 @@ input[type="text"] {
 	-moz-transition: background .5s;
 	-o-transition: background .5s;
 }
+.section#nav {
+	border-bottom:none;
+}
 .section#make {
 	display: none;
 	border-bottom: 1px solid #aaa;
