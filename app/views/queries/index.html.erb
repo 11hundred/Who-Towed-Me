@@ -31,6 +31,48 @@
 					<div class="make_button home"><h5>Search by:</h5><h2>Make</h2></div>	
 
 				</div>
+				<ul class="plates">
+
+			<% @all_plates.take(5).each do |license_plate| %>
+
+				<% date = license_plate["tow_date"] %></h4>
+				<% date = date[0..-10] %></h4>
+		
+
+				<% if license_plate["state"] == "IL" %>
+				<li class="illinois">
+				<% elsif %>
+				<li>
+				<% end %>	
+				<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
+				
+				<div class="center">
+					<div class="center">
+						<h2>
+							<span class="number">
+							<% if license_plate["state"] != "IL" %>
+							<%= license_plate["state"] %>
+							<% end %>	
+							
+							<%= license_plate["plate"] %>
+							</span>
+						</h2>
+				
+						<div class="details">
+							
+							<h3><%= date %></h3>
+							<h3>View this plate</h3>
+
+						</div>	
+				
+					</div>
+					</div>
+				</li>
+  
+			<% end %>
+
+			</ul>
+
 
 	</div>
 

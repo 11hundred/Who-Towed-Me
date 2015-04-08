@@ -8,6 +8,7 @@ class QueriesController < ApplicationController
     url = 'https://data.cityofchicago.org/resource/ygr5-vcbg.json'
     raw_data = open(url).read
     all_plates = JSON.parse(raw_data)
+    @all_plates = all_plates
 
   	@plate_count = all_plates.count
 
