@@ -43,12 +43,16 @@ $(window).load(function() {
 		
 	});
 	$('.search_make').click( function() {
-	    $(".search_make ul").slideUp();
+	    $(".search_make ul").slideToggle();
 		$('html, body').animate({scrollTop: $(this).offset().top}, 650);
-	    $("body").addClass("make-active");
 	});
 	
 
+	$('.search_make').click( function() {
+	    $("body").addClass("make-active");
+		
+	});
+	
 	$(' input#plate_search').focus(function() {
 	    $(this).addClass("active");
 	    $("body").addClass("active");
