@@ -707,8 +707,10 @@ padding-top:75px;
 				padding:20px 0 50px;
 			}
 			.home#page .make_button, .home#page .search_button {
-			  width: 100%;
-			  margin-bottom:10px;
+				height:100px;
+			}
+			.home .make_button h5, .home .search_button h5 {
+			  padding-top: 10px;
 			}
 	.section#page {
 	  padding-top: 20px;
@@ -720,6 +722,7 @@ padding-top:75px;
 		font-size:0.9em;
 		color:rgba(0,0,0,0.8);
 		padding-right:89px;
+		display:none;
 
 }
 	#nav .message {
