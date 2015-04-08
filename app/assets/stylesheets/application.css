@@ -121,8 +121,11 @@ input[type="text"] {
 	display: none;
 	border-bottom: 1px solid #aaa;
 	border-top: 2px solid #383836;
-	background:#383836;
+	background: #fff;
 	  padding: 10px 0;
+}
+.active .section#make {
+	background:#383836;
 }
 
 #map-canvas {
