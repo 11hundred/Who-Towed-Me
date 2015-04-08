@@ -1,13 +1,32 @@
 
-<div class="section" id="home">
-	<div class="center">
-		<form action="/lookup/plate/">
-			<h1>Who<em>&nbsp;</em>Towed<em>&nbsp;</em>Me?</h1>
-			<input name="plate" type="text" id="plate_search" autofocus placeholder="Search Now">
-		</form>	
+
+	<div class="section" id="nav">
+		<div class="center">
+			<div id="search">
+				<div class="search-module">
+					<form action="/lookup/plate/">
+						<input name="plate" type="text" id="plate_search" placeholder="PLATE NUMBER">
+						<div class="search-close"><span class="cancel">X</span></div>
+					</form>	
+				</div>
+			</div>	
+			<div class="main-links"><a href="/" class="home">home</a> Towed Vehicle Search</div>
+				<h1>
+						WHO TOWED ME
+					<span class="menu search_button">Search</span>	
+				</h1>
+				
+			
+			<div class="lincoln"></div>
+		</div>
 	</div>
-</div>
-					
+
+	<%= render "/queries/make_list"%>
+
+
+
+
+
 
 <!--
 <div class="modal">
