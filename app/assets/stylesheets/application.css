@@ -224,13 +224,12 @@ input#plate_search:focus {
 }
 .search-close {
     position: absolute;
-    right: 0px;
+    right: -10px;
     z-index: 9;
-    top: 24px;
+    top: 25px;
     border: 1px solid #ddd;
     height: 30px;
     width: 26px;
-    /* background: #eee; */
     padding-left: 15px;
     line-height: 2.25em;
 }
