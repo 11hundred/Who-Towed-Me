@@ -415,10 +415,6 @@ input#plate_search:focus {
 
 .active #nav {
 	border-bottom:1px solid #fff;
-	transition: all .5s;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
 }
 .active #nav h1 {
 	z-index: 0;
