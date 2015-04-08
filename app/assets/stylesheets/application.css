@@ -125,7 +125,7 @@ input[type="text"] {
 	display: none;
 	border-bottom: 1px solid #aaa;
     background: #fff;
-    padding:0 0 75px 0;
+    padding: 0 0 10px 0;
 }
 .active .section#make {
 }
@@ -377,6 +377,8 @@ input#plate_search:focus {
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
+    padding:0 0 75px 0;
+	
 }
 .make-links ul li {
     width: 50%;
@@ -410,8 +412,6 @@ input#plate_search:focus {
 .make-active .make-links ul {
 	height: 100%;
 	display: block;
-	margin: 0;
-	padding: 0;
 }
 .active .search_make {
 	top: 0px;
