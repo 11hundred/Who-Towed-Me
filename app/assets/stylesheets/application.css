@@ -627,12 +627,21 @@ ul#maps  {
 	}
 	ul#maps li.doty {
   	  background-image: url(doty_map.jpg);
+	background-position:center;
+	background-size: cover;
+	background-repeat:no-repeat;
 	}
 	ul#maps li.sacramento {
   	  background-image: url(sacramento_map.jpg);
+  	background-position:center;
+  	background-size: cover;
+  	background-repeat:no-repeat;
 	}
 	ul#maps li.wacker {
   	  background-image: url(wacker_map.jpg);
+  	background-position:center;
+  	background-size: cover;
+  	background-repeat:no-repeat;
 	}
 	
 	@media all and (min-width:768px) {

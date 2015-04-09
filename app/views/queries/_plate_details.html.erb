@@ -22,10 +22,7 @@
 			<h4 class="tow_date">Towed on <%= @date %></h4>
 			<h4 class="tow_location"> <%= @address %> <a href="tel:<%= @plate.tow_facility_phone %>" class="call">CALL</a> </h4>
 		</div>
-
-
-	<div class="section" id="maps">
-		<ul>
+		<ul id="maps">
 			<% @sac = "701 N. Sacramento" %>
 			<% @doty = "10300 S. Doty" %>
 			<% @wacker = "400 E. Lower Wacker" %>
@@ -56,7 +53,6 @@
 			<% end %>
 
 		</ul>
-	</div>
 	</div>	
 
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
