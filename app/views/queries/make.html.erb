@@ -36,6 +36,7 @@
 
 
 	<div class="section page">
+		<div class='center'>
 
 				<ul class="plates">
 
@@ -53,25 +54,22 @@
 				<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
 				
 				<div class="center">
-					<div class="center">
 						<h2>
 							<span class="number">
-							<% if license_plate["state"] != "IL" %>
-							<%= license_plate["state"] %>
+							<%  if license_plate["plate"].blank? %>
+							&nbsp;N/A&nbsp;
+							<% elsif %>
+							<%= license_plate["plate"] %>
 							<% end %>	
 							
-							<%= license_plate["plate"] %>
 							</span>
 						</h2>
 				
 						<div class="details">
 							
-							<h3><%= date %></h3>
-							<h3>View this plate</h3>
+							<h4><%= date %></h4>
 
 						</div>	
-				
-					</div>
 					</div>
 				</li>
   
@@ -79,5 +77,6 @@
 
 			</ul>
 
+	</div>
 	</div>
 		

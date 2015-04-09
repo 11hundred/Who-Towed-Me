@@ -28,6 +28,9 @@ $(window).load(function() {
 	$('.sign').css({height:windowHeight -50});
 	$('.sign .title').css({paddingTop:windowHeightHalf -200});
 
+	$( ".plates li:nth-child(odd)" ).addClass( "odd" );
+	$( ".plates li:nth-child(even)" ).addClass( "even" );
+
 
 	$('.search_button').click( function() {
     	$(' input#plate_search').focus();
