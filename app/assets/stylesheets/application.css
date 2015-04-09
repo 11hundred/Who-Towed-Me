@@ -810,7 +810,7 @@ ul#maps  {
 			}
 			.home#page .search_button{
 				background:#fff;
-				background-image: url(plate_large.png);
+				background-image: url(plate_home.png);
 				background-position:center 30px;
 				background-size: 130px;
 				background-repeat:no-repeat;
@@ -820,7 +820,7 @@ ul#maps  {
 			.home#page .make_button{
 				background:#fff;
 								float:right;
-				background-image: url(make_large.png);
+				background-image: url(make_home.png);
 				background-position:center 30px;
 				background-size: 130px;
 				background-repeat:no-repeat;
