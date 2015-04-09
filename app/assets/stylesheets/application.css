@@ -622,13 +622,24 @@ ul#maps  {
 		width:100%;
 		float:left;
 		padding:20px 0;
-		background:#ddd;
 	}
 	ul#maps li.doty {
+  	  background-image: url(doty.jpg);
+  	  background-position: center;
+  	  background-size: cover;
+  	  background-repeat: no-repeat;
 	}
 	ul#maps li.sacramento {
+  	  background-image: url(sacramento.jpg);
+  	  background-position: center;
+  	  background-size: cover;
+  	  background-repeat: no-repeat;
 	}
 	ul#maps li.wacker {
+  	  background-image: url(wacker.jpg);
+  	  background-position: center;
+  	  background-size: cover;
+  	  background-repeat: no-repeat;
 	}
 	
 	@media all and (min-width:768px) {
