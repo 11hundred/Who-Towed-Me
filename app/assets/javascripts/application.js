@@ -64,8 +64,17 @@ $(window).load(function() {
 	// });
 	
 	$('.make_button').click( function() {
-		$('.interior').addClass("clicked");
-		$('.interior').animate({marginLeft:-windowWidth /2 -120}, 200);
+	    $("#search").fadeIn(0, function(){
+			
+	    $("#make").slideDown(220, function(){
+			$('html, body').animate({scrollTop: $(".search_make ul").offset().top}, 150, function(){
+				 $(".search_make ul").slideDown();
+			});
+		   
+	    });
+    });
+	    $("body").addClass("active");
+	    $("body").addClass("make-active");
 	});
 	$('.cancel').click( function() {
 	    $("body").removeClass("active");
