@@ -25,7 +25,15 @@
 
 	<%= render "/queries/make_list"%>
 
-	<div class="section" id="maps">
+
+
+	<div class="section home" id="page">
+		<!-- <div class="breaker"><h4>Search by:</h4></div> -->
+				<p class="message">Search all recent vehicles towed by the city of Chicago.</p>
+					<div class="search_button"><h4>By: Plate</h4></div>	
+					<div class="make_button home"><h4>By: Make</h4></div>	
+
+
 		<ul>
 			<li class="doty">
 				<h3>10300 S. Doty</h3>
@@ -43,3 +51,24 @@
 		</ul>
 	</div>
 
+
+<!--
+<div class="modal">
+	
+	<div class="container">
+		
+			<form action="/lookup/plate/">
+				<input name="plate" type="text" id="plate_search" placeholder="<%= @plate_search %>">
+			</form>	
+			<h5>Search by Make instead. <em>Not sure about your plate number?</em></h5>
+		
+		
+		
+		
+	</div>	
+	
+</div>	
+
+
+
+-->
