@@ -492,26 +492,26 @@ input#plate_search:focus {
 	text-align:center;
 }
 .home#page .search_button{
-	border-right:2px solid rgba(0,0,0,0.2);
 	background-image: url(plate_icon.png);
 	background-position:center 40px;
-	background-size: 100px;
+	background-size: 150px;
 	background-repeat:no-repeat;
+	border-right:2px solid rgba(0,0,0,0.1);
 	
 }
 .home#page .make_button{
 	float:right;
 	background-image: url(car_icon.png);
 	background-position:center 40px;
-	background-size: 100px;
+	background-size: 150px;
 	background-repeat:no-repeat;
 	
 	width:48%;
 }
 
-.make_button h3,
-.search_button h3 {
-	  line-height: 12em;
+.make_button h4,
+.search_button h4 {
+	  line-height: 18em;
 	  text-transform: uppercase;
 	  letter-spacing: 0.135em;
 }
@@ -777,18 +777,17 @@ padding-top:75px;
 			  padding: 25px 0;
 			}
 			.home#page .search_button{
-				border-right:2px solid rgba(0,0,0,0.2);
 				background-image: url(plate_icon.png);
-				background-position:center 40px;
-				background-size: 70px;
+				background-position:center 30px;
+				background-size: 110px;
 				background-repeat:no-repeat;
 	
 			}
 			.home#page .make_button{
 				float:right;
 				background-image: url(car_icon.png);
-				background-position:center 40px;
-				background-size: 70px;
+				background-position:center 30px;
+				background-size: 110px;
 				background-repeat:no-repeat;
 	
 				width:48%;
@@ -806,6 +805,11 @@ padding-top:75px;
 		display:none;
 
 }
+.make_button h4,
+.search_button h4 {
+	  line-height: 22em;
+  }
+  
 	#nav .message {
 		display:none;
 	}
