@@ -602,16 +602,19 @@ padding-top:75px;
 		text-indent:-999em;
 	}
 	.breaker {
+		border-top:1px solid #aaa;
 		width:100%;
-		padding:10px 0;
-		background:rgba(255,255,255,0.5);
 		float:left;
+		padding:0;
 	}
 	
 	.breaker h4 {
+		padding:10px 0;
+		border-top:2px solid rgba(0,0,0,0.1);
 		text-align:center;
 		text-transform:uppercase;
 		font-weight:700;
+		margin:0;
 		
 	}
 	
@@ -812,8 +815,5 @@ padding-top:75px;
   
 	#nav .message {
 		display:none;
-	}
-	.breaker {
-		padding:5px 0;
 	}
 }
