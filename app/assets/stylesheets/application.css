@@ -604,6 +604,9 @@ padding-top:75px;
 		float:left;
 		padding:0;
 	}
+	.breaker.white {
+		background:#fff;
+	}
 	
 	.breaker h4 {
 		padding:10px 0;
