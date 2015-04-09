@@ -626,19 +626,19 @@ ul#maps  {
 		padding:20px 0;
 	}
 	ul#maps li.doty {
-  	  background-image: url(doty_map.jpg);
+  	  background-image: url(doty.jpg);
 	background-position:center;
 	background-size: cover;
 	background-repeat:no-repeat;
 	}
 	ul#maps li.sacramento {
-  	  background-image: url(sacramento_map.jpg);
+  	  background-image: url(sacramento.jpg);
   	background-position:center;
   	background-size: cover;
   	background-repeat:no-repeat;
 	}
 	ul#maps li.wacker {
-  	  background-image: url(wacker_map.jpg);
+  	  background-image: url(wacker.jpg);
   	background-position:center;
   	background-size: cover;
   	background-repeat:no-repeat;
@@ -851,6 +851,24 @@ ul#maps  {
 		float:left;
 		height:200px;
 		padding:20px 0;
+	}
+	ul#maps li.doty {
+  	  background-image: url(doty_map.jpg);
+	background-position:center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	}
+	ul#maps li.sacramento {
+  	  background-image: url(sacramento_map.jpg);
+  	background-position:center;
+  	background-size: cover;
+  	background-repeat:no-repeat;
+	}
+	ul#maps li.wacker {
+  	  background-image: url(wacker_map.jpg);
+  	background-position:center;
+  	background-size: cover;
+  	background-repeat:no-repeat;
 	}
 
 }
