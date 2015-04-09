@@ -20,15 +20,43 @@
 			 	<%= @color.capitalize %> <a href="/lookup/make/<%= @plate.make %>"><%= @make %></a>
 			</h4>
 			<h4 class="tow_date">Towed on <%= @date %></h4>
-			<h4 class="tow_location"> <%= @address %>  Chicago, IL  <a href="tel:<%= @plate.tow_facility_phone %>" class="call"><%= @plate.tow_facility_phone %></a> </h4>
+			<h4 class="tow_location"> <%= @address %> <a href="tel:<%= @plate.tow_facility_phone %>" class="call">CALL</a> </h4>
 		</div>
 
 
-		<div id="map-canvas"></div>
-	
-		<div class="address">
-			<div class="center"></div>
-		</div>
+	<div class="section" id="maps">
+		<ul>
+			<% @sac = "701 N. Sacramento" %>
+			<% @doty = "10300 S. Doty" %>
+			<% @wacker = "400 E. Wacker" %>
+			
+			
+			
+			<% if @address.include? @wacker %>
+			<li class="wacker">
+				<div class="center">
+				
+				<a href="tel:773-744-7550">Get Directions</a>
+			</div>
+			</li>	
+			<% end %>
+			<% if @address.include? @sac %>
+			<li class="sacramento">
+				<div class="center">
+				<a href="tel:773-744-7550">Get Directions</a>
+			</div>
+			</li>	
+			<% end %>
+			<% if @address.include? @doty %>
+			<li class="doty">
+				<div class="center">
+				<a href="tel:773-744-7550">Get Directions</a>
+			</div>
+			</li>	
+			<% end %>
+
+		</ul>
+	</div>
 	</div>	
 
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>

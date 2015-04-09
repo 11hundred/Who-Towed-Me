@@ -130,9 +130,7 @@ input[type="text"] {
 .active .section#make {
 }
 
-#map-canvas {
-	height: 500px;
-	padding: 0px;
+#maps {
     margin-top: 50px;
 }
 
@@ -534,18 +532,14 @@ padding-top:75px;
 	.plate-details h4.first {
 	}
 	.call {
-		background-image: url(phone_icon.png);
-		background-position: center;
-		background-size: 20px;
-		text-indent:-999em;
-		background-repeat:no-repeat;
-	    background-size: 30px;
-	    text-indent: -999em;
-	    background-repeat: no-repeat;
-	    width: 40px;
-	    position: absolute;
-	    right: 25px;		
-	}
+		position: absolute;
+		  right: 30px;
+		  border-bottom: 1px solid rgba(0,0,0,0.1);
+		  text-decoration: none;
+		  text-align: center;
+		  width: auto;
+		  padding: 0;
+		  text-indent: 0;	}
 	
 	.plate-details h4.tow_date {
 		background-image: url(time_icon.png);
@@ -616,6 +610,38 @@ padding-top:75px;
 		font-weight:700;
 		margin:0;
 		
+	}
+	
+	
+	#maps ul {
+		width:100%;
+		float:left;
+		padding:0;
+		margin:0;
+	}
+	#maps ul li {
+		width:100%;
+		float:left;
+		height:500px;
+		padding:20px 0;
+	}
+	#maps ul li.doty {
+  	  background-image: url(doty.jpg);
+  	  background-position: center;
+  	  background-size: cover;
+  	  background-repeat: no-repeat;
+	}
+	#maps ul li.sacramento {
+  	  background-image: url(sacramento.jpg);
+  	  background-position: center;
+  	  background-size: cover;
+  	  background-repeat: no-repeat;
+	}
+	#maps ul li.wacker {
+  	  background-image: url(wacker.jpg);
+  	  background-position: center;
+  	  background-size: cover;
+  	  background-repeat: no-repeat;
 	}
 	
 	@media all and (min-width:768px) {
@@ -801,7 +827,7 @@ padding-top:75px;
 	.section#page {
 	  padding-top: 20px;
 	}	
-	#map-canvas {
+	#maps {
 		margin-top:20px;
 	}
 	#page .message {
@@ -819,4 +845,12 @@ padding-top:75px;
 	#nav .message {
 		display:none;
 	}
+
+	#maps ul li {
+		width:100%;
+		float:left;
+		height:200px;
+		padding:20px 0;
+	}
+
 }

@@ -24,55 +24,23 @@
 
 	<%= render "/queries/make_list"%>
 
-	<div class="section home" id="page">
-		<!-- <div class="breaker"><h4>Search by:</h4></div> -->
-				<p class="message">Search all recent vehicles towed by the city of Chicago.</p>
-					<div class="search_button"><h4>By: Plate</h4></div>	
-					<div class="make_button home"><h4>By: Make</h4></div>	
-		<div class="breaker"><h4>Most recent towed:</h4></div>
-		<div class="center">
+	<div class="section" id="maps">
+		<ul>
+			<li class="doty">
+				<h3>10300 S. Doty</h3>
+				<a href="tel:773-568-8495">Call the Facility: 773-568-8495</a>
+			</li>	
+			<li class="sacramento">
+				<h3>701 N Sacramento</h3>
+				<a href="tel:773-265-7605">Call the Facility: 773-265-7605</a>
+			</li>	
+			<li class="wacker">
+				<h3>400 E. Wacker</h3>
+				<a href="tel:773-744-7550">Call the Facility: 773-744-7550</a>
+			</li>	
 
-				<ul class="plates">
-
-			<% @all_plates.take(5).each do |license_plate| %>
-		
-
-				<% if license_plate["state"] == "IL" %>
-				<li class="illinois">
-				<% elsif %>
-				<li>
-				<% end %>	
-				<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
-				
-				<div class="center">
-						<h2>
-							<span class="number">
-							<% if license_plate["state"] != "IL" %>
-							<%= license_plate["state"] %>
-							<% end %>	
-							
-							<%= license_plate["plate"] %>
-							</span>
-						</h2>
-				
-						<div class="details">
-							
-							<h4><%= @color %> <%= @make %>
-</h4>
-							<h4>View this plate</h4>
-
-						</div>	
-					</div>
-				</li>
-  
-			<% end %>
-
-			</ul>
-				</div>
-
-
+		</ul>
 	</div>
-
 
 <!--
 <div class="modal">

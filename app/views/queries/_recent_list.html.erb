@@ -1,0 +1,49 @@
+
+	<div class="section home" id="page">
+		<!-- <div class="breaker"><h4>Search by:</h4></div> -->
+				<p class="message">Search all recent vehicles towed by the city of Chicago.</p>
+					<div class="search_button"><h4>By: Plate</h4></div>	
+					<div class="make_button home"><h4>By: Make</h4></div>	
+		<div class="breaker"><h4>Most recent towed:</h4></div>
+		<div class="center">
+
+				<ul class="plates">
+
+			<% @all_plates.take(5).each do |license_plate| %>
+		
+
+				<% if license_plate["state"] == "IL" %>
+				<li class="illinois">
+				<% elsif %>
+				<li>
+				<% end %>	
+				<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
+				
+				<div class="center">
+						<h2>
+							<span class="number">
+							<% if license_plate["state"] != "IL" %>
+							<%= license_plate["state"] %>
+							<% end %>	
+							
+							<%= license_plate["plate"] %>
+							</span>
+						</h2>
+				
+						<div class="details">
+							
+							<h4><%= @color %> <%= @make %>
+</h4>
+							<h4>View this plate</h4>
+
+						</div>	
+					</div>
+				</li>
+  
+			<% end %>
+
+			</ul>
+				</div>
+
+
+	</div>
