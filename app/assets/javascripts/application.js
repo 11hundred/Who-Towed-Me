@@ -66,10 +66,10 @@ $(window).load(function() {
 	$('.make_button').click( function() {
 	    $("#search").fadeIn(0, function(){
 			
-	    $("#make").slideDown(220, function(){
+	    $(".search_make ul").slideDown(0, function(){
 			$('html, body').animate({scrollTop: $(".search_make ul").offset().top}, 150);
 			
-		    $(".search_make ul").slideDown();
+		    $("#make").slideDown(220);
 	    });
     });
 	    $("body").addClass("active");
