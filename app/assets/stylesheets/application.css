@@ -494,7 +494,7 @@ input#plate_search:focus {
 	background-position:center 40px;
 	background-size: 150px;
 	background-repeat:no-repeat;
-	border-right:2px solid rgba(0,0,0,0.1);
+	border-right:2px solid rgba(0,0,0,0.075);
 	
 }
 .home#page .make_button{
@@ -523,6 +523,7 @@ padding-top:75px;
 	}
 .home.section#page {
 			padding:0 0 50px 0;
+			background:#fff;
 		}
 	
 	.plate-details h4 {
@@ -596,6 +597,7 @@ padding-top:75px;
 		text-indent:-999em;
 	}
 	.breaker {
+		background:#E2E2DF;
 		border-top:1px solid #aaa;
 		width:100%;
 		float:left;
@@ -811,7 +813,7 @@ ul#maps  {
 				background-position:center 30px;
 				background-size: 130px;
 				background-repeat:no-repeat;
-				border-right:2px solid rgba(0,0,0,0.1);
+				border-right:2px solid rgba(0,0,0,0.075);
 	
 			}
 			.home#page .make_button{
