@@ -130,7 +130,7 @@ input[type="text"] {
 .active .section#make {
 }
 
-#maps {
+ul#maps {
     margin-top: 50px;
 }
 
@@ -829,7 +829,7 @@ ul#maps  {
 	.section#page {
 	  padding-top: 20px;
 	}	
-	#maps {
+	ul#maps {
 		margin-top:20px;
 	}
 	#page .message {
