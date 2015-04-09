@@ -512,6 +512,7 @@ input#plate_search:focus {
 	  line-height: 18em;
 	  text-transform: uppercase;
 	  letter-spacing: 0.135em;
+	  display:none;
 }
 .home .make_button h5,
 .home .search_button h5 {
@@ -830,7 +831,6 @@ ul#maps  {
 	  padding-top: 20px;
 	}	
 	ul#maps {
-		margin-top:20px;
 	}
 	#page .message {
 		font-size:0.9em;
