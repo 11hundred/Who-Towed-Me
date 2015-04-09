@@ -780,6 +780,7 @@ padding-top:75px;
 			  padding: 25px 0;
 			}
 			.home#page .search_button{
+				background:#fff;
 				background-image: url(plate_large.png);
 				background-position:center 30px;
 				background-size: 130px;
@@ -788,7 +789,8 @@ padding-top:75px;
 	
 			}
 			.home#page .make_button{
-				float:right;
+				background:#fff;
+								float:right;
 				background-image: url(make_large.png);
 				background-position:center 30px;
 				background-size: 130px;
