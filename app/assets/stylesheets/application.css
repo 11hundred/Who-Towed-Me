@@ -626,13 +626,13 @@ ul#maps  {
 		padding:20px 0;
 	}
 	ul#maps li.doty {
-  	  background-image: url(doty.jpg);
+  	  background-image: url(doty_map.jpg);
 	}
 	ul#maps li.sacramento {
-  	  background-image: url(sacramento.jpg);
+  	  background-image: url(sacramento_map.jpg);
 	}
 	ul#maps li.wacker {
-  	  background-image: url(wacker.jpg);
+  	  background-image: url(wacker_map.jpg);
 	}
 	
 	@media all and (min-width:768px) {
