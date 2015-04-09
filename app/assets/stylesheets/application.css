@@ -613,31 +613,31 @@ padding-top:75px;
 	}
 	
 	
-	#maps ul {
+ul#maps  {
 		width:100%;
 		float:left;
 		padding:0;
 		margin:0;
 	}
-	#maps ul li {
+	ul#maps li {
 		width:100%;
 		float:left;
 		height:500px;
 		padding:20px 0;
 	}
-	#maps ul li.doty {
+	ul#maps li.doty {
   	  background-image: url(doty.jpg);
   	  background-position: center;
   	  background-size: cover;
   	  background-repeat: no-repeat;
 	}
-	#maps ul li.sacramento {
+	ul#maps li.sacramento {
   	  background-image: url(sacramento.jpg);
   	  background-position: center;
   	  background-size: cover;
   	  background-repeat: no-repeat;
 	}
-	#maps ul li.wacker {
+	ul#maps li.wacker {
   	  background-image: url(wacker.jpg);
   	  background-position: center;
   	  background-size: cover;
@@ -846,7 +846,7 @@ padding-top:75px;
 		display:none;
 	}
 
-	#maps ul li {
+	ul#maps li {
 		width:100%;
 		float:left;
 		height:200px;
