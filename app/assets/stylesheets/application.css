@@ -699,7 +699,7 @@ ul#maps li a {
 	background: rgba(32, 73, 73,0.4);
 }
 .active .overlay {
-	background: rgba(0,0,0,8);
+	background: rgba(0,0,0,0.75);
 }
 
 
