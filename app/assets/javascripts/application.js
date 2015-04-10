@@ -84,6 +84,7 @@ $(window).load(function() {
 	    $("body").removeClass("active");
 	    $("body.make-active").removeClass("make-active");
 	    $("#make").delay(50).slideUp(220);
+    	$('#search').fadeOut(0);
     	$('.search_button').css({opacity:1},0);
 	});
 
