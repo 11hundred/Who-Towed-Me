@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-	font-size:3em;
+	font-size: 3em;
 	margin: 0;
 }
 h3 {
@@ -63,11 +63,11 @@ h4 {
 	font-family: 'Gotham SSm A', 'Gotham SSm B';
 	font-weight: 500;
 	font-style: normal;
-	font-size:.9em;
+	font-size: .9em;
 }
 h4 a {
 	text-decoration: underline;
-	color:inherit;
+	color: inherit;
 }
 
 a {
@@ -76,8 +76,8 @@ a {
 	font-style: normal;
 	text-decoration: none;
 	text-transform: uppercase;
-	color:#333;
-    font-size: .9em;
+	color: #333;
+	font-size: .9em;
 }
 
 ul li {
@@ -119,13 +119,13 @@ input[type="text"] {
 	-o-transition: background .5s;
 }
 .section#nav {
-	border-bottom:none;
+	border-bottom: none;
 }
 .section#make {
 	display: none;
 	border-bottom: 1px solid #aaa;
-    background: #fff;
-    padding: 0 0 10px 0;
+	background: #fff;
+	padding: 0 0 10px 0;
 }
 .active .section#make {
 }
@@ -199,12 +199,12 @@ input[type="text"] {
 }
 #nav h1,
 .search-module {
-    float: left;
-    width: 100%;
-    padding: 0px 0 15px;
-    margin-top: 45px;
-    z-index: 1;
-    margin-bottom: 35px;
+	float: left;
+	width: 100%;
+	padding: 0px 0 15px;
+	margin-top: 45px;
+	z-index: 1;
+	margin-bottom: 35px;
 }
 .search-module {
 	position: absolute;
@@ -227,25 +227,25 @@ input#plate_search {
 	font-size: 9em;
 	text-indent: 30px;
 	background: #eee;
-	border-radius:3px;
+	border-radius: 3px;
 	top: -10px;
-	left:-1px;
-	border:1px solid #ccc;
+	left: -1px;
+	border: 1px solid #ccc;
 	box-shadow: 0px 0px 2px rgba(0,0,0,0.1), 0px 3px 3px rgba(0,0,0,0.1);
 }
 
 input#plate_search:focus {
 }
 .search-close {
-    position: absolute;
-    right: -10px;
-    z-index: 9;
-    top: 25px;
-    border: 1px solid #ddd;
-    height: 30px;
-    width: 26px;
-    padding-left: 15px;
-    line-height: 2.25em;
+	position: absolute;
+	right: -10px;
+	z-index: 9;
+	top: 25px;
+	border: 1px solid #ddd;
+	height: 30px;
+	width: 26px;
+	padding-left: 15px;
+	line-height: 2.25em;
 }
 #nav h1 {
 	font-size: 09em;
@@ -258,8 +258,8 @@ input#plate_search:focus {
 }
 #nav h1 em {
 	display: inline-block;
-	font-style:normal;
-	color:#ddd;
+	font-style: normal;
+	color: #ddd;
 }
 .search-module.active h1 {
 	background-image: url(who_bar.png), url(who_bar.png);
@@ -306,7 +306,7 @@ input#plate_search:focus {
 	background-size: 50px;
 	background-repeat: no-repeat;
 	color: #ccc;
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .lincoln {
@@ -345,19 +345,19 @@ input#plate_search:focus {
 	width: 100%;
 }
 .make-links h4 {
-    position: relative;
+	position: relative;
 	text-align: left;
-	  background-image: url(hazard_icon.png);
-	  background-position: 0px center;
-	  background-size: 25px;
-	  background-repeat: no-repeat;
-	  text-indent: 35px;
-	  margin-left: -5px;
-	  width: auto;
+	background-image: url(hazard_icon.png);
+	background-position: 0px center;
+	background-size: 25px;
+	background-repeat: no-repeat;
+	text-indent: 35px;
+	margin-left: -5px;
+	width: auto;
 }
 .make-links h4 em {
-	font-style:normal;
-	font-weight:700;
+	font-style: normal;
+	font-weight: 700;
 }
 	
 
@@ -369,15 +369,14 @@ input#plate_search:focus {
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
-    padding:0 0 75px 0;
-	
+	padding: 0 0 75px 0;
 }
 .make-links ul li {
-    width: 50%;
-    float: left;
-    position: relative;
-    border-bottom: 2px solid rgba(204, 205, 195, 0.75);
-    padding: 15px 0;
+	width: 50%;
+	float: left;
+	position: relative;
+	border-bottom: 2px solid rgba(204, 205, 195, 0.75);
+	padding: 15px 0;
 }
 
 .active .menu.search_button {
@@ -417,11 +416,11 @@ input#plate_search:focus {
 }
 
 .active #nav {
-	border-bottom:1px solid #fff;
+	border-bottom: 1px solid #fff;
 }
 .active #nav h1 {
 	z-index: 0;
-	opacity:0;
+	opacity: 0;
 }
 .active input#plate_search {
 	z-index: 2;
@@ -466,250 +465,299 @@ input#plate_search:focus {
 	font-family: 'Gotham SSm A', 'Gotham SSm B';
 	font-weight: 700;
 	font-style: normal;
-
 }
 #nav .message {
-  position: relative;
-  top: -20px;
+	position: relative;
+	top: -20px;
 }
 .active #nav .message {
-	opacity:0;
+	opacity: 0;
 }
 .home#page .make_button,
 .home#page .search_button {
-	width:50%;
-	height:250px;
-	float:left;
-	border-radius:2px;
-	text-align:center;
+	width: 50%;
+	height: 250px;
+	float: left;
+	border-radius: 2px;
+	text-align: center;
 }
-.home#page .search_button{
+.home#page .search_button {
 	background-image: url(plate_large.png);
-	background-position:center 40px;
+	background-position: center 40px;
 	background-size: 150px;
-	background-repeat:no-repeat;
-	border-right:2px solid rgba(0,0,0,0.075);
-	
+	background-repeat: no-repeat;
+	border-right: 2px solid rgba(0,0,0,0.075);
 }
-.home#page .make_button{
-	float:right;
+.home#page .make_button {
+	float: right;
 	background-image: url(make_large.png);
-	background-position:center 40px;
+	background-position: center 40px;
 	background-size: 150px;
-	background-repeat:no-repeat;
-	
-	width:48%;
+	background-repeat: no-repeat;
+	width: 48%;
 }
 
 .make_button h4,
 .search_button h4 {
-	  line-height: 18em;
-	  text-transform: uppercase;
-	  letter-spacing: 0.135em;
-	  display:none;
+	line-height: 18em;
+	text-transform: uppercase;
+	letter-spacing: 0.135em;
+	display: none;
 }
 .home .make_button h5,
 .home .search_button h5 {
-padding-top:75px;
+	padding-top: 75px;
 }
 .section#page {
-		border-top: 2px solid rgba(0,0,0,0.05);
-		padding-top:50px;
-	}
-.home.section#page {
-			padding:0 0 50px 0;
-		}
-	
-	.plate-details h4 {
-		padding:10px 0;
-		border-bottom:2px solid rgba(0,0,0,0.1);
-	}
-	.plate-details h4.first {
-	}
-	.call {
-		position: absolute;
-		  right: 30px;
-		  text-decoration: underline;
-		  text-align: center;
-		  width: auto;
-		  padding: 0;
-		  text-indent: 0;	}
-	
-	.plate-details h4.tow_date {
-		background-image: url(time_icon.png);
-		background-position:0 center;
-		background-size: 20px;
-		text-indent:30px;
-		background-repeat:no-repeat;
-	}
-	.plate-details h4.make_details {
-		background-image: url(car_icon.png);
-		background-position:0 center;
-		background-size: 20px;
-		text-indent:30px;
-		background-repeat:no-repeat;
-		
-	}
-	.plate-details h4.tow_location {
-		background-image: url(place_icon.png);
-		background-position:0 center;
-		background-size: 20px;
-		text-indent:30px;
-		background-repeat:no-repeat;
-		border:none;
-		
-	}
-	
-	
-	ul.plates {
-		width:100%;
-		float:left;
-		margin:0;
-		padding:20px 0;
-	}
-	ul.plates li {
-		padding:20px 0;
-		border-bottom:2px solid rgba(0,0,0,0.2);
-		width:48%;
-		background:#fff;
-		float:left;
-		position:relative;
-		margin-bottom:3%;
-	}
-	ul.plates li.odd {
-		margin-right:4%;
+	border-top: 2px solid rgba(0,0,0,0.05);
+	padding-top: 50px;
 }
-	ul.plates li:hover {
-		background:rgba(255,255,255,0.9);
-	}
-	ul.plates li a {
-		position:absolute;
-		left:0px;
-		top:0px;
-		width:100%;
-		height:100%;
-		z-index:9;
-		text-indent:-999em;
-	}
-	ul.plates li h2,
-	ul.plates li h4 {
-		text-align:center;
-	}
-	ul.plates li h2 {
-		color:#595951;
-	}
-	ul.plates li:hover h2 {
-		color:#cc0000;;
-	}
+.home.section#page {
+	padding: 0 0 50px 0;
+}
 	
-	.breaker {
-		background:#E2E2DF;
-		border-top:1px solid #aaa;
-		width:100%;
-		float:left;
-		padding:0;
-		border-bottom:2px solid rgba(0,0,0,0.1);
-	}
-	.breaker.white {
-		background:#fff;
-	}
+.plate-details h4 {
+	padding: 10px 0;
+	border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.plate-details h4.first {
+}
+.call {
+	position: absolute;
+	right: 30px;
+	text-decoration: underline;
+	text-align: center;
+	width: auto;
+	padding: 0;
+	text-indent: 0;
+}
 	
-	.breaker h4 {
-		padding:10px 0;
-		border-top:2px solid rgba(0,0,0,0.1);
-		text-align:center;
-		text-transform:uppercase;
-		font-weight:700;
-		margin:0;
-		
-	}
+.plate-details h4.tow_date {
+	background-image: url(time_icon.png);
+	background-position: 0 center;
+	background-size: 20px;
+	text-indent: 30px;
+	background-repeat: no-repeat;
+}
+.plate-details h4.make_details {
+	background-image: url(car_icon.png);
+	background-position: 0 center;
+	background-size: 20px;
+	text-indent: 30px;
+	background-repeat: no-repeat;
+}
+.plate-details h4.tow_location {
+	background-image: url(place_icon.png);
+	background-position: 0 center;
+	background-size: 20px;
+	text-indent: 30px;
+	background-repeat: no-repeat;
+	border: none;
+}
 	
 	
-ul#maps  {
-		width:100%;
-		float:left;
-		padding:0;
-		margin:0;
-	}
-	ul#maps {
-	    margin-top: 50px;
-	}
+ul.plates {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 20px 0;
+}
+ul.plates li {
+	padding: 20px 0;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	width: 48%;
+	background: #fff;
+	float: left;
+	position: relative;
+	margin-bottom: 3%;
+}
+ul.plates li.odd {
+	margin-right: 4%;
+}
+ul.plates li:hover {
+	background: rgba(255,255,255,0.9);
+}
+ul.plates li a {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	text-indent: -999em;
+}
+ul.plates li h2,
+ul.plates li h4 {
+	text-align: center;
+}
+ul.plates li h2 {
+	color: #595951;
+}
+ul.plates li:hover h2 {
+	color: #cc0000;;
+}
 	
-	ul#maps li {
-		width:100%;
-		float:left;
-		height:500px;
-		padding:20px 0;
-	}
-	ul#maps li.doty {
-  	  background-image: url(doty.jpg);
-	background-position:center;
+.breaker {
+	background: #E2E2DF;
+	border-top: 1px solid #aaa;
+	width: 100%;
+	float: left;
+	padding: 0;
+	border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.breaker.white {
+	background: #fff;
+}
+	
+.breaker h4 {
+	padding: 10px 0;
+	border-top: 2px solid rgba(0,0,0,0.1);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0;
+}
+	
+	
+ul#maps {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+ul#maps {
+	margin-top: 50px;
+}
+	
+ul#maps li {
+	width: 100%;
+	float: left;
+	height: 500px;
+	padding: 20px 0;
+}
+ul#maps li.doty {
+	background-image: url(doty.jpg);
+	background-position: center;
 	background-size: cover;
-	background-repeat:no-repeat;
-	}
-	ul#maps li.sacramento {
-  	  background-image: url(sacramento.jpg);
-  	background-position:center;
-  	background-size: cover;
-  	background-repeat:no-repeat;
-	}
-	ul#maps li.wacker {
-  	  background-image: url(wacker.jpg);
-  	background-position:center;
-  	background-size: cover;
-  	background-repeat:no-repeat;
-	}
-	ul#maps li a  {
+	background-repeat: no-repeat;
+}
+ul#maps li.sacramento {
+	background-image: url(sacramento.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+ul#maps li.wacker {
+	background-image: url(wacker.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+ul#maps li a {
 	padding: 10px 30px;
-	  background: #fff;
-	  margin-top: -20px;
-	  position: relative;
-	  float: left;
-	}
-	@media all and (min-width:768px) {
+	background: #fff;
+	margin-top: -20px;
+	position: relative;
+	float: left;
+}
+	
+	
+.home.section#nav {
+	background: none;
+}
+.main-links,
+.home.section#nav h1 {
+	visibility: hidden;
+	opacity: 0;
+}
+	
+.active .section#make,
+.active .home.section#nav {
+	background: #fff;
+	z-index: 99;
+}
+#poster {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+	background: #111;
+	background-image: url(wacker_map.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+#poster .search_button {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width:200px;
+	height:30px;
+	text-align:center;
+	color:#fff;
+	margin-left:-100px;
+	z-index:999;
+	margin-top:-50px;
+	border:1px solid rgba(255,255,255,0.5);
+	padding:20px 0;
+}
+
+
+@media all and (min-width:768px) {
 	#nav h1 .menu {
-	  background-image: url(mag_icon.png);
-	  background-position: center;
-	  background-size: 70px;
-	  background-repeat: no-repeat;
-	  width: 230px;
-	  position: relative;
-	  display: inline-block;
-	  float: right;
-	  border: 2px solid;
-	  position: absolute;
-	  line-height: 20px;
-	  height: 80px;
-	  margin-top: 35px;
-	  right: 0px;
-	  font-family: 'Gotham SSm A', 'Gotham SSm B';
-	  font-weight: 700;
-	  font-style: normal;
-	  font-size: .25em;
-	  color: #eee;
-	  text-align: right;
-	  padding-right: 20px;
-	  line-height: 2.5em;
-	  text-indent: 9999999em;
-	  width: 70px;
-	  border: none;
+		background-image: url(mag_icon.png);
+		background-position: center;
+		background-size: 70px;
+		background-repeat: no-repeat;
+		width: 230px;
+		position: relative;
+		display: inline-block;
+		float: right;
+		border: 2px solid;
+		position: absolute;
+		line-height: 20px;
+		height: 80px;
+		margin-top: 35px;
+		right: 0px;
+		font-family: 'Gotham SSm A', 'Gotham SSm B';
+		font-weight: 700;
+		font-style: normal;
+		font-size: .25em;
+		color: #eee;
+		text-align: right;
+		padding-right: 20px;
+		line-height: 2.5em;
+		text-indent: 9999999em;
+		width: 70px;
+		border: none;
 	}
 	.home.section#nav {
-	  padding: 100px 0;
-	  padding-bottom:20px;
-
+		padding: 100px 0;
+		padding-bottom: 20px;
 	}
 	#nav h1 {
-	  padding: 0px 0 5px;
-	  margin-bottom: 45px;
+		padding: 0px 0 5px;
+		margin-bottom: 45px;
 	}
 	.active .section#make {
-  	  padding-bottom:40px;
-		
+		padding-bottom: 40px;
 	}
 	#page .message {
-		display:none;
+		display: none;
 	}
+
 }
 @media all and (max-width:768px) {
 	.center {
@@ -773,23 +821,23 @@ ul#maps  {
 	#nav h1 .menu {
 		/* text-indent: -999em; */
 		background-image: url(magnify_icon.png);
-	    background-position: 10px center;
-	    background-size: 18px;
-	    background-repeat: no-repeat;
-	    width: 95px;
-	    position: relative;
-	    display: inline-block;
-	    float: right;
-	    border: 1px solid #ddd;
-	    position: absolute;
-	    line-height: 29px;
-	    height: 30px;
-	    margin-top: 5px;
-	    right: 0px;
-	    text-align: right;
-	    font-size: .4em;
-	    color: #bbb;
-	    padding-right: 10px;
+		background-position: 10px center;
+		background-size: 18px;
+		background-repeat: no-repeat;
+		width: 95px;
+		position: relative;
+		display: inline-block;
+		float: right;
+		border: 1px solid #ddd;
+		position: absolute;
+		line-height: 29px;
+		height: 30px;
+		margin-top: 5px;
+		right: 0px;
+		text-align: right;
+		font-size: .4em;
+		color: #bbb;
+		padding-right: 10px;
 	}
 	  
 	#nav h1 .menu:hover {
@@ -807,7 +855,7 @@ ul#maps  {
 	}
 
 	input#plate_search {
-		border:1px solid #ccc;
+		border: 1px solid #ccc;
 		top: -6px;
 		box-shadow: 0px 0px 2px rgba(0,0,0,0.1), 0px 2px 3px rgba(0,0,0,0.075);
 	}
@@ -815,82 +863,79 @@ ul#maps  {
 	}
 
 	#map-canvas {
-	  height: 350px;
-	  padding: 0px;
+		height: 350px;
+		padding: 0px;
 	}
 	.home.section#page {
-				padding:0px 0 50px;
-			}
-			.home#page .make_button, .home#page .search_button {
-				height:200px;
-			}
-			.home .make_button h5, .home .search_button h5 {
-			  padding: 25px 0;
-			}
-			.home#page .search_button{
-				background:#fff;
-				background-image: url(plate_home.png);
-				background-position:center 30px;
-				background-size: 130px;
-				background-repeat:no-repeat;
-				border-right:2px solid rgba(0,0,0,0.075);
-	
-			}
-			.home#page .make_button{
-				background:#fff;
-								float:right;
-				background-image: url(make_newhome.png);
-				background-position:center 30px;
-				background-size: 130px;
-				background-repeat:no-repeat;
-	
-				width:48%;
-			}
+		padding: 0px 0 50px;
+	}
+	.home#page .make_button, .home#page .search_button {
+		height: 200px;
+	}
+	.home .make_button h5, .home .search_button h5 {
+		padding: 25px 0;
+	}
+	.home#page .search_button {
+		background: #fff;
+		background-image: url(plate_home.png);
+		background-position: center 30px;
+		background-size: 130px;
+		background-repeat: no-repeat;
+		border-right: 2px solid rgba(0,0,0,0.075);
+	}
+	.home#page .make_button {
+		background: #fff;
+		float: right;
+		background-image: url(make_newhome.png);
+		background-position: center 30px;
+		background-size: 130px;
+		background-repeat: no-repeat;
+		width: 48%;
+	}
 	.section#page {
-	  padding-top: 20px;
-	}	
+		padding-top: 20px;
+	}
 	ul#maps {
-		margin-top:20px;
+		margin-top: 20px;
 	}
 	#page .message {
-		font-size:0.9em;
-		color:rgba(0,0,0,0.8);
-		padding-right:89px;
-		display:none;
-
-}
-.make_button h4,
-.search_button h4 {
-	  line-height: 28em;
-  }
+		font-size: 0.9em;
+		color: rgba(0,0,0,0.8);
+		padding-right: 89px;
+		display: none;
+	}
+	.make_button h4,
+	.search_button h4 {
+		line-height: 28em;
+	}
   
 	#nav .message {
-		display:none;
+		display: none;
 	}
 
 	ul#maps li {
-		width:100%;
-		float:left;
-		height:200px;
-		padding:20px 0;
+		width: 100%;
+		float: left;
+		height: 200px;
+		padding: 20px 0;
 	}
 	ul#maps li.doty {
-  	  background-image: url(doty_map.jpg);
-	background-position:center;
-	background-size: cover;
-	background-repeat:no-repeat;
+		background-image: url(doty_map.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	ul#maps li.sacramento {
-  	  background-image: url(sacramento_map.jpg);
-  	background-position:center;
-  	background-size: cover;
-  	background-repeat:no-repeat;
+		background-image: url(sacramento_map.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	ul#maps li.wacker {
-  	  background-image: url(wacker_map.jpg);
-  	background-position:center;
-  	background-size: cover;
-  	background-repeat:no-repeat;
+		background-image: url(wacker_map.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 }

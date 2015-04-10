@@ -1,0 +1,76 @@
+
+
+	<div class="section home" id="page">
+	<div class="breaker"><h4>Recent Towed:</h4></div>
+				<div class="center">
+
+				<ul class="plates">
+
+			<% @all_plates.take(2).each do |license_plate| %>
+
+				<% date = license_plate["tow_date"] %></h4>
+				<% date = date[0..-10] %></h4>
+		
+
+				<% if license_plate["state"] == "IL" %>
+				<li class="illinois">
+				<% elsif %>
+				<li>
+				<% end %>	
+				<a href="/lookup/plate/?plate=<%= license_plate["plate"] %>">View this plate</a>
+				
+				<div class="center">
+						<h2>
+							<span class="number">
+							<%  if license_plate["plate"].blank? %>
+							&nbsp;N/A&nbsp;
+							<% end %>
+							<% if license_plate["state"] != "IL" %>
+							<%= license_plate["state"] %>
+							<% end %>	
+							
+							<%= license_plate["plate"] %>
+							</span>
+						</h2>
+				
+						<div class="details">
+							
+							<h4><%= date %></h4>
+
+						</div>	
+					</div>
+				</li>
+  
+			<% end %>
+
+			</ul>
+					<div class="search_button"><h4>Search</h4></div>	
+
+	</div>
+
+
+
+<div class="breaker"><h4>FIND A LOCATION:</h4></div>
+		<ul id="maps">
+			<li class="doty">
+				<div class="center">
+				<h4>10300 S. Doty</h4>
+				<a href="tel:773-568-8495">Call the Facility: 773-568-8495</a>
+			</div>
+					</li>	
+			<li class="sacramento">
+				<div class="center">
+				<h4>701 N Sacramento</h4>
+				<a href="tel:773-265-7605">Call the Facility: 773-265-7605</a>
+			</div>
+					</li>	
+			<li class="wacker">
+				<div class="center">
+				<h4>400 E. Wacker</h4>
+				<a href="tel:773-744-7550">Call the Facility: 773-744-7550</a>
+			</div>
+			</li>	
+
+		</ul>
+	</div>
+
