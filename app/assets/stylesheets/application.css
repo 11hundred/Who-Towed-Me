@@ -636,19 +636,19 @@ ul#maps li {
 	padding: 20px 0;
 }
 ul#maps li.doty {
-	background-image: url(doty.jpg);
+	background-image: url(doty_color_map.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 ul#maps li.sacramento {
-	background-image: url(sacramento.jpg);
+	background-image: url(sac_color_map.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 ul#maps li.wacker {
-	background-image: url(wacker.jpg);
+	background-image: url(wacker_color_map.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -684,7 +684,7 @@ ul#maps li a {
 	top: 0px;
 	z-index: 0;
 	background: #111;
-	background-image: url(wacker_map.jpg);
+	background-image: url(wacker_color_map.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1003,19 +1003,19 @@ padding: 20px;
 		padding: 20px 0;
 	}
 	ul#maps li.doty {
-		background-image: url(doty_map.jpg);
+		background-image: url(doty_color_map.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	ul#maps li.sacramento {
-		background-image: url(sacramento_map.jpg);
+		background-image: url(sac_color_map.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	ul#maps li.wacker {
-		background-image: url(wacker_map.jpg);
+		background-image: url(wacker_color_map.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
