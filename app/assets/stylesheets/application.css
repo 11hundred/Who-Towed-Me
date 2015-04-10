@@ -744,7 +744,7 @@ display: inline-block;
 	line-height:1.6em;
 }
 
-.search_button{
+#poster .search_button{
 padding: 20px;
   border: 1px solid rgba(255,255,255,0.3);
   width: 50%;
@@ -1022,7 +1022,7 @@ padding: 20px;
 	#poster .title p {
 	  padding-top: 10px;
 	}
-		.search_button {
+	#poster 	.search_button {
 	  padding: 20px;
 	  margin: 50px auto;
 	}
