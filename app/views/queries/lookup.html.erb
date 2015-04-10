@@ -12,6 +12,10 @@
 			</div>	
 			<div class="main-links"><a href="/" class="home">home</a> WHO TOWED ME</div>
 				<h1>
+					<%  if  @plate.plate.blank? %>
+					<span class="plate">&nbsp;N/A&nbsp;</span>
+					<% end %>
+					
 						<span class="plate"><%= @plate.plate %></span>
 					<span class="menu search_button">Search</span>	
 				</h1>

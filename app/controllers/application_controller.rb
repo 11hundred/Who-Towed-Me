@@ -59,7 +59,7 @@ class ApplicationController < ActionController::Base
 		elsif @make == "MITS"
 			@make ="Mitsubishi" 
 		elsif @make == "NISS"
-			@make ="Nissaan" 
+			@make ="Nissan" 
 		elsif @make == "PONT"
 			@make ="Pontiac" 
 		elsif @make == "SATR"
