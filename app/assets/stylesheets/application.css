@@ -23,7 +23,7 @@ html, body, #map-canvas {
 	font-family: 'Vitesse A', 'Vitesse B';
 	font-weight: 400;
 	font-style: normal;
-	background: #E2E2DF;
+	background: #e9e8e5;
 }
 
 input,
@@ -103,7 +103,7 @@ input[type="text"] {
 	width: 100%;
 	position: relative;
 	float: left;
-	background: #E2E2DF;
+	background: #e9e8e5;
 }
 .section#search,
 .section#nav {
@@ -598,7 +598,7 @@ ul.plates li:hover h2 {
 }
 	
 .breaker {
-	background: #E2E2DF;
+	background: #e9e8e5;
 	border-top: 1px solid #aaa;
 	width: 100%;
 	float: left;
@@ -661,7 +661,14 @@ ul#maps li a {
 	float: left;
 }
 	
-	
+#map-canvas {
+    height: 500px;
+    width: 100%;
+    float: left;
+    display: block;
+	margin-top:50px;
+	border-top:1px solid rgba(0,0,0,0.2);
+}	
 .home.section#nav {
 	background: none;
 }
@@ -760,7 +767,7 @@ padding: 20px;
 	width:100%;
 	height:auto;
 	padding:10px 0;
-    background: #E2E2DF;
+    background: #e9e8e5;
 	border-top:1px solid rgba(0,0,0,0.2);
 }
 .footer p {
