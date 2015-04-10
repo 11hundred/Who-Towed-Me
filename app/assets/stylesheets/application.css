@@ -1030,4 +1030,9 @@ padding: 20px;
 	  padding: 20px;
 	  margin: 50px auto;
 	}
+	.plate-details h4 {
+		padding: 7px 0;
+		border-bottom: 2px solid rgba(0,0,0,0.1);
+	}
+
 }
