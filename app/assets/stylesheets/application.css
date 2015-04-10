@@ -750,6 +750,9 @@ padding: 20px;
   width: 50%;
   margin: 75px auto;
   max-width: 200px;
+  background:#fff;
+  color:#111;
+  
 }
 .footer {
 	position:relative;
