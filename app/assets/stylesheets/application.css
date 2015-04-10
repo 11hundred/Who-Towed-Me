@@ -758,7 +758,6 @@ padding: 20px;
 	height:auto;
 	padding:10px 0;
     background: #E2E2DF;
-	text-indent:20px;
 	border-top:1px solid rgba(0,0,0,0.2);
 }
 .footer p {
@@ -1017,5 +1016,14 @@ padding: 20px;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-
+	#poster .title h1 {
+	  padding: 20px 0;
+	}
+	#poster .title p {
+	  padding-top: 10px;
+	}
+		.search_button {
+	  padding: 20px;
+	  margin: 50px auto;
+	}
 }
