@@ -665,7 +665,7 @@ ul#maps li a {
 .home.section#nav {
 	background: none;
 }
-.main-links,
+.home .main-links,
 .home.section#nav h1 {
 	visibility: hidden;
 	opacity: 0;
