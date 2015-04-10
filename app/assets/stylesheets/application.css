@@ -706,7 +706,7 @@ ul#maps li a {
 }
 
 
-#poster .search_button {
+#poster .title {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -716,10 +716,10 @@ ul#maps li a {
     color: #fff;
     margin-left: -125px;
     z-index: 999;
-    margin-top: -90px;
+    margin-top: -175px;
     padding: 20px 0;
   }
-#poster .search_button  h1 {
+#poster .title  h1 {
 
 background-image: url(who_bar.png), url(who_bar.png);
 background-position: center top, center bottom;
@@ -727,7 +727,7 @@ background-size: 100% 5px;
 background-repeat: no-repeat;
 padding:10px 0;
 }
-#poster .search_button  h1 em {
+#poster .title  h1 em {
 background-image:url(who_star.png);
 background-position:center;
 background-size:15px;
@@ -735,14 +735,22 @@ background-repeat:no-repeat;
 width:20px;
 display: inline-block;
 }
-#poster .search_button p {
+#poster .title p {
 	padding-top:20px;
 	font-family: 'Gotham SSm A', 'Gotham SSm B';
 	font-weight: 700;
 	font-style: normal;
 	font-size: .9em;
+	line-height:1.6em;
 }
 
+.search_button{
+padding: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 50%;
+  margin: 75px auto;
+  max-width: 200px;
+}
 .footer {
 	position:relative;
 	float:left;
@@ -758,6 +766,7 @@ display: inline-block;
 	font-weight: 500;
 	font-style: normal;
 	font-size: .9em;
+	text-align:center;
 	
 }
 .footer p em {
@@ -812,7 +821,7 @@ display: inline-block;
 	#page .message {
 		display: none;
 	}
-	#poster .search_button {
+	#poster .title {
 		position: absolute;
 		left: 50%;
 		top: 50%;
@@ -821,11 +830,11 @@ display: inline-block;
 		color:#fff;
 		margin-left:-250px;
 		z-index:999;
-		margin-top:-140px;
+		margin-top:-200px;
 		padding:20px 0;
 
 	}
-	#poster .search_button  h1 {
+	#poster .title  h1 {
 		font-size:6em;
 		padding:20px 0;
 	}

@@ -33,7 +33,7 @@ $(window).load(function() {
 
 
 	$('.search_button').click( function() {
-    	$(this).css({opacity:0},0);
+    	$('.title').css({opacity:0},0);
     	$(' input#plate_search').focus();
 	    $("#search").fadeIn(0, function(){
 		    $("body").addClass("active");
@@ -85,7 +85,7 @@ $(window).load(function() {
 	    $("body.make-active").removeClass("make-active");
 	    $("#make").delay(50).slideUp(220);
     	$('#search').fadeOut(0);
-    	$('.search_button').css({opacity:1},0);
+    	$('.title').css({opacity:1},0);
 	});
 
 
