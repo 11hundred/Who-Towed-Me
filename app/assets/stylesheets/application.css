@@ -740,7 +740,7 @@ display: inline-block;
 	font-family: 'Gotham SSm A', 'Gotham SSm B';
 	font-weight: 700;
 	font-style: normal;
-	
+	font-size: .9em;
 }
 
 .footer {
@@ -751,6 +751,7 @@ display: inline-block;
 	padding:10px 0;
     background: #E2E2DF;
 	text-indent:20px;
+	border-top:1px solid rgba(0,0,0,0.2);
 }
 .footer p {
 	font-family: 'Gotham SSm A', 'Gotham SSm B';
@@ -768,6 +769,7 @@ display: inline-block;
 .home.footer {
   position: absolute;
   bottom: 0px;
+  background:none;
 }
 @media all and (min-width:768px) {
 	#nav h1 .menu {
