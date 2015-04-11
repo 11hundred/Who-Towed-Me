@@ -112,7 +112,7 @@ input[type="text"] {
 	display: inline-block;
 	border-bottom: 1px solid #aaa;
 	transition: all .5s;
-	padding-bottom: 50px;
+	padding-bottom:0px;
 	overflow: hidden;
 	-webkit-transition: background .5s;
 	-moz-transition: background .5s;
@@ -876,7 +876,7 @@ padding: 20px;
 	#nav h1 {
 	    background-image: url(who_bar.png);
 	    background-position: center bottom;
-	    background-size: 100% 15px;
+	    background-size: 100% 10px;
 	    background-repeat: no-repeat;
 	    margin-top: 10px;
 	    text-indent: 8px;
