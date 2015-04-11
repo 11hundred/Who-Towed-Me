@@ -187,15 +187,15 @@ input[type="text"] {
 
 .main-links a.home {
 	background-image: url(who_star.png);
-	background-position: 0 center;
-	background-size: 15px;
-	background-repeat: repeat-x;
-	text-indent: -1009em;
-	width: 30px;
-	margin-right: 20px;
-	position: relative;
-	float: left;
-	border-bottom: none;
+	  background-position: 0 -2px;
+	  background-size: 15px;
+	  background-repeat: repeat-x;
+	  text-indent: -1009em;
+	  width: 30px;
+	  margin-right: 20px;
+	  position: relative;
+	  float: left;
+	  border-bottom: none;
 }
 #nav h1,
 .search-module {
@@ -217,6 +217,8 @@ input[type="text"] {
 	background-position: center bottom;
 	background-size: 100% 10px;
 	background-repeat: no-repeat;
+	z-index:0;
+	
 }
 input#plate_search {
 	padding: 25px 20px 29px;
@@ -254,7 +256,6 @@ input#plate_search:focus {
 	text-align: left;
 	text-indent: 0px;
 	position: relative;
-	z-index: 2;
 }
 #nav h1 em {
 	display: inline-block;
@@ -401,8 +402,14 @@ input#plate_search:focus {
 	-o-transition: all .5s;
 }
 .make-active .make-links ul {
+	border-top:2px solid rgba(204, 205, 195, 0.75);
+    margin-top: 20px;
 	height: 100%;
 	display: block;
+	transition: margin-top .15s;
+	-webkit-transition: margin-top .15s;
+	-moz-transition: margin-top .15s;
+	-o-transition: margin-top .15s;
 }
 .active .search_make {
 	top: 0px;
@@ -412,7 +419,8 @@ input#plate_search:focus {
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 }
-.active .make-links h4 {
+.make-active .make-links h4 {
+	
 }
 
 .active #nav {
@@ -874,14 +882,15 @@ padding: 20px;
 		text-indent: 0px;
 	}
 	#nav h1 {
-	    background-image: url(who_bar.png);
-	    background-position: center bottom;
-	    background-size: 100% 10px;
-	    background-repeat: no-repeat;
-	    margin-top: 10px;
-	    text-indent: 8px;
-	    margin-bottom: 0px;
-	    padding-bottom: 35px;
+		background-image: url(who_bar.png);
+		  background-position: center top;
+		  background-size: 100% 15px;
+		  background-repeat: no-repeat;
+		  padding-top: 40px;
+		  text-indent: 8px;
+		  margin-bottom: 0px;
+		  padding-bottom: 25px;
+		  margin-top: -15px;
 	}
 		
 	input#plate_search {
