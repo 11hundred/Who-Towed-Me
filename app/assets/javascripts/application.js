@@ -57,11 +57,10 @@ $(window).load(function() {
 	});
 	
 	$('.open-close').click( function() {
+		
 	    $(".overlay").toggle(0,function() {
-	    	$('.open-close').html("x")
 	    } );
-		
-		
+        $('.open-close').html($('.open-close').text() == 'i' ? 'x' : 'i');
 	});
 	$(' input#plate_search').focus(function() {
 	    $(this).addClass("active");
