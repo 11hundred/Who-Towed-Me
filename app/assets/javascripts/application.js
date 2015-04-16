@@ -56,6 +56,13 @@ $(window).load(function() {
 		
 	});
 	
+	$('.open-close').click( function() {
+	    $(".overlay").toggle(0,function() {
+	    	$('.open-close').html("x")
+	    } );
+		
+		
+	});
 	$(' input#plate_search').focus(function() {
 	    $(this).addClass("active");
 	    $("body").addClass("active");

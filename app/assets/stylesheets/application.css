@@ -711,17 +711,45 @@ ul#maps li a {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	z-index: 0;
-/*	background: rgba(32, 73, 73,0.4);
+	z-index: 9999;
+	background: rgba(32, 73, 73,0.4);
 	background: rgba(255, 0, 0, 0.75);
-*/	
+	display:none;
 	
 }
+.overlay p {
+	width:800px;
+	margin:0% auto;
+	text-align:center;
+	color:#fff;
+	font-family: 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 700;
+	font-style: normal;
+	font-size:2em;
+	line-height:2em;
+	top:20%;
+	position:relative;
+}
 .active .overlay {
-	background: rgba(20, 24, 24,0.9);
+	display:block;
 }
 
-
+.open-close {
+	width:50px;
+	height:50px;
+	position:absolute;
+	padding:25px;
+	font-size:3em;
+	color:#fff;
+	border-radius:50%;
+	background:#111;
+	z-index:99999;
+	left:50%;
+	top:60%;
+	text-align:center;
+	margin-left:-50px;
+	
+}
 #poster .title {
     position: absolute;
     left: 0px;
@@ -1118,6 +1146,39 @@ border: 4px solid rgba(255,0,0,0.5);
 	    text-transform: uppercase;
 	    height: 100px;
 	    line-height: 3.5em;
+	}
+	.overlay p {
+		width:auto;
+		margin:20px;
+		text-align:center;
+		color:#fff;
+		font-family: 'Gotham SSm A', 'Gotham SSm B';
+		font-weight: 700;
+		font-style: normal;
+		font-size:1em;
+		line-height:2em;
+		top:20%;
+		position:relative;
+	}
+	.active .overlay {
+		background: rgba(20, 24, 24,0.9);
+	}
+
+	.open-close {
+		width:23px;
+		height:23px;
+		position:absolute;
+		padding:20px;
+		font-size:1.5em;
+		color:#fff;
+		border-radius:50%;
+		background:#111;
+		z-index:99999;
+		left:50%;
+		top:70%;
+		text-align:center;
+		margin-left:-30px;
+	
 	}
 	
 
