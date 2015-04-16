@@ -736,7 +736,7 @@ ul#maps li a {
 	padding:20px 0;
 	color:#111;
 	font-style:inherit;
-	line-height:1em;
+	line-height:1.3em;
 }
 .overlay p a {
 	color:inherit;
@@ -754,9 +754,9 @@ ul#maps li a {
 	position:absolute;
 	padding:25px;
 	font-size:3em;
-	color:#fff;
+	color:#222;
 	border-radius:50%;
-	background:#111;
+	background:rgba(0,0,0,0.2);
 	z-index:99999;
 	left:50%;
 	top:60%;
