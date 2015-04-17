@@ -60,7 +60,7 @@ $(window).load(function() {
 		
 	    $(".overlay").toggle(0,function() {
 	    } );
-        $('.open-close').html($('.open-close').text() == 'i' ? 'x' : 'i');
+        $('.open-close').html($('.open-close').text() == 'info' ? 'close' : 'info');
 	});
 	$(' input#plate_search').focus(function() {
 	    $(this).addClass("active");
