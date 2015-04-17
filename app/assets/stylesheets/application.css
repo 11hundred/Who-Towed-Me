@@ -1236,3 +1236,15 @@ font-style: normal;
 	  display:none;
 	}
 }
+@media all and (min-height:200px) {
+	.open-close {
+  	  top: 65%;
+	}
+}
+
+@media all and (min-height:200px) {
+	.open-close {
+  	  top: auto;
+	  bottom:70px;
+	}
+}
