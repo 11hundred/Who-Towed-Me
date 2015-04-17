@@ -745,10 +745,13 @@ ul#maps li a {
 	text-decoration:underline;
 }
 .active .overlay {
-	background: rgba(255, 0, 0, 0.75);
-	display:block;
+	background: rgba(20, 24, 24,0.9);
+  display: block!important;
 }
 .active .overlay p {
+	display:none;
+}
+.active .open-close {
 	display:none;
 }
 
@@ -1188,6 +1191,7 @@ border: 4px solid rgba(255,0,0,0.5);
 	}
 	.active .overlay {
 		background: rgba(20, 24, 24,0.9);
+	  display: block!important;
 	}
 
 	.open-close {
