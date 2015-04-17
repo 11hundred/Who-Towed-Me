@@ -738,9 +738,15 @@ ul.plates li:hover h2 {
 	font-style: normal;
 	text-decoration: none;
 	text-transform:uppercase;
+	cursor:pointer;
 	
 	
 }
+
+.open-close:hover{
+	text-decoration:underline;
+}
+
 #poster .title {
     position: absolute;
     left: 0px;
@@ -814,6 +820,7 @@ font-weight: 700;
 font-style: normal;
 
 }
+
 .footer {
 	position:relative;
 	float:left;
