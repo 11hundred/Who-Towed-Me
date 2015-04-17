@@ -745,6 +745,11 @@ ul#maps li a {
 	text-decoration:underline;
 }
 .active .overlay {
+	background: rgba(255, 0, 0, 0.75);
+	display:block;
+}
+.active .overlay p {
+	display:none;
 }
 
 
@@ -757,7 +762,7 @@ ul#maps li a {
 	color:#222;
 	z-index:99999;
 	left:50%;
-	top:50%;
+	top:55%;
 	text-align:center;
 	margin-left:-50px;
 	font-family: 'Gotham SSm A', 'Gotham SSm B';
@@ -820,7 +825,7 @@ padding: 20px;
   
 }
 #poster .search_button{
-padding: 20px;
+padding: 20px 0;
 left:50%;
 margin-top:-150px;
 margin-left:-250px;
