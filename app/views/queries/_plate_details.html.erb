@@ -6,9 +6,79 @@
 	<div class="section" id="page">
 		<div class="plate-details center">
 				<h2>Sorry! Couldn't Find that plate number.<br/><br/><br/></h2>
+			<h4><em>Search by make</em> instead.</h4>
 			</div>	
+		
+		
+		<div class="search_make view center">
+		<ul>		
+			<li>
+				<a href="/lookup/make/ACUR">Acura</a>
+			</li>
+			<li>
+				<a href="/lookup/make/AUDI">AUDI</a>
+			</li>
+			<li>
+				<a href="/lookup/make/BMW">BMW</a>
+			</li>
+			<li>
+				<a href="/lookup/make/BUIC">Buick</a>
+			</li>
+			<li>
+				<a href="/lookup/make/CADI">Cadillac</a>
+			</li>
+			<li>
+				<a href="/lookup/make/CHEV">Chevy</a>
+			</li>
+			<li>
+				<a href="/lookup/make/DODG">Dodge</a>
+			</li>
+			<li>
+				<a href="/lookup/make/FORD">Ford</a>
+			</li>
+			<li>
+				<a href="/lookup/make/HOND">Honda</a>
+			</li>
+			<li>
+				<a href="/lookup/make/HYUN">Hyundai</a>
+			</li>
+			<li>
+				<a href="/lookup/make/INFI">Infiniti</a>
+			</li>
+			<li>
+				<a href="/lookup/make/LEXS">Lexus</a>
+			</li>
+			<li>
+				<a href="/lookup/make/LINC">Lincoln</a>
+			</li>
+			<li>
+				<a href="/lookup/make/MAZD">Mazda</a>
+			</li>
+			<li>
+				<a href="/lookup/make/MITS">Mitsubishi</a>
+			</li>
+			<li>
+				<a href="/lookup/make/NISS">Nissan</a>
+			</li>
+			<li>
+				<a href="/lookup/make/PONT">Pontiac</a>
+			</li>
+			<li>
+				<a href="/lookup/make/SATR">Saturn</a>
+			</li>
+			<li>
+				<a href="/lookup/make/SUZI">Suzuki</a>
+			</li>
+			<li>
+				<a href="/lookup/make/VOLK">volkswagen</a>
+			</li>
+		</ul>				
+		
 		</div>
-
+		
+		</div>
+		
+		
 	<% else %>
 
 
@@ -22,40 +92,9 @@
 			<h4 class="tow_date">Towed on <%= @date %></h4>
 			<h4 class="tow_location"> <%= @address %> <a href="tel:<%= @plate.tow_facility_phone %>" class="call">CALL FACILITY</a> </h4>
 		</div>
-		<!-- <ul id="maps">
-			<% @sac = "701 N. Sacramento" %>
-			<% @doty = "10300 S. Doty" %>
-			<% @wacker = "400 E. Lower Wacker" %>
-
-
-
-			<% if @address.include? @wacker %>
-			<li class="wacker">
-				<div class="center">
-				<h6><a href="tel:773-744-7550">Get Directions</a></h6>
-				</div>
-				<div class="overlay blue"></div>
-			</li>
-			<% end %>
-			<% if @address.include? @sac %>
-			<li class="sacramento">
-				<div class="center">
-				<h6><a href="tel:773-744-7550">Get Directions</a></h6>
-			</div>
-	<div class="overlay blue"></div>
-			</li>
-			<% end %>
-			<% if @address.include? @doty %>
-			<li class="doty">
-				<div class="center">
-				<h6><a href="tel:773-744-7550">Get Directions</a></h6>
-			</div>
-				<div class="overlay blue"></div>
-			</li>
-			<% end %>
-
-		</ul> -->
 	</div>	
+    <%= @lat%>
+    <%= @long  %>
 	
 	<div id="map-canvas"></div>
 

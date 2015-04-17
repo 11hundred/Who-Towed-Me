@@ -45,13 +45,13 @@ $(window).load(function() {
 		
 		
 	});
-	$('.search_make').click( function() {
+	$('.make-links .search_make').click( function() {
 	    $(".search_make ul").slideToggle();
 		$('html, body').animate({scrollTop: $(".search_make ul").offset().top}, 650);
 	});
 	
 
-	$('.search_make').click( function() {
+	$('.make-links .search_make').click( function() {
 	    $("body").addClass("make-active");
 		
 	});

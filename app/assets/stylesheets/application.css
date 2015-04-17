@@ -365,6 +365,7 @@ input#plate_search:focus {
 .make-links h4:hover {
 	cursor: pointer;
 }
+.search_make.view ul,
 .make-links ul {
 	display: none;
 	padding: 0;
@@ -372,6 +373,10 @@ input#plate_search:focus {
 	overflow: hidden;
 	padding: 0 0 75px 0;
 }
+.search_make.view ul  {
+	display: block;
+}
+.search_make.view ul li,
 .make-links ul li {
 	width: 50%;
 	float: left;
@@ -626,48 +631,6 @@ ul.plates li:hover h2 {
 	margin: 0;
 }
 	
-	
-ul#maps {
-	width: 100%;
-	float: left;
-	padding: 0;
-	margin: 0;
-}
-ul#maps {
-	margin-top: 50px;
-}
-	
-ul#maps li {
-	width: 100%;
-	float: left;
-	height: 500px;
-	padding: 20px 0;
-}
-ul#maps li.doty {
-	background-image: url(doty_color_map.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-ul#maps li.sacramento {
-	background-image: url(sac_color_map.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-ul#maps li.wacker {
-	background-image: url(wacker_color_map.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-ul#maps li a {
-	padding: 10px 30px;
-	background: #fff;
-	margin-top: -20px;
-	position: relative;
-	float: left;
-}
 	
 #map-canvas {
     height: 500px;
@@ -1028,7 +991,10 @@ border: 4px solid rgba(255,0,0,0.5);
 	input#plate_search:focus {
 	}
 
-	#map-canvas {
+	#map-canvas,
+	#map-canvas2,
+		#map-canvas3,
+			#map-canvas4 {
 		height: 350px;
 		padding: 0px;
 	}
@@ -1118,7 +1084,10 @@ border: 4px solid rgba(255,0,0,0.5);
 		border-bottom: 2px solid rgba(0,0,0,0.1);
 	}
 
-	#map-canvas {
+	#map-canvas,
+	#map-canvas2,
+		#map-canvas3,
+			#map-canvas4 {
 	    height: 250px;
 	    width: 100%;
 	    float: left;
