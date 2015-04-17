@@ -69,7 +69,7 @@ class ApplicationController < ActionController::Base
 		elsif @make == "TOYT"
 			@make ="Toyota" 
 		elsif @make == "VOLK"
-			@make ="volkswagen" 
+			@make ="VW" 
 		end
   end
 
