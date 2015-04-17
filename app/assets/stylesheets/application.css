@@ -1215,7 +1215,7 @@ font-style: normal;
 	  border-radius: 50%;
 	  z-index: 99999;
 	  left: 50%;
-	  top: 75%;
+	  top: 70%;
 	  text-align: center;
 	  margin-left: -100px;
 	}
@@ -1231,5 +1231,8 @@ font-style: normal;
 	  line-height: 1.7em;
 	  top: 20%;
 	  position: relative;
+	}
+	.overlay p em {
+	  display:none;
 	}
 }
