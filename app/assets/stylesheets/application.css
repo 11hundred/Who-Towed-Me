@@ -1236,7 +1236,7 @@ font-style: normal;
 	  display:none;
 	}
 }
-@media all and (min-height:200px) {
+@media all and (min-height:650px) {
 	.open-close {
   	  top: 65%;
 	}
@@ -1245,6 +1245,12 @@ font-style: normal;
 @media all and (min-height:200px) {
 	.open-close {
   	  top: auto;
-	  bottom:70px;
+	  bottom:80px;
+	}
+}
+@media all and (min-height:500px) {
+	.open-close {
+  	  top: auto;
+	  bottom:180px;
 	}
 }
