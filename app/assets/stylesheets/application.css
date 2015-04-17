@@ -1193,3 +1193,43 @@ font-style: normal;
 	
 
 }
+@media all and (max-width:328px) {
+	#poster .search_button {
+	  padding: 0px;
+	  left: 0px;
+	  width: 70%;
+	  bottom: 20px;
+	  margin: -50px 0 0 15%;
+	  font-size: 1.5em;
+	  position: absolute;
+	  top: 50%;
+	  text-transform: uppercase;
+	  height: 100px;
+	  line-height: 4.75em;
+	}
+	.open-close {
+	  width: 200px;
+	  height: 23px;
+	  position: absolute;
+	  padding: 0px;
+	  border-radius: 50%;
+	  z-index: 99999;
+	  left: 50%;
+	  top: 75%;
+	  text-align: center;
+	  margin-left: -100px;
+	}
+	.overlay p {
+	  width: auto;
+	  margin: 10px 40px;
+	  text-align: center;
+	  color: #fff;
+	  font-family: 'Gotham SSm A', 'Gotham SSm B';
+	  font-weight: 700;
+	  font-style: normal;
+	  font-size: 1em;
+	  line-height: 1.7em;
+	  top: 20%;
+	  position: relative;
+	}
+}
