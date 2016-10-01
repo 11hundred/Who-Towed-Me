@@ -37,4 +37,5 @@ bower.json
 log/*
 tmp/*
 
+config/application.yml
 config/secrets.yml
