@@ -29,7 +29,7 @@ server 'b8jc-wvfx.accessdomain.com', port: 22, roles: [:web, :app, :db], primary
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 set :repo_url,        'git@github.com:11hundred/Who-Towed-Me.git'
-set :application,     'Who-Towed-Me'
+set :application,     'whotowedme'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
