@@ -31,7 +31,7 @@ set :branch, ENV['BRANCH'] if ENV['BRANCH']
 set :repo_url,        'git@github.com:11hundred/Who-Towed-Me.git'
 set :application,     'whotowedme'
 set :user,            'deploy'
-set :puma_threads,    [4, 16]
+set :puma_threads,    [2, 8]
 set :puma_workers,    0
 
 set :console_env, :production
