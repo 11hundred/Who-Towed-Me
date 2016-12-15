@@ -11,3 +11,18 @@ https://data.cityofchicago.org/Transportation/Towed-Vehicles/ygr5-vcbg
 Google Maps are used to display the location of the towed vehicle
 
 There are many ways this can be done better. Namely by Scott Robbin http://www.wasmycartowed.com/ and https://github.com/smartchicago/wasmycartowed.
+
+To deploy to production:
+
+```
+git checkout master
+cap production deploy
+[enter deploy user password]
+```
+
+To deploy to staging.url.com:
+```
+git checkout [branchname]
+cap staging deploy BRANCH=[branchname]
+[enter deploy user password]
+```
