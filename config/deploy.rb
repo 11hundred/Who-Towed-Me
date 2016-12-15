@@ -26,7 +26,7 @@ end
 # Change these
 server 'b8jc-wvfx.accessdomain.com', port: 22, roles: [:web, :app, :db], primary: true
 
-set :branch, ENV['BRANCH'] if ENV['BRANCH']
+set :branch, if ENV['BRANCH'] then ENV['BRANCH'] else 'master' end
 
 set :repo_url,        'git@github.com:11hundred/Who-Towed-Me.git'
 set :application,     'whotowedme'
