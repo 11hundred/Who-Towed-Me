@@ -34,7 +34,7 @@ set :user,            'deploy'
 set :puma_threads,    [2, 8]
 set :puma_workers,    0
 
-set :console_env, :production
+#set :console_env, :production
 set :console_user, nil
 
 # Don't change these unless you know what you're doing
