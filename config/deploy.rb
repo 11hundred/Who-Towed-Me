@@ -34,7 +34,7 @@ set :user,            'deploy'
 set :puma_threads,    [2, 8]
 set :puma_workers,    0
 
-set :console_env, :production
+#set :console_env, :production
 set :console_user, nil
 
 # Don't change these unless you know what you're doing
@@ -57,7 +57,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 # set :scm,           :git
 # set :branch,        :master
 # set :format,        :pretty
-# set :log_level,     :debug
+set :log_level,     :error
 # set :keep_releases, 5
 
 ## Linked Files & Directories (Default None):
